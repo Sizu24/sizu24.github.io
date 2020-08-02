@@ -1,0 +1,36 @@
+footer ul{
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  li{
+    display: inline-block;
+  }
+}
+a{
+  &.social{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 5px 0;
+    opacity: 0.5;
+    transition: 0.6s;
+  }
+  &.twitter{
+    background-image: url("../img/twitter.svg");
+  }
+  &.github{
+    background-image: url("../img/github.svg");
+  }
+  &:hover{
+    opacity: 1.0;
+  }
+}
+
+footer .copyright{
+  color: #efefef;
+  text-align: center;
+  top: -8px;
+  position: relative;
+}
+
+

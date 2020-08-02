@@ -1,0 +1,42 @@
+.grid-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+
+    "header nav"
+    "main main"
+    "footer footer";
+
+  @include mq($lg){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+     "header nav nav nav"
+      "main main main main"
+      "footer footer footer footer";
+  }
+}
+
+header{
+  grid-area: header;
+  background-color: #292929;
+  height: 600px;
+}
+
+nav{
+  grid-area: nav;
+  background-color: rgb(41, 41, 41);
+}
+
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+  height: 150px;
+  width: 100%;
+  background-color: #292929;
+  
+}
