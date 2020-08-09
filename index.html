@@ -4,17 +4,15 @@
   <meta charset="utf-8">
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="grid-container">
 
-    <header>
-      <h1>Shah Chisty</h1>
-    </header>
-
     <nav>
+
+      <h1 id="name"><i class="fab fa-stripe-s"></i></h1>
       <div id="hamburger">
         <div class="line"></div>
         <div class="line"></div>
@@ -22,58 +20,118 @@
       </div>
       <div id="nav-drop">
         <div id="nav-links">
-          <a class="nav-button active">Home</a>
-          <a class="nav-button">About Me</a>
+          <a href="#" class="nav-button active">Home</a>
+          <a href="#" class="nav-button">About Me</a>
           <a href="#projects" class="nav-button">Projects</a>
           <a href="#contact" class="nav-button">Contact</a>
         </div>
       </div>
+
     </nav>
 
+    <header>
+
+      <div id="background">
+        <div id="overlay">
+          <div id="welcome">
+            <h2>Front End <span>Developer</span></h2>
+            <ul id="skills">
+              <li>HTML <i class="fab fa-html5"></i></li>
+              <li>CSS <i class="fab fa-css3-alt"></i></li>
+              <li>JavaScript <i class="fab fa-js"></i></li>
+              <li>jQuery</li>
+              <li><i class="fab fa-sass"></i></li>
+            </ul>
+            <p>Hi! My name is Shah, and I live in Reno NV.
+               I have 2 years of experience building responsive pages
+                with a mobile-first approach,
+                to make your page work on any type of screen size.
+              Check out my projects below to see some examples of my work, and my code!</p>
+            <div id="buttons">
+              <button class="button one">
+                <a href="#about">
+                  Who Am I?
+                </a>
+              </button>
+              <button class="button two">
+                <a href="#projects">
+                  My Work
+                </a>
+              </button>
+            </div>      
+          </div>
+        </div>
+      </div>   
+
+    </header>
+
     <main>
+
+      <div id="about">
+        <h2>HELLO</h2>
+        <img src="img/chisty.jpg" id="pic">
+      </div>
+
       <div id="projects">
-        <h2>Projects</h2>
+        <h3>Projects</h3>
         <div class="projects">
-          <div class="card">
-            <h3>Image Gallery</h3>
+          <figure class="card">
+            <img src="img/images.png" alt="thumbnail of site with image gallery">
+            <h4>Image Gallery</h4>
             <p class="card-description">
               Image gallery with modal demonstration. Implemented search bar, and lightgallery plugin
             </p>
-          </div>
-          <div class="card">
-            <h3>Wheel of Success</h3>
+          </figure>
+
+          <figure class="card">
+            <img src="img/wheel.png">
+            <h4>Wheel of Success</h4>
             <p class="card-description">
               Guess the letters to reveal random phrase
             </p>
-          </div>
-          <div class="card">
-            <h3>Memory Game</h3>
+          </figure>
+
+          <figure class="card">
+            <a href="https://sizu24.github.io/MemoryGame/">
+              <img src="img/match.png">
+              <h4>Memory Game</h4>
+              <p class="card-description">
+    
+              </p>
+            </a>
+          </figure>
+
+          <figure class="card">
+            <a href="https://sizu24.github.io/Interactive-Dashboard">
+              <img src="img/charts.png">
+              <h4>SVG Charts</h4>
+              <p class="card-description">
+    
+              </p>
+            </a>
+            
+          </figure>
+
+          <figure class="card">
+            <img src="img/employee.png">
+            <h4>Employee Directory</h4>
             <p class="card-description">
   
             </p>
-          </div>
-          <div class="card">
-            <h3>SVG Charts</h3>
+          </figure>
+
+          <figure class="card">
+            <img src="img/form.png">
+            <h4>Newsletter Form</h4>
             <p class="card-description">
-  
+
             </p>
-          </div>
-          <div class="card">
-            <h3>Employee Directory</h3>
-            <p class="card-description">
-  
-            </p>
-          </div>
-          <div class="card">
-            <h3>Newsletter Form</h3>
-            <p class="card-description">
-  
-            </p>
-          </div>
-      </div>
-  
+          </figure>
+        </div>
       </div>  
+
     </main>
+
     <footer>
       <ul id="contact">
         <li><a href="http://www.twitter.com/sizu24" target="_blank" class="social twitter"></a></li>

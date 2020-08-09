@@ -1,0 +1,54 @@
+// Landing page buttons
+#buttons{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include mq($sm){
+    display: inline-block;
+    margin-top: 100px;
+  }
+}
+
+.button{
+  opacity: 1.0;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin: 10px;
+  &.one{
+    margin-bottom: 40px;
+    a{
+      padding: 14px 40px;
+    }
+  }
+  &.two{
+    a{
+      padding: 14px 50px;
+    }
+  }
+  a:before{
+    text-decoration: none;    
+    color: #fff;
+  }
+  a{
+    border-radius: 50px;
+    border: 3px solid #fff;
+    font-weight: 900;
+    font-size: 1.2em;
+    &:link{
+      text-decoration: none;
+      color: white;
+    }
+    &:hover{
+      color: white;
+    }
+    &:active{
+      color: white;
+    }
+    &:visited{
+      color: white;
+    }
+  }
+}
+

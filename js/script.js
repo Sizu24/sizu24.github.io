@@ -1,5 +1,6 @@
 const hamburger = document.getElementById("hamburger");
-const navDrop = document.getElementById("nav-drop");
+const navDrop = document.querySelector("#nav-drop");
+const navLinks = document.querySelector("#nav-links");
 
 hamburger.addEventListener("click", ()=>{
   navDrop.style.display === "block";
@@ -19,9 +20,7 @@ const removeActive = ()=>{
 };
 
 // on click if nav button is clicked, make active.
-const navButton = document.getElementById("nav-drop");
-
-navButton.addEventListener("click", e =>{
+navLinks.addEventListener("click", e =>{
   const element = e.target;
   removeActive();
   if(element.tagName === "A"){
