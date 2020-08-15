@@ -45,14 +45,15 @@ footer{
   
 }
 #about{
-  border-radius: 35px;
-  margin: 30px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   @include mq($md){
     grid-template-columns: 2, 1fr, repeat(3, 2fr);
     grid-template-rows: 1fr 3fr 1fr;
   }
-  box-shadow: 5px 5px 10px 0 rgb(180, 180, 180);
-  background-color: rgb(58, 58, 58);
+  background-color: #F4F4F4;
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
 }

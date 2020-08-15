@@ -1,5 +1,4 @@
 * {
-  font-family: 'Jaldi', sans-serif;
   box-sizing: border-box;
 }
 h1{
@@ -93,20 +92,59 @@ span{
 
 }
 .me {
-  @include mq($lg){
-    width: 40%;
-    height: 300px;
-    grid-column: 1/3;
-    margin-left: 100px;
-    grid-row: 2/4;
-    padding: 20px;
-  }
-  
+
+  background-color: rgb(240, 108, 101);
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
+  position: relative;
   color: #fff;
-  background-color: rgb(53, 53, 53);
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px rgb(104, 104, 104);
-  font-size: 0.8em;
-  grid-row: 3/4;
+  height: 300px;
+  width: 86.5%;
+  border-radius: 35px;
+  bottom: 120px;
+
+  h2{
+    color: #fff;
+    text-align: left;
+    margin-left: 35px;
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1em;
+    font-weight: 900;
+  }
+
+  p{
+    padding: 5px 35px;
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+}
+
+.languages{
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
+
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1em;
+    color: #4A4A4A;
+    margin-bottom: 0;
+  }
+
+  ul{
+    margin-top: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    li{
+      margin: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 

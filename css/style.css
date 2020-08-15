@@ -338,7 +338,6 @@ template {
 }
 
 * {
-  font-family: "Jaldi", sans-serif;
   box-sizing: border-box;
 }
 
@@ -439,22 +438,55 @@ span {
 }
 
 .me {
+  background-color: #f06c65;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
+  position: relative;
   color: #fff;
-  background-color: #353535;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px #686868;
-  font-size: 0.8em;
-  grid-row: 3/4;
+  height: 300px;
+  width: 86.5%;
+  border-radius: 35px;
+  bottom: 120px;
 }
-@media (min-width: 1024px) {
-  .me {
-    width: 40%;
-    height: 300px;
-    grid-column: 1/3;
-    margin-left: 100px;
-    grid-row: 2/4;
-    padding: 20px;
-  }
+.me h2 {
+  color: #fff;
+  text-align: left;
+  margin-left: 35px;
+  padding-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1em;
+  font-weight: 900;
+}
+.me p {
+  padding: 5px 35px;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+.languages {
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
+}
+.languages h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1em;
+  color: #4A4A4A;
+  margin-bottom: 0;
+}
+.languages ul {
+  margin-top: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+}
+.languages ul li {
+  margin: 20px;
+  padding-right: 20px;
 }
 
 .grid-container {
@@ -493,18 +525,19 @@ footer {
 }
 
 #about {
-  border-radius: 35px;
-  margin: 30px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  box-shadow: 5px 5px 10px 0 #b4b4b4;
-  background-color: #3a3a3a;
+  background-color: #F4F4F4;
 }
 @media (min-width: 768px) {
   #about {
     grid-template-columns: 2, 1fr, repeat(3, 2fr);
     grid-template-rows: 1fr 3fr 1fr;
   }
+}
+#about .container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #nav-drop {
@@ -682,8 +715,9 @@ figure img:hover {
 
 #pic {
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   opacity: 0.9;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.151);
   border-radius: 35px;
 }
 @media (min-width: 1024px) {
@@ -691,8 +725,6 @@ figure img:hover {
     grid-column: 4/6;
     width: 100%;
     grid-row: 1/4;
-    box-shadow: 5px 5px 5px #9b9b9b;
-    border-radius: 35px;
   }
 }
 
