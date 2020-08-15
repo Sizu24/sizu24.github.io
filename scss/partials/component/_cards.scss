@@ -6,16 +6,18 @@
   flex-wrap: wrap;
   padding-bottom: 2em;
   justify-content: center;
+    border-radius: 35px;
 }
 
 .card{
   height: 200px;
   width: 300px;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px 0 rgb(0, 0, 0, 0.1);
   &:nth-child(1){
 
-    background-color: rgb(78, 176, 221);
+    background: linear-gradient(rgb(78, 176, 221), rgb(0, 0, 0));
   }
   &:nth-child(2){
 
