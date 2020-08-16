@@ -1,5 +1,8 @@
 #nav{
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   &-drop{
     font-size: 1em;
     color: rgb(71, 71, 71);

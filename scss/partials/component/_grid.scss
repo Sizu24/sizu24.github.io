@@ -45,6 +45,7 @@ footer{
   
 }
 #about{
+
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   @include mq($md){
@@ -55,5 +56,6 @@ footer{
   .container{
     width: 90%;
     margin: 0 auto;
+
   }
 }
