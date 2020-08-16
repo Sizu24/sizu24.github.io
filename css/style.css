@@ -390,7 +390,7 @@ h2 {
   text-align: center;
   margin-top: 50px;
   color: #000;
-  font-weight: 100;
+  font-weight: 200;
 }
 @media (min-width: 1024px) {
   #welcome p {
@@ -536,6 +536,7 @@ footer {
 }
 
 #about {
+  padding-top: 50px;
   background-color: #F4F4F4;
 }
 #about .container {
