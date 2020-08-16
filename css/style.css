@@ -390,7 +390,7 @@ h2 {
   text-align: center;
   margin-top: 50px;
   color: #000;
-  font-weight: 200;
+  font-weight: 400;
 }
 @media (min-width: 1024px) {
   #welcome p {
@@ -788,15 +788,19 @@ footer .copyright {
   margin: 10px;
 }
 .button:hover {
-  background-color: #000;
+  background-color: #1f1f1f;
   transition-duration: 700ms;
   color: #fff;
-  border-color: #000;
+  border-color: #1f1f1f;
 }
 .button.one {
   padding: 10px 100px;
   background-color: #fff;
   color: #000;
+}
+.button.one:hover {
+  background-color: #1f1f1f;
+  color: #fff;
 }
 @media (min-width: 576px) {
   .button.one {

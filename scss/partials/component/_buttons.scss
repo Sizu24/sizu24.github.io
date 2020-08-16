@@ -23,16 +23,20 @@
   // color: #fff;
   margin: 10px;
   &:hover{
-    background-color: #000;
+    background-color: rgb(31, 31, 31);
     transition-duration: 700ms;
     color: #fff;
-    border-color: #000;
+    border-color: rgb(31, 31, 31);
   }
 
   &.one{
     padding: 10px 100px;
     background-color: #fff;
     color: #000;
+    &:hover{
+      background-color: rgb(31, 31, 31);
+      color: #fff;
+    }
     @include mq($sm){
       padding: 10px 100px;
     }
