@@ -69,8 +69,6 @@ span{
   color: #fff;
 }
 
-
-
 #projects h3{
   text-align: center;
   font-size: 2em;
@@ -84,12 +82,13 @@ span{
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
   padding: 20px 0;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 100%;
   h2{
     color: #fff;
     text-align: center;
     margin: 0;
+    padding: 30px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.1em;
     font-weight: 900;
@@ -104,6 +103,9 @@ span{
 }
 .me {
   background-color: rgb(240, 108, 101);
+  span{
+    font-weight: 600;
+  }
 }
 
 .languages{
@@ -119,9 +121,13 @@ span{
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
+
     li{
       margin: 15px;
       padding-right: 20px;
+      &:nth-child(1){
+        padding-right: 60px;
+      }
     }
   }
 }
@@ -135,5 +141,6 @@ span{
     border-radius: 5px;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
   }
+
 }
 

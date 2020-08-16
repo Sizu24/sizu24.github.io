@@ -432,13 +432,14 @@ span {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
   padding: 20px 0;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 100%;
 }
 .info h2 {
   color: #fff;
   text-align: center;
   margin: 0;
+  padding: 30px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 2.1em;
   font-weight: 900;
@@ -453,6 +454,9 @@ span {
 
 .me {
   background-color: #f06c65;
+}
+.me span {
+  font-weight: 600;
 }
 
 .languages {
@@ -473,6 +477,9 @@ span {
 .languages ul li {
   margin: 15px;
   padding-right: 20px;
+}
+.languages ul li:nth-child(1) {
+  padding-right: 60px;
 }
 
 .skills {
@@ -522,15 +529,7 @@ footer {
 }
 
 #about {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   background-color: #F4F4F4;
-}
-@media (min-width: 768px) {
-  #about {
-    grid-template-columns: 2, 1fr, repeat(3, 2fr);
-    grid-template-rows: 1fr 3fr 1fr;
-  }
 }
 #about .container {
   width: 90%;
@@ -599,7 +598,7 @@ footer {
   color: white;
 }
 #nav-links a:visited {
-  color: #6d6d6d;
+  color: white;
 }
 
 .nav-button {
@@ -640,6 +639,7 @@ footer {
 }
 
 #projects {
+  padding-top: 80px;
   background-color: #00bcd4;
 }
 
@@ -652,8 +652,8 @@ footer {
 }
 
 .card {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
   margin: 20px;
   border-radius: 35px;
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
@@ -763,6 +763,16 @@ footer .copyright {
   text-align: center;
   top: -8px;
   position: relative;
+}
+
+.skill-list {
+  text-align: center;
+}
+.skill-list span {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 30px;
 }
 
 #buttons {

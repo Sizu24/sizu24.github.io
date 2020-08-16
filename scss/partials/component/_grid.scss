@@ -46,12 +46,6 @@ footer{
 }
 #about{
 
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  @include mq($md){
-    grid-template-columns: 2, 1fr, repeat(3, 2fr);
-    grid-template-rows: 1fr 3fr 1fr;
-  }
   background-color: #F4F4F4;
   .container{
     width: 90%;
