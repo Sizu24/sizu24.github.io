@@ -419,12 +419,15 @@ span {
   color: #fff;
 }
 
-#projects h3 {
+.card h3 {
   text-align: center;
-  font-size: 2em;
-  color: #fff;
-  padding: 20px;
-  margin-top: 0;
+  font-weight: 600;
+  font-size: 1em;
+  color: #7B7B7B;
+  text-transform: uppercase;
+}
+.card a {
+  text-decoration: none;
 }
 
 .info {
@@ -640,7 +643,8 @@ footer {
 
 #projects {
   padding-top: 80px;
-  background-color: #00bcd4;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .projects {
@@ -652,40 +656,25 @@ footer {
 }
 
 .card {
-  height: 300px;
-  width: 400px;
+  height: 320px;
+  width: 350px;
   margin: 20px;
-  border-radius: 35px;
+  border-radius: 15px;
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
-.card:nth-child(1) {
-  background: linear-gradient(#4eb0dd, black);
-}
-.card:nth-child(2) {
-  background-color: #f0cf3a;
-}
-.card:nth-child(3) {
-  background-color: #8053c7;
-}
-.card:nth-child(4) {
-  background-color: #d86aaa;
-}
-.card:nth-child(5) {
-  background-color: #a0c5f0;
-}
-.card:nth-child(6) {
-  background-color: #f36b67;
-}
-.card h4 {
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 25px;
+.card-background {
+  background-color: #E3E3E3;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 20px 15px 0px 15px;
 }
 .card-description {
-  color: #fff;
+  color: #7B7B7B;
   text-align: center;
   font-size: 0.9em;
+  padding: 20px;
 }
 
 #background {
@@ -702,16 +691,12 @@ footer {
   opacity: 0.9;
 }
 
-figure {
-  width: 100%;
-}
-figure img {
-  width: 80%;
-  height: 80%;
-  margin: 20px 20px 20px 30px;
+.card img {
+  width: 60%;
+  border-radius: 15px;
   opacity: 1;
 }
-figure img:hover {
+.card img:hover {
   opacity: 0.1;
   transition-duration: 500ms;
 }

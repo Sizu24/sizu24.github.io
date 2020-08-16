@@ -14,13 +14,11 @@
 }
 
 // Project card images
-figure{
-  width: 100%;
+.card{
 
   img{
-    width: 80%;
-    height: 80%;
-    margin: 20px 20px 20px 30px;
+    width: 60%;
+    border-radius: 15px;
     opacity: 1.0;
     // position: relative;
     &:hover{

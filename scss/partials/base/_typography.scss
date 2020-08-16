@@ -69,12 +69,17 @@ span{
   color: #fff;
 }
 
-#projects h3{
-  text-align: center;
-  font-size: 2em;
-  color: #fff;
-  padding: 20px;
-  margin-top: 0;
+.card{
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+    color: #7B7B7B;
+    text-transform: uppercase;
+  }
+  a{
+    text-decoration: none;
+  }
 }
 
 .info{
