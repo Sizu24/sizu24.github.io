@@ -339,6 +339,7 @@ template {
 
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -426,54 +427,39 @@ span {
   margin-top: 0;
 }
 
-.skills {
-  color: #fff;
-  margin-left: 45px;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.name {
-  position: absolute;
-}
-
-.me {
-  background-color: #f06c65;
+.info {
   font-family: "Montserrat", sans-serif;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
-  position: relative;
-  color: #fff;
-  height: 300px;
-  width: 86.5%;
-  border-radius: 35px;
-  bottom: 120px;
+  padding: 20px 0;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
 }
-.me h2 {
+.info h2 {
   color: #fff;
-  text-align: left;
-  margin-left: 35px;
-  padding-top: 30px;
+  text-align: center;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 2.1em;
   font-weight: 900;
 }
-.me p {
-  padding: 5px 35px;
-  font-size: 1.3em;
+.info p {
+  padding: 0px 35px;
+  font-size: 1.1em;
   font-weight: 100;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.me {
+  background-color: #f06c65;
 }
 
 .languages {
-  padding: 20px 0;
   background-color: #fff;
-  border-radius: 35px;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
 }
 .languages h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.1em;
   color: #4A4A4A;
-  margin-bottom: 0;
 }
 .languages ul {
   margin-top: 0;
@@ -485,8 +471,19 @@ span {
   font-size: 1.3em;
 }
 .languages ul li {
-  margin: 20px;
+  margin: 15px;
   padding-right: 20px;
+}
+
+.skills {
+  background-color: #5c5c5c;
+}
+.skills span {
+  font-weight: 600;
+  padding: 0 5px;
+  background: linear-gradient(120deg, #99999960, #3b3b3b21);
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
 }
 
 .grid-container {
