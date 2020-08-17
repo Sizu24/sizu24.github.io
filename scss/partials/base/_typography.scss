@@ -3,12 +3,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 h1{
-  font-size: 3.5em;
+  font-size: 2.8em;
   font-weight: 900;
-  color: #000;
-  text-transform: uppercase;
+
+ 
   @include mq($md){
     font-size: 6.0em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
   }
   @include mq($lg){
     font-size: 8.0em;
@@ -33,46 +35,36 @@ h2{
   color: #fff;
   text-align: center;
   @include mq($md){
-    padding-top: 350px;
+    padding-top: 150px;
   }
   h2{
-    margin-top: 0;
+    margin: 0;
     text-align: center;
     font-size: 1.8em;
-    margin-bottom: 0;
+
     font-weight: 900;
     @include mq($md){
       font-size: 2.5em;
     }
     @include mq($lg){
-      font-size: 3.1em;
+      font-size: 2.7em;
     }
-  }
-  p{
-    text-align: center;
-    margin-top: 50px;
-    color: #000;
-    font-weight: 400;
-    @include mq($lg){
-      padding: 0 900px;
-    }
-
   }
 }
 
-#skills{
+#language-icons{
   list-style-type: none;
   padding-left: 0;
   li{
     display: inline-block;
     padding: 2px 10px;
     margin: 0 5px;
-    font-size: 1.0em;
-    @include mq($sm){
+    font-size: 0.8em;
+    @include mq($md){
       font-size: 1.2em;
     }
     @include mq($lg){
-      font-size: 1.7em;
+      font-size: 1.3em;
     }
   }
 }
@@ -118,7 +110,7 @@ span{
   }
 }
 .me {
-  background-color: rgb(240, 108, 101);
+  background-image: linear-gradient(to bottom, rgb(255, 175, 101), rgb(233, 95, 95));
   padding-bottom: 40px;
   span{
     font-weight: 600;

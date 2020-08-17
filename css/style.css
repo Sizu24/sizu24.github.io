@@ -343,14 +343,14 @@ template {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 2.8em;
   font-weight: 900;
-  color: #000;
-  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   h1 {
     font-size: 6em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -378,14 +378,13 @@ h2 {
 }
 @media (min-width: 768px) {
   #welcome {
-    padding-top: 350px;
+    padding-top: 150px;
   }
 }
 #welcome h2 {
-  margin-top: 0;
+  margin: 0;
   text-align: center;
   font-size: 1.8em;
-  margin-bottom: 0;
   font-weight: 900;
 }
 @media (min-width: 768px) {
@@ -395,39 +394,28 @@ h2 {
 }
 @media (min-width: 1024px) {
   #welcome h2 {
-    font-size: 3.1em;
-  }
-}
-#welcome p {
-  text-align: center;
-  margin-top: 50px;
-  color: #000;
-  font-weight: 400;
-}
-@media (min-width: 1024px) {
-  #welcome p {
-    padding: 0 900px;
+    font-size: 2.7em;
   }
 }
 
-#skills {
+#language-icons {
   list-style-type: none;
   padding-left: 0;
 }
-#skills li {
+#language-icons li {
   display: inline-block;
   padding: 2px 10px;
   margin: 0 5px;
-  font-size: 1em;
+  font-size: 0.8em;
 }
-@media (min-width: 576px) {
-  #skills li {
+@media (min-width: 768px) {
+  #language-icons li {
     font-size: 1.2em;
   }
 }
 @media (min-width: 1024px) {
-  #skills li {
-    font-size: 1.7em;
+  #language-icons li {
+    font-size: 1.3em;
   }
 }
 
@@ -469,7 +457,7 @@ span {
 }
 
 .me {
-  background-color: #f06c65;
+  background-image: linear-gradient(to bottom, #ffaf65, #e95f5f);
   padding-bottom: 40px;
 }
 .me span {
@@ -779,15 +767,29 @@ footer .copyright {
 }
 
 #buttons {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+#buttons a {
+  text-decoration: none;
+}
 @media (min-width: 576px) {
   #buttons {
-    display: inline-block;
-    margin-top: 100px;
+    display: block;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  #buttons {
+    font-size: 1.7em;
+    margin-top: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #buttons {
+    margin-top: 500px;
   }
 }
 
@@ -797,10 +799,10 @@ footer .copyright {
   border: 3px solid #fff;
   background-color: transparent;
   transition-duration: 800ms;
-  font-weight: 900;
+  font-weight: 100;
   font-size: 1.2em;
   color: #fff;
-  margin: 10px;
+  margin: 10px 30px;
 }
 .button:hover {
   background-color: #1f1f1f;
@@ -810,24 +812,25 @@ footer .copyright {
 }
 .button.one {
   padding: 10px 100px;
-  background-color: #fff;
-  color: #000;
+  background-color: transparent;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .button.one {
+    padding: 20px 90px;
+    margin-top: 0;
+  }
 }
 .button.one:hover {
   background-color: #1f1f1f;
   color: #fff;
 }
-@media (min-width: 576px) {
-  .button.one {
-    padding: 10px 100px;
-  }
-}
 .button.two {
   padding: 10px 110px;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .button.two {
-    padding: 10px 100px;
+    padding: 20px 100px;
   }
 }
 .button a:before {

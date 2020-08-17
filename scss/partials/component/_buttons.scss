@@ -1,13 +1,22 @@
 // Landing page buttons
 #buttons{
-  margin-top: 80px;
+  a{
+    text-decoration: none;
+  }
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   @include mq($sm){
-    display: inline-block;
-    margin-top: 100px;
-    
+    display: block;
+    margin-top: 50px;    
+  }
+  @include mq($md){
+    font-size: 1.7em; 
+    margin-top: 500px;
+  }
+  @include mq($lg){
+    margin-top: 500px;
   }
 }
 
@@ -17,11 +26,10 @@
   border: 3px solid #fff;
   background-color: transparent;
   transition-duration: 800ms;
-  font-weight: 900;
+  font-weight: 100;
   font-size: 1.2em;
   color: #fff;
-  // color: #fff;
-  margin: 10px;
+  margin: 10px 30px;
   &:hover{
     background-color: rgb(31, 31, 31);
     transition-duration: 700ms;
@@ -31,20 +39,21 @@
 
   &.one{
     padding: 10px 100px;
-    background-color: #fff;
-    color: #000;
+    background-color: transparent;
+    color: #fff;
+    @include mq($md){
+      padding: 20px 90px;
+      margin-top: 0;
+    }
     &:hover{
       background-color: rgb(31, 31, 31);
       color: #fff;
     }
-    @include mq($sm){
-      padding: 10px 100px;
-    }
   }
   &.two{
     padding: 10px 110px;
-    @include mq($sm){
-      padding: 10px 100px;
+    @include mq($md){
+      padding: 20px 100px;
     }
   }
 
