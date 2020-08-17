@@ -1,21 +1,18 @@
 // Landing page buttons
 #buttons{
-  padding-bottom: 200px;
-  margin-top: 80px;
   a{
     text-decoration: none;
   }
-  margin-top: 50px;
+  padding-bottom: 200px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   @include mq($sm){
     display: block;
-   
   }
   @include mq($md){
     font-size: 1.7em; 
-
   }
   @include mq($xl){
     margin-top: 500px;
@@ -57,9 +54,13 @@
   }
   &.two{
     padding: 10px 110px;
+    @include mq($md){
+      padding: 10px 120px;
+    }
     @include mq($lg){
       padding: 8px 65px;
     }
+
   }
 
   a:before{

@@ -769,7 +769,6 @@ footer .copyright {
 #buttons {
   padding-bottom: 200px;
   margin-top: 80px;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -832,6 +831,11 @@ footer .copyright {
 }
 .button.two {
   padding: 10px 110px;
+}
+@media (min-width: 768px) {
+  .button.two {
+    padding: 10px 120px;
+  }
 }
 @media (min-width: 1024px) {
   .button.two {
