@@ -3,17 +3,23 @@
   font-family: 'Montserrat', sans-serif;
 }
 h1{
-  font-size: 1.5em;
-  color: #fff;
-  margin: 0 10px;
-  padding: 15px 15px 0;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  @include mq($md){
+    font-size: 6.0em;
+  }
+  @include mq($lg){
+    font-size: 8.0em;
+  }
+
+
 }
 
 h2{
-  text-align: center;
-  font-weight: 900;
-  font-family: 'Saira', sans-serif;
   color: #000;
+  text-transform: uppercase;
   @include mq($md){
     text-align: left;
   }
@@ -21,24 +27,25 @@ h2{
 }
 
 #welcome {
-  padding: 80px 20px 0;
+  padding: 100px 20px 0;
   opacity: 1.0;
   z-index: 1000;
   color: #fff;
-  font-weight: 600;
   text-align: center;
-
+  @include mq($md){
+    padding-top: 350px;
+  }
   h2{
     margin-top: 0;
     text-align: center;
-    font-size: 2.9em;
+    font-size: 1.8em;
     margin-bottom: 0;
-    font-weight: 600;
+    font-weight: 900;
     @include mq($md){
-      font-size: 4.0em;
+      font-size: 2.5em;
     }
     @include mq($lg){
-      font-size: 5.0em;
+      font-size: 3.1em;
     }
   }
   p{
@@ -47,7 +54,7 @@ h2{
     color: #000;
     font-weight: 400;
     @include mq($lg){
-      padding: 0 250px;
+      padding: 0 900px;
     }
 
   }
@@ -77,9 +84,9 @@ span{
   h3 {
     text-align: center;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #7B7B7B;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
   a{
     text-decoration: none;
@@ -87,7 +94,7 @@ span{
 }
 
 .info{
-  font-family: 'Montserrat', sans-serif;
+
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
   padding: 20px 0;
   border-radius: 15px;
@@ -98,7 +105,7 @@ span{
     text-align: center;
     margin: 0;
     padding: 30px 0;
-    font-family: 'Montserrat', sans-serif;
+
     font-size: 2.1em;
     font-weight: 900;
   }
@@ -112,6 +119,7 @@ span{
 }
 .me {
   background-color: rgb(240, 108, 101);
+  padding-bottom: 40px;
   span{
     font-weight: 600;
   }
@@ -128,7 +136,7 @@ span{
     list-style: none;
     flex-wrap: wrap;
     font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
+
     font-size: 1.3em;
 
     li{
@@ -143,6 +151,7 @@ span{
 
 .skills{
   background-color: #5c5c5c;
+  padding-bottom: 40px;
   span{
     font-weight: 600;
     padding: 0 5px;
@@ -150,6 +159,5 @@ span{
     border-radius: 5px;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
   }
-
 }
 
