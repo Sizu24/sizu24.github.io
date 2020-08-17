@@ -378,7 +378,7 @@ h2 {
 }
 @media (min-width: 768px) {
   #welcome {
-    padding-top: 150px;
+    padding-top: 20px;
   }
 }
 #welcome h2 {
@@ -510,6 +510,7 @@ span {
 @media (min-width: 1024px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 45px 1fr 1fr 120px;
     grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer";
   }
 }
@@ -687,13 +688,11 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   z-index: -1;
 }
 
 #overlay {
   background-image: linear-gradient(60deg, #ffaf65, #e95f5f);
-  height: 100vh;
   opacity: 0.9;
 }
 
@@ -768,6 +767,7 @@ footer .copyright {
 }
 
 #buttons {
+  padding-bottom: 200px;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -779,16 +779,15 @@ footer .copyright {
 @media (min-width: 576px) {
   #buttons {
     display: block;
-    margin-top: 50px;
   }
 }
 @media (min-width: 768px) {
   #buttons {
     font-size: 1.7em;
-    margin-top: 500px;
+    margin-top: 100px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1282px) {
   #buttons {
     margin-top: 500px;
   }
@@ -812,16 +811,19 @@ footer .copyright {
   border-color: #1f1f1f;
 }
 .button.one {
-  padding: 10px 100px;
+  padding: 10px 110px;
   color: #000;
   background-color: #fff;
 }
 @media (min-width: 768px) {
   .button.one {
-    background-color: transparent;
-    color: #fff;
-    padding: 20px 90px;
+    padding: 10px 100px;
     margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .button.one {
+    padding: 8px 50px;
   }
 }
 .button.one:hover {
@@ -829,11 +831,11 @@ footer .copyright {
   color: #fff;
 }
 .button.two {
-  padding: 10px 110px;
+  padding: 10px 120px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .button.two {
-    padding: 20px 100px;
+    padding: 8px 65px;
   }
 }
 .button a:before {
