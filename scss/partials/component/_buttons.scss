@@ -9,7 +9,7 @@
   justify-content: center;
   flex-direction: column;
   @include mq($sm){
-    display: block;
+ 
   }
   @include mq($md){
     font-size: 1.7em; 
@@ -37,7 +37,7 @@
   }
 
   &.one{
-    padding: 10px 100px;
+    padding: 10px 85px;
     color: #000;
     background-color: #fff;
     @include mq($md){
@@ -53,7 +53,7 @@
     }
   }
   &.two{
-    padding: 10px 110px;
+    padding: 10px 95px;
     @include mq($md){
       padding: 10px 120px;
     }
