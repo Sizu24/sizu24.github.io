@@ -43,6 +43,7 @@
     background-color: #fff;
     @include mq($md){
       background-color: transparent;
+      color: #fff;
       padding: 20px 90px;
       margin-top: 0;
     }

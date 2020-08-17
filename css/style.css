@@ -819,6 +819,7 @@ footer .copyright {
 @media (min-width: 768px) {
   .button.one {
     background-color: transparent;
+    color: #fff;
     padding: 20px 90px;
     margin-top: 0;
   }
