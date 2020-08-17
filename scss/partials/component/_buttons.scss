@@ -40,12 +40,11 @@
   }
 
   &.one{
-    padding: 10px 110px;
+    padding: 10px 100px;
     color: #000;
     background-color: #fff;
     @include mq($md){
       padding: 10px 100px;
-
       margin-top: 0;
     }
     @include mq($lg){
@@ -57,7 +56,7 @@
     }
   }
   &.two{
-    padding: 10px 120px;
+    padding: 10px 110px;
     @include mq($lg){
       padding: 8px 65px;
     }
