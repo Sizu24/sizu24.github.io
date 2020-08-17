@@ -343,9 +343,11 @@ template {
 }
 
 h1 {
-  font-size: 3.4em;
+  text-align: center;
+  font-size: 2.9em;
   font-weight: 900;
   text-transform: uppercase;
+  padding: 0 6px;
 }
 @media (min-width: 768px) {
   h1 {
@@ -356,6 +358,7 @@ h1 {
 @media (min-width: 1024px) {
   h1 {
     font-size: 8em;
+    padding: 0 27px;
   }
 }
 
@@ -776,14 +779,20 @@ footer .copyright {
 #buttons a {
   text-decoration: none;
 }
+@media (min-width: 576px) {
+  #buttons {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   #buttons {
     font-size: 1.7em;
+    margin-top: 500px;
   }
 }
 @media (min-width: 1282px) {
   #buttons {
-    margin-top: 500px;
+    padding-bottom: 400px;
   }
 }
 

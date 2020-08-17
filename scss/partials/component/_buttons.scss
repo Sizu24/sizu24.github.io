@@ -9,13 +9,14 @@
   justify-content: center;
   flex-direction: column;
   @include mq($sm){
- 
+    display: block;
   }
   @include mq($md){
     font-size: 1.7em; 
+    margin-top: 500px;
   }
   @include mq($xl){
-    margin-top: 500px;
+    padding-bottom: 400px;
   }
 }
 
