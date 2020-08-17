@@ -1,42 +1,51 @@
 // Landing page buttons
-.button{
+#buttons{
+  padding-bottom: 200px;
+  margin-top: 80px;
+  a{
+    text-decoration: none;
+  }
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @include mq($sm){
+    display: block;
+   
+  }
+  @include mq($md){
+    font-size: 1.7em; 
+
+  }
+  @include mq($xl){
+    margin-top: 500px;
+  }
+}
+
+.button{
   opacity: 1.0;
   border-radius: 50px;
   border: 3px solid #fff;
   background-color: transparent;
+  transition-duration: 800ms;
   font-weight: 400;
   font-size: 1.2em;
   color: #fff;
-  margin: 50px 30px 10px 30px;
-  padding-bottom: 200px;
-  transition-duration: 800ms;
+  margin: 10px 30px;
   &:hover{
     background-color: rgb(31, 31, 31);
     transition-duration: 700ms;
     color: #fff;
     border-color: rgb(31, 31, 31);
   }
-  a{
-    text-decoration: none;
-  }
-  @include mq($md){
-    font-size: 1.7em; 
-    margin-top: 100px;
-  }
-  @include mq($xl){
-    margin-top: 500px;
-  }
 
-  // Button one
   &.one{
     padding: 10px 110px;
     color: #000;
     background-color: #fff;
     @include mq($md){
       padding: 10px 100px;
+
       margin-top: 0;
     }
     @include mq($lg){
@@ -47,12 +56,30 @@
       color: #fff;
     }
   }
-
-  // Button two
   &.two{
     padding: 10px 120px;
     @include mq($lg){
       padding: 8px 65px;
+    }
+  }
+
+  a:before{
+    text-decoration: none;    
+    // color: #fff;
+  }
+  a{
+    &:link{
+      text-decoration: none;
+      // color: white;
+    }
+    &:hover{
+      // color: white;
+    }
+    &:active{
+      // color: white;
+    }
+    &:visited{
+      color: #000;
     }
   }
 }

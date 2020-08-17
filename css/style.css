@@ -768,6 +768,7 @@ footer .copyright {
 
 #buttons {
   padding-bottom: 200px;
+  margin-top: 80px;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -784,7 +785,6 @@ footer .copyright {
 @media (min-width: 768px) {
   #buttons {
     font-size: 1.7em;
-    margin-top: 100px;
   }
 }
 @media (min-width: 1282px) {
