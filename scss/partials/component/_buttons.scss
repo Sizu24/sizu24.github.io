@@ -26,7 +26,7 @@
   border: 3px solid #fff;
   background-color: transparent;
   transition-duration: 800ms;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1.2em;
   color: #fff;
   margin: 10px 30px;
@@ -39,9 +39,10 @@
 
   &.one{
     padding: 10px 100px;
-    background-color: transparent;
-    color: #fff;
+    color: #000;
+    background-color: #fff;
     @include mq($md){
+      background-color: transparent;
       padding: 20px 90px;
       margin-top: 0;
     }

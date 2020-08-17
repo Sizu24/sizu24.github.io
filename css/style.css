@@ -345,11 +345,11 @@ template {
 h1 {
   font-size: 2.8em;
   font-weight: 900;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   h1 {
     font-size: 6em;
-    text-transform: uppercase;
     margin-bottom: 40px;
   }
 }
@@ -405,12 +405,13 @@ h2 {
 #language-icons li {
   display: inline-block;
   padding: 2px 10px;
-  margin: 0 5px;
+  margin: 0 2px;
   font-size: 0.8em;
 }
 @media (min-width: 768px) {
   #language-icons li {
     font-size: 1.2em;
+    margin: 0 5px;
   }
 }
 @media (min-width: 1024px) {
@@ -799,7 +800,7 @@ footer .copyright {
   border: 3px solid #fff;
   background-color: transparent;
   transition-duration: 800ms;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1.2em;
   color: #fff;
   margin: 10px 30px;
@@ -812,11 +813,12 @@ footer .copyright {
 }
 .button.one {
   padding: 10px 100px;
-  background-color: transparent;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   .button.one {
+    background-color: transparent;
     padding: 20px 90px;
     margin-top: 0;
   }
