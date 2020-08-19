@@ -787,21 +787,21 @@ footer .copyright {
 @media (min-width: 768px) {
   #buttons {
     font-size: 1.7em;
-    margin-top: 500px;
   }
 }
 @media (min-width: 1282px) {
   #buttons {
     padding-bottom: 400px;
+    margin-top: 500px;
   }
 }
 
 .button {
   opacity: 1;
-  border-radius: 50px;
+  border-radius: 15px;
   border: 3px solid #fff;
   background-color: transparent;
-  transition-duration: 800ms;
+  transition: 700ms;
   font-weight: 400;
   font-size: 1.2em;
   color: #fff;
@@ -809,7 +809,7 @@ footer .copyright {
 }
 .button:hover {
   background-color: #1f1f1f;
-  transition-duration: 700ms;
+  transition: 700ms;
   color: #fff;
   border-color: #1f1f1f;
 }
