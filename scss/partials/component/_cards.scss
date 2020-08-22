@@ -12,23 +12,10 @@
 }
 
 .card{
-
-  &-background{
-    background-color: #E3E3E3;
-    padding: 20px 0;
-    margin: 20px 15px 0px 15px;
-  }
-  height: 320px;
   width: 350px;
   margin: 20px;
-  border-radius: 15px;
+  padding: 40px 20px;
+  border-radius: 35px;
   box-shadow: 5px 5px 5px 0 rgb(0, 0, 0, 0.1);
-  background-color: #fff;
-
-  &-description{
-    color: #7B7B7B;
-    text-align: center;
-    font-size: 0.9em;
-    padding: 20px;
-  }
+  background-color: #333333;
 }

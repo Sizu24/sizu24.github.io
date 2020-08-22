@@ -76,18 +76,6 @@ span{
   color: #fff;
 }
 
-.card{
-  h3 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.1em;
-    color: #7B7B7B;
-    // text-transform: uppercase;
-  }
-  a{
-    text-decoration: none;
-  }
-}
 
 .info{
 
@@ -170,3 +158,19 @@ span{
   }
 }
 
+// Projects cards
+.card{
+  h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6em;
+    color: #ffffff;
+    // text-transform: uppercase;
+  }
+  &-description{
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px;
+  }
+}

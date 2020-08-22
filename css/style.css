@@ -428,16 +428,6 @@ span {
   color: #fff;
 }
 
-.card h3 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.1em;
-  color: #7B7B7B;
-}
-.card a {
-  text-decoration: none;
-}
-
 .info {
   width: 100%;
 }
@@ -512,6 +502,19 @@ span {
   background: linear-gradient(120deg, #99999960, #3b3b3b21);
   border-radius: 5px;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
+}
+
+.card h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: #ffffff;
+}
+.card-description {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 20px;
 }
 
 .grid-container {
@@ -684,23 +687,12 @@ footer {
 }
 
 .card {
-  height: 320px;
   width: 350px;
   margin: 20px;
-  border-radius: 15px;
+  padding: 40px 20px;
+  border-radius: 35px;
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-.card-background {
-  background-color: #E3E3E3;
-  padding: 20px 0;
-  margin: 20px 15px 0px 15px;
-}
-.card-description {
-  color: #7B7B7B;
-  text-align: center;
-  font-size: 0.9em;
-  padding: 20px;
+  background-color: #333333;
 }
 
 #background {
@@ -717,13 +709,9 @@ footer {
 }
 
 .card img {
-  width: 60%;
-  border-radius: 15px;
+  width: 95%;
+  border-radius: 5px;
   opacity: 1;
-}
-.card img:hover {
-  opacity: 0.1;
-  transition-duration: 500ms;
 }
 
 #pic {
@@ -868,6 +856,26 @@ footer .copyright {
 }
 .button a:visited {
   color: #000;
+}
+
+.run-button {
+  font-size: 0.8em;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  margin: 10px 5px;
+}
+
+.code-button {
+  font-size: 0.8em;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
