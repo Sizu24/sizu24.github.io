@@ -14,7 +14,7 @@ h1{
     margin-bottom: 40px;
   }
   @include mq($lg){
-    font-size: 8.0em;
+    font-size: 6.0em;
     padding: 0 27px;
   }
 
@@ -46,10 +46,10 @@ h2{
 
     font-weight: 900;
     @include mq($md){
-      font-size: 2.5em;
+      font-size: 2.0em;
     }
     @include mq($lg){
-      font-size: 2.7em;
+      font-size: 2.2em;
     }
   }
 }
@@ -110,6 +110,9 @@ span{
     font-weight: 100;
     margin-top: 10px;
     color: #fff;
+  }
+  @include mq($lg){
+    width: 90%;
   }
 }
 .me {
