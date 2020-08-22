@@ -49,8 +49,11 @@ footer{
   padding-top: 50px;
   background-color: #F4F4F4;
   .container{
-    width: 90%;
-    margin: 0 auto;
-
+    width: 100%;
+    // margin: 0 auto;
+    @include mq($sm){
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+    }
   }
 }

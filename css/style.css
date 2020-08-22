@@ -357,7 +357,7 @@ h1 {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 8em;
+    font-size: 6em;
     padding: 0 27px;
   }
 }
@@ -392,12 +392,12 @@ h2 {
 }
 @media (min-width: 768px) {
   #welcome h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 @media (min-width: 1024px) {
   #welcome h2 {
-    font-size: 2.7em;
+    font-size: 2.2em;
   }
 }
 
@@ -458,6 +458,11 @@ span {
   font-weight: 100;
   margin-top: 10px;
   color: #fff;
+}
+@media (min-width: 1024px) {
+  .info {
+    width: 90%;
+  }
 }
 
 .me {
@@ -543,8 +548,13 @@ footer {
   background-color: #F4F4F4;
 }
 #about .container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  #about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
 }
 
 #nav {
@@ -713,14 +723,11 @@ footer {
   width: 100%;
   margin: 20px auto;
   opacity: 0.9;
-  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.151);
-  border-radius: 35px;
 }
 @media (min-width: 1024px) {
   #pic {
-    grid-column: 4/6;
-    width: 100%;
-    grid-row: 1/4;
+    grid-column: 3/6;
+    margin: 20px;
   }
 }
 
@@ -787,21 +794,21 @@ footer .copyright {
 @media (min-width: 768px) {
   #buttons {
     font-size: 1.7em;
-    margin-top: 500px;
   }
 }
 @media (min-width: 1282px) {
   #buttons {
     padding-bottom: 400px;
+    margin-top: 500px;
   }
 }
 
 .button {
   opacity: 1;
-  border-radius: 50px;
+  border-radius: 15px;
   border: 3px solid #fff;
   background-color: transparent;
-  transition-duration: 800ms;
+  transition: 700ms;
   font-weight: 400;
   font-size: 1.2em;
   color: #fff;
@@ -809,7 +816,7 @@ footer .copyright {
 }
 .button:hover {
   background-color: #1f1f1f;
-  transition-duration: 700ms;
+  transition: 700ms;
   color: #fff;
   border-color: #1f1f1f;
 }
