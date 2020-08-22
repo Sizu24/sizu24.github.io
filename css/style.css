@@ -364,7 +364,6 @@ h1 {
 
 h2 {
   color: #000;
-  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   h2 {
@@ -374,6 +373,7 @@ h2 {
 
 #welcome {
   padding: 100px 20px 0;
+  height: 100vh;
   opacity: 1;
   z-index: 1000;
   color: #fff;
@@ -387,6 +387,7 @@ h2 {
 #welcome h2 {
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
   font-size: 1.5em;
   font-weight: 900;
 }
@@ -444,12 +445,12 @@ span {
   color: #000;
   text-align: center;
   margin: 0;
-  padding: 30px 0;
+  padding: 50px 0;
   font-size: 2.1em;
   font-weight: 900;
 }
 .info p {
-  padding: 0px 35px;
+  padding: 20px 35px;
   font-size: 1.1em;
   font-weight: 100;
   margin-top: 10px;
@@ -473,7 +474,7 @@ span {
   background-color: #fff;
 }
 .languages h2 {
-  color: #4A4A4A;
+  color: #000;
 }
 .languages ul {
   margin: 0 auto;
@@ -490,6 +491,9 @@ span {
 }
 .languages ul li:nth-child(1) {
   padding-right: 60px;
+}
+.languages ul li:nth-child(-n+3) {
+  font-weight: 600;
 }
 
 .skills {
