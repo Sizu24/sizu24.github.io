@@ -438,14 +438,10 @@ span {
 }
 
 .info {
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
-  padding: 20px 0;
-  border-radius: 15px;
-  margin-bottom: 40px;
   width: 100%;
 }
 .info h2 {
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 0;
   padding: 30px 0;
@@ -457,7 +453,7 @@ span {
   font-size: 1.1em;
   font-weight: 100;
   margin-top: 10px;
-  color: #fff;
+  color: #000;
 }
 @media (min-width: 1024px) {
   .info {
@@ -466,11 +462,11 @@ span {
 }
 
 .me {
-  background-image: linear-gradient(to bottom, #ffaf65, #e95f5f);
   padding-bottom: 40px;
 }
 .me span {
   font-weight: 600;
+  color: #000;
 }
 
 .languages {
@@ -480,7 +476,8 @@ span {
   color: #4A4A4A;
 }
 .languages ul {
-  margin-top: 0;
+  margin: 0 auto;
+  padding-bottom: 50px;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -498,6 +495,12 @@ span {
 .skills {
   background-color: #5c5c5c;
   padding-bottom: 40px;
+}
+.skills h2 {
+  color: #fff;
+}
+.skills p {
+  color: #fff;
 }
 .skills span {
   font-weight: 600;
@@ -544,7 +547,7 @@ footer {
 }
 
 #about {
-  padding-top: 50px;
+  margin-top: 50px;
   background-color: #F4F4F4;
 }
 #about .container {
@@ -721,7 +724,7 @@ footer {
 
 #pic {
   width: 100%;
-  margin: 20px auto;
+  margin-bottom: 0;
   opacity: 0.9;
 }
 @media (min-width: 1024px) {
