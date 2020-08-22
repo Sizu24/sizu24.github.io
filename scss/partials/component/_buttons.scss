@@ -37,6 +37,7 @@
     border-color: rgb(31, 31, 31);
   }
 
+// Button One
   &.one{
     padding: 10px 85px;
     color: #000;
@@ -53,6 +54,8 @@
       color: #fff;
     }
   }
+
+// Button Two  
   &.two{
     padding: 10px 95px;
     @include mq($md){
@@ -63,7 +66,8 @@
     }
 
   }
-
+  
+// Button Links
   a:before{
     text-decoration: none;    
     // color: #fff;
