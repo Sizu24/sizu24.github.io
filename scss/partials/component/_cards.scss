@@ -1,6 +1,6 @@
 #projects{
   padding-top: 80px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
 .projects{
@@ -13,14 +13,10 @@
 }
 
 .card{
-  width: 450px;
+  width: 350px;
   margin: 20px;
   padding: 40px 20px;
   border-radius: 35px;
-  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.228);
+  box-shadow: 5px 5px 5px 0 rgb(0, 0, 0, 0.1);
   background-color: #333333;
-  @include mq($xl){
-    width: 380px;
-
-  }
 }

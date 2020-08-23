@@ -468,19 +468,39 @@ span {
 }
 .languages ul {
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding: 0 60px 50px 60px;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   font-weight: 100;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .languages ul li {
-  margin: 15px;
+  margin: 15px 5px;
   padding-right: 20px;
 }
+@media (min-width: 351px) {
+  .languages ul li {
+    font-size: 1.3em;
+  }
+  .languages ul li:nth-child(1) {
+    margin-right: 75px;
+  }
+  .languages ul li:nth-child(2) {
+    margin-right: 0px;
+  }
+  .languages ul li:nth-child(5) {
+    margin-right: 0px;
+  }
+}
 .languages ul li:nth-child(1) {
-  padding-right: 60px;
+  margin-right: 40px;
+}
+.languages ul li:nth-child(2) {
+  margin-right: 20px;
+}
+.languages ul li:nth-child(5) {
+  margin-right: 20px;
 }
 .languages ul li:nth-child(-n+3) {
   font-weight: 600;
@@ -678,7 +698,7 @@ footer {
 
 #projects {
   padding-top: 80px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -692,17 +712,12 @@ footer {
 }
 
 .card {
-  width: 450px;
+  width: 350px;
   margin: 20px;
   padding: 40px 20px;
   border-radius: 35px;
-  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.228);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
   background-color: #333333;
-}
-@media (min-width: 1282px) {
-  .card {
-    width: 380px;
-  }
 }
 
 #background {

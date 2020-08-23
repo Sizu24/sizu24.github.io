@@ -120,18 +120,36 @@ span{
   }
   ul{
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 0 60px 50px 60px;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     font-weight: 100;
-    font-size: 1.3em;
+    font-size: 1.1em;
 
     li{
-      margin: 15px;
+      margin: 15px 5px;
       padding-right: 20px;
+      @include mq($xs){
+        font-size: 1.3em;
+        &:nth-child(1){
+          margin-right: 75px;
+        }
+        &:nth-child(2){
+          margin-right: 0px;
+        }
+        &:nth-child(5){
+          margin-right: 0px;
+        }
+      }
       &:nth-child(1){
-        padding-right: 60px;
+        margin-right: 40px;
+      }
+      &:nth-child(2){
+        margin-right: 20px;
+      }
+      &:nth-child(5){
+        margin-right: 20px;
       }
       &:nth-child(-n+3){
         font-weight: 600;
