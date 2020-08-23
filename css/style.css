@@ -529,16 +529,17 @@ span {
 }
 
 .card h4 {
-  text-align: center;
+  text-align: left;
   font-weight: 400;
   font-size: 1.6em;
   color: #ffffff;
+  padding-left: 10px;
 }
 .card-description {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   font-size: 0.9em;
-  padding: 20px;
+  padding: 5px;
 }
 
 .grid-container {
@@ -712,11 +713,11 @@ footer {
 }
 
 .card {
-  width: 350px;
-  margin: 20px;
-  padding: 40px 20px;
+  width: 360px;
+  margin: 20px auto;
+  padding: 10px 20px 40px 20px;
   border-radius: 35px;
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.596);
   background-color: #333333;
 }
 
@@ -737,6 +738,7 @@ footer {
   width: 95%;
   border-radius: 5px;
   opacity: 1;
+  display: none;
 }
 
 #pic {

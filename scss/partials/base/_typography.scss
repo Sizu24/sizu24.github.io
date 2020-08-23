@@ -183,16 +183,17 @@ span{
 
 .card{
   h4 {
-    text-align: center;
+    text-align: left;
     font-weight: 400;
     font-size: 1.6em;
     color: #ffffff;
+    padding-left: 10px;
     // text-transform: uppercase;
   }
   &-description{
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-size: 0.9em;
-    padding: 20px;
+    padding: 5px;
   }
 }
