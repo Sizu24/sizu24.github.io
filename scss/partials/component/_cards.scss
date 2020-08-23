@@ -1,21 +1,26 @@
 #projects{
   padding-top: 80px;
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
 }
 .projects{
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   padding-bottom: 2em;
   justify-content: center;
-    border-radius: 35px;
+  border-radius: 35px;
 }
 
 .card{
-  width: 350px;
+  width: 450px;
   margin: 20px;
   padding: 40px 20px;
   border-radius: 35px;
-  box-shadow: 5px 5px 5px 0 rgb(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.228);
   background-color: #333333;
+  @include mq($xl){
+    width: 380px;
+
+  }
 }

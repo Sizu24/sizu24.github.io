@@ -504,7 +504,11 @@ span {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
 }
 
-.card h3 {
+#projects h3 {
+  font-size: 2.1em;
+}
+
+.card h4 {
   text-align: center;
   font-weight: 400;
   font-size: 1.6em;
@@ -674,25 +678,31 @@ footer {
 
 #projects {
   padding-top: 80px;
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   padding-bottom: 2em;
   justify-content: center;
   border-radius: 35px;
 }
 
 .card {
-  width: 350px;
+  width: 450px;
   margin: 20px;
   padding: 40px 20px;
   border-radius: 35px;
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.228);
   background-color: #333333;
+}
+@media (min-width: 1282px) {
+  .card {
+    width: 380px;
+  }
 }
 
 #background {
@@ -862,8 +872,8 @@ footer .copyright {
   font-size: 0.8em;
   background-color: transparent;
   color: #fff;
-  padding: 10px 30px;
-  border-radius: 15px;
+  padding: 18px 32px;
+  border-radius: 10px;
   border: 2px solid #fff;
   margin: 10px 5px;
 }
@@ -873,8 +883,8 @@ footer .copyright {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 15px;
+  padding: 18px 22px;
+  border-radius: 10px;
   margin: 0 5px;
 }
 
