@@ -13,7 +13,6 @@
   }
   @include mq($md){
     font-size: 1.7em; 
-
   }
   @include mq($xl){
     padding-bottom: 400px;
@@ -38,7 +37,7 @@
     border-color: rgb(31, 31, 31);
   }
 
-// Button One
+// Landing page Button One
   &.one{
     padding: 10px 85px;
     color: #000;
@@ -56,7 +55,7 @@
     }
   }
 
-// Button Two  
+// Landing page Button Two  
   &.two{
     padding: 10px 95px;
     @include mq($md){
@@ -106,7 +105,7 @@
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 18px 22px;
+  padding: 18px 38px;
   border-radius: 10px;
   margin: 0 5px;
 }

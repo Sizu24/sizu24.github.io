@@ -122,6 +122,7 @@ span{
     margin: 0 auto;
     padding: 0 60px 50px 60px;
     display: flex;
+    justify-content: space-evenly;
     list-style: none;
     flex-wrap: wrap;
     font-weight: 100;
@@ -129,19 +130,9 @@ span{
 
     li{
       margin: 15px 0px;
-      // padding-right: 20px;
       padding: 10px;
-      @include mq($sm){
-        font-size: 1.3em;
-        &:nth-child(1){
-          margin-right: 75px;
-        }
-        &:nth-child(2){
-          margin-right: 0px;
-        }
-        &:nth-child(5){
-          margin-right: 0px;
-        }
+      @include mq($xs){
+        font-size: 1.2em;
       }
 
       &:nth-child(-n+3){
