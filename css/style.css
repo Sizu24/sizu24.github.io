@@ -432,24 +432,53 @@ span {
   width: 100%;
 }
 .info h2 {
+  left: 20px;
+  padding-left: 50px;
+}
+@media (min-width: 1024px) {
+  .info h2 {
+    position: absolute;
+    font-size: 4em;
+    display: absolute;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1024px) {
+  .info p:nth-of-type(1) {
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 4em;
+    display: absolute;
+    padding-top: 130px;
+    padding-left: 70px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .info p:nth-of-type(2) {
+    padding-left: 70px;
+  }
+}
+.info h3 {
   color: #000;
   text-align: center;
   margin: 0;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   font-size: 2.1em;
   font-weight: 900;
 }
+@media (min-width: 1024px) {
+  .info h3 {
+    text-align: left;
+    padding-left: 70px;
+  }
+}
 .info p {
-  padding: 20px 35px;
+  padding: 20px 70px;
   font-size: 1.1em;
   font-weight: 100;
   margin-top: 10px;
   color: #000;
-}
-@media (min-width: 1024px) {
-  .info {
-    width: 90%;
-  }
 }
 
 .me {
@@ -459,11 +488,16 @@ span {
   font-weight: 600;
   color: #000;
 }
+@media (min-width: 1024px) {
+  .me {
+    position: relative;
+  }
+}
 
 .languages {
   background-color: #fff;
 }
-.languages h2 {
+.languages h3 {
   color: #000;
 }
 .languages ul {
@@ -493,7 +527,7 @@ span {
   background-color: #5c5c5c;
   padding-bottom: 40px;
 }
-.skills h2 {
+.skills h3 {
   color: #fff;
 }
 .skills p {
@@ -563,15 +597,15 @@ footer {
 
 #about {
   margin-top: 50px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4f4;
 }
 #about .container {
   width: 100%;
 }
 @media (min-width: 576px) {
   #about .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    position: relative;
+    background-color: #fff;
   }
 }
 
@@ -731,8 +765,8 @@ footer {
 }
 @media (min-width: 1024px) {
   #pic {
-    grid-column: 3/6;
-    margin: 20px;
+    width: 60%;
+    float: right;
   }
 }
 
@@ -801,7 +835,7 @@ footer .copyright {
     font-size: 1.7em;
   }
 }
-@media (min-width: 1282px) {
+@media (min-width: 1285px) {
   #buttons {
     padding-bottom: 400px;
     margin-top: 500px;

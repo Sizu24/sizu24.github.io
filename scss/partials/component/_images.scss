@@ -34,8 +34,7 @@
   // border-radius: 35px;
 
   @include mq($lg){
-    grid-column: 3/6;
-    margin: 20px;
-
+    width: 60%;
+    float: right;
   }
 }

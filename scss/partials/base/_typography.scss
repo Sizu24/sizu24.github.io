@@ -78,44 +78,73 @@ span{
 
 
 .info{
-
-  // box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
-  // padding: 20px 0;
-  // border-radius: 15px;
-  // margin-bottom: 40px;
   width: 100%;
   h2{
+    left: 20px;
+    padding-left: 50px;
+    @include mq($lg){
+      position: absolute;
+      font-size: 4em;
+      display: absolute;
+      font-weight: 600;
+    }
+  }
+  p{
+    &:nth-of-type(1){
+      @include mq($lg){
+        margin-top: 0;
+        font-weight: 900;
+        font-size: 4em;
+        display: absolute;
+        padding-top: 130px;
+        padding-left: 70px;
+        margin-bottom: 0;
+      }
+    }  
+    &:nth-of-type(2){
+      @include mq($lg){
+        padding-left: 70px;
+      }
+    }    
+  }
+  h3{
     color: #000;
     text-align: center;
     margin: 0;
-    padding: 50px 0;
-
+    padding: 50px 0 0 0;
     font-size: 2.1em;
     font-weight: 900;
+    @include mq($lg){
+      text-align: left;
+      padding-left: 70px;
+    }
   }
   p{
-    padding: 20px 35px;
+    padding: 20px 70px;
     font-size: 1.1em;
     font-weight: 100;
     margin-top: 10px;
     color: #000;
   }
-  @include mq($lg){
-    width: 90%;
-  }
+  // @include mq($lg){
+  //   width: 90%;
+  // }
 }
 .me {
-  // background-image: linear-gradient(to bottom, rgb(255, 175, 101), rgb(233, 95, 95));
   padding-bottom: 40px;
   span{
     font-weight: 600;
     color: #000;
   }
+  @include mq($lg){
+    position: relative;
+
+  }
 }
 
 .languages{
   background-color: #fff;
-  h2{
+  h3{
    color: #000;
   }
   ul{
@@ -145,7 +174,7 @@ span{
 .skills{
   background-color: #5c5c5c;
   padding-bottom: 40px;
-  h2{
+  h3{
     color: #fff;
   }
   p{

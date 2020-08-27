@@ -47,13 +47,13 @@ footer{
 }
 #about{
   margin-top: 50px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4f4;
   .container{
     width: 100%;
     // margin: 0 auto;
     @include mq($sm){
-      display: grid;
-      grid-template-columns: 1fr 1fr 2fr;
+      position: relative;
+      background-color: #fff;
     }
   }
 }
