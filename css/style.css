@@ -494,6 +494,10 @@ span {
   }
 }
 
+.more-info h2 {
+  padding-top: 50px;
+}
+
 .languages {
   background-color: #fff;
 }
@@ -549,11 +553,11 @@ span {
   text-align: left;
   font-weight: 400;
   font-size: 1.6em;
-  color: #ffffff;
+  color: #000;
   padding-left: 10px;
 }
 .card-description {
-  color: #ffffff;
+  color: #000;
   text-align: left;
   font-size: 0.9em;
   padding: 5px;
@@ -731,11 +735,30 @@ footer {
 
 .card {
   width: 360px;
+  height: 400px;
   margin: 20px auto;
   padding: 10px 20px 40px 20px;
   border-radius: 35px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.596);
   background-color: #333333;
+}
+.card:nth-child(1) {
+  background-color: #F7C1C1;
+}
+.card:nth-child(2) {
+  background-color: #DCC1F7;
+}
+.card:nth-child(3) {
+  background-color: #E2E2E2;
+}
+.card:nth-child(4) {
+  background-color: #C1DEF7;
+}
+.card:nth-child(5) {
+  background-color: #F7F7C1;
+}
+.card:nth-child(6) {
+  background-color: #C1F7C9;
 }
 
 #background {
@@ -755,7 +778,6 @@ footer {
   width: 95%;
   border-radius: 5px;
   opacity: 1;
-  display: none;
 }
 
 #pic {

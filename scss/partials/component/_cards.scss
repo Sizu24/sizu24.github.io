@@ -14,9 +14,28 @@
 
 .card{
   width: 360px;
+  height: 400px;
   margin: 20px auto;
   padding: 10px 20px 40px 20px;
   border-radius: 35px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.596);
   background-color: #333333;
+  &:nth-child(1){
+    background-color: #F7C1C1;
+  }
+  &:nth-child(2){
+    background-color: #DCC1F7;
+  }
+  &:nth-child(3){
+    background-color: #E2E2E2;
+  }
+  &:nth-child(4){
+    background-color: #C1DEF7;
+  }
+  &:nth-child(5){
+    background-color: #F7F7C1;
+  }
+  &:nth-child(6){
+    background-color: #C1F7C9;
+  }
 }
