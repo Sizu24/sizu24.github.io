@@ -83,7 +83,9 @@ span{
     left: 20px;
     padding-left: 50px;
     @include mq($lg){
-      position: absolute;
+      &:nth-child(2){
+        position: absolute;
+      }
       font-size: 4em;
       display: absolute;
       font-weight: 600;
@@ -151,6 +153,7 @@ span{
   background-color: #fff;
   h3{
    color: #000;
+
   }
   ul{
     margin: 0 auto;
@@ -161,12 +164,20 @@ span{
     flex-wrap: wrap;
     font-weight: 100;
     font-size: 1.1em;
+    @include mq($lg){
+      width: 40%;
+      justify-content: flex-start;
+      padding: 50px 0;
+      margin: 0 70px;
+      flex-direction: column;
+    }
 
     li{
       margin: 15px 0px;
       padding: 10px;
       @include mq($xs){
         font-size: 1.2em;
+      
       }
 
       &:nth-child(-n+3){
@@ -177,20 +188,18 @@ span{
 }
 
 .skills{
-  background-color: #5c5c5c;
+  // background-color: #5c5c5c;
+  background-color: #fff;
   padding-bottom: 40px;
   h3{
-    color: #fff;
+    color: #000;
   }
   p{
-    color: #fff;
+    color: #000;
   }
-  span{
+  ul{
     font-weight: 600;
     padding: 0 5px;
-    background: linear-gradient(120deg, #99999960, #3b3b3b21);
-    border-radius: 5px;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
   }
 }
 

@@ -437,10 +437,12 @@ span {
 }
 @media (min-width: 1024px) {
   .info h2 {
-    position: absolute;
     font-size: 4em;
     display: absolute;
     font-weight: 600;
+  }
+  .info h2:nth-child(2) {
+    position: absolute;
   }
 }
 @media (min-width: 1024px) {
@@ -514,6 +516,15 @@ span {
   font-weight: 100;
   font-size: 1.1em;
 }
+@media (min-width: 1024px) {
+  .languages ul {
+    width: 40%;
+    justify-content: flex-start;
+    padding: 50px 0;
+    margin: 0 70px;
+    flex-direction: column;
+  }
+}
 .languages ul li {
   margin: 15px 0px;
   padding: 10px;
@@ -528,21 +539,18 @@ span {
 }
 
 .skills {
-  background-color: #5c5c5c;
+  background-color: #fff;
   padding-bottom: 40px;
 }
 .skills h3 {
-  color: #fff;
+  color: #000;
 }
 .skills p {
-  color: #fff;
+  color: #000;
 }
-.skills span {
+.skills ul {
   font-weight: 600;
   padding: 0 5px;
-  background: linear-gradient(120deg, #99999960, #3b3b3b21);
-  border-radius: 5px;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.116);
 }
 
 #projects h3 {
