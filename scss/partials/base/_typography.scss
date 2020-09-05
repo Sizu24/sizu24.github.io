@@ -84,6 +84,7 @@ span{
     padding-left: 50px;
     margin-bottom: 0;
     @include mq($lg){
+ 
       &:nth-child(2){
         position: absolute;
       }

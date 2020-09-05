@@ -775,11 +775,10 @@ footer {
 
 .card {
   width: 360px;
-  height: 400px;
+  height: 480px;
   margin: 20px auto;
-  padding: 10px 20px 40px 20px;
-  border-radius: 35px;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.596);
+  padding: 10px 30px 40px 30px;
+  border-radius: 15px;
   background-color: #333333;
 }
 .card:nth-child(1) {
@@ -859,11 +858,36 @@ a:hover {
   opacity: 1;
 }
 
+#image-icon {
+  padding-top: 25px;
+  width: 200px;
+}
+
+#chart-icon {
+  padding-top: 50px;
+  width: 200px;
+}
+
 footer .copyright {
   color: #efefef;
   text-align: center;
   top: -8px;
   position: relative;
+}
+
+#form-icon {
+  padding-top: 50px;
+  width: 200px;
+}
+
+#wheel-icon {
+  padding-top: 50px;
+  width: 200px;
+}
+
+#memory-icon {
+  padding-top: 50px;
+  width: 200px;
 }
 
 #buttons {

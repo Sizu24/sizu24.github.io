@@ -14,11 +14,11 @@
 
 .card{
   width: 360px;
-  height: 400px;
+  height: 480px;
   margin: 20px auto;
-  padding: 10px 20px 40px 20px;
-  border-radius: 35px;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.596);
+  padding: 10px 30px 40px 30px;
+  border-radius: 15px;
+  // box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.596);
   background-color: #333333;
   &:nth-child(1){
     background-color: #F7C1C1;
