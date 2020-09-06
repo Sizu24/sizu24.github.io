@@ -868,14 +868,12 @@ a:hover {
   width: 200px;
 }
 
-footer .copyright {
-  color: #efefef;
-  text-align: center;
-  top: -8px;
-  position: relative;
+#form-icon {
+  padding-top: 50px;
+  width: 200px;
 }
 
-#form-icon {
+#employee-icon {
   padding-top: 50px;
   width: 200px;
 }
@@ -888,6 +886,13 @@ footer .copyright {
 #memory-icon {
   padding-top: 50px;
   width: 200px;
+}
+
+footer .copyright {
+  color: #efefef;
+  text-align: center;
+  top: -8px;
+  position: relative;
 }
 
 #buttons {
