@@ -36,18 +36,23 @@
     display: none;
     width: 60%;
     float: right;
-    height: 100vh;
+    // height: 100vh;
+    // position: sticky;
+    z-index: -1;
   }
 }
 
 #about{
   @include mq($lg){
-    background-image: url("../img/chisty1.jpg");
+
+    background: url("../img/chisty1.jpg") no-repeat;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: right;
-    background-repeat: no-repeat;
-    height: 2000px;
+  
+    // height: 2000px;
+    
+    z-index: -1;
   }
 
   

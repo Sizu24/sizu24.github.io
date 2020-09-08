@@ -496,6 +496,7 @@ span {
 }
 
 .me {
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 .me span {
@@ -562,6 +563,9 @@ span {
 }
 .skills p {
   color: #000;
+}
+.skills p:nth-of-type(1) {
+  width: 61%;
 }
 .skills ul {
   text-align: center;
@@ -821,18 +825,17 @@ footer {
     display: none;
     width: 60%;
     float: right;
-    height: 100vh;
+    z-index: -1;
   }
 }
 
 @media (min-width: 1024px) {
   #about {
-    background-image: url("../img/chisty1.jpg");
+    background: url("../img/chisty1.jpg") no-repeat;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: right;
-    background-repeat: no-repeat;
-    height: 2000px;
+    z-index: -1;
   }
 }
 
