@@ -146,6 +146,7 @@ span{
   // }
 }
 .me {
+
   padding-bottom: 40px;
   span{
     font-weight: 600;
@@ -153,7 +154,7 @@ span{
   }
   @include mq($lg){
     position: relative;
-
+    width: 55%;
   }
 }
 
@@ -165,7 +166,7 @@ span{
   }
 }
 .languages{
-  background-color: #fff;
+  // background-color: #fff;
   h3{
    color: #000;
 
@@ -206,7 +207,7 @@ span{
 
 .skills{
   // background-color: #5c5c5c;
-  background-color: #fff;
+  // background-color: #fff;
   padding-bottom: 40px;
   h3{
     color: #000;

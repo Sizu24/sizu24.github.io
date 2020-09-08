@@ -33,7 +33,22 @@
   // border-radius: 35px;
 
   @include mq($lg){
+    display: none;
     width: 60%;
     float: right;
+    height: 100vh;
   }
+}
+
+#about{
+  @include mq($lg){
+    background-image: url("../img/chisty1.jpg");
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 2000px;
+  }
+
+  
 }

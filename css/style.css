@@ -505,6 +505,7 @@ span {
 @media (min-width: 1024px) {
   .me {
     position: relative;
+    width: 55%;
   }
 }
 
@@ -513,9 +514,6 @@ span {
   padding-bottom: 20px;
 }
 
-.languages {
-  background-color: #fff;
-}
 .languages h3 {
   color: #000;
 }
@@ -557,7 +555,6 @@ span {
 }
 
 .skills {
-  background-color: #fff;
   padding-bottom: 40px;
 }
 .skills h3 {
@@ -639,17 +636,12 @@ footer {
   background-color: #292929;
 }
 
-#about {
-  margin-top: 50px;
-  background-color: #f4f4f4f4;
-}
 #about .container {
   width: 100%;
 }
 @media (min-width: 576px) {
   #about .container {
     position: relative;
-    background-color: #fff;
   }
 }
 
@@ -826,8 +818,21 @@ footer {
 }
 @media (min-width: 1024px) {
   #pic {
+    display: none;
     width: 60%;
     float: right;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  #about {
+    background-image: url("../img/chisty1.jpg");
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 2000px;
   }
 }
 
@@ -863,7 +868,7 @@ a:hover {
   width: 200px;
 }
 
-#chart-icon {
+#dashboard-icon {
   padding-top: 50px;
   width: 200px;
 }

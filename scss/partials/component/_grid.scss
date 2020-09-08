@@ -46,14 +46,17 @@ footer{
   
 }
 #about{
-  margin-top: 50px;
-  background-color: #f4f4f4f4;
+  // margin-top: 50px;
+  // background-color: #f4f4f4f4;
+
+
   .container{
     width: 100%;
     // margin: 0 auto;
     @include mq($sm){
+
       position: relative;
-      background-color: #fff;
+      // background-color: #fff;
 
     }
   }
