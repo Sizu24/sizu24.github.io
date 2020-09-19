@@ -1,6 +1,7 @@
 const hamburger = document.getElementById("hamburger");
 const navDrop = document.querySelector("#nav-drop");
 const navLinks = document.querySelector("#nav-links");
+const aboutSection = document.getElementById("about");
 
 hamburger.addEventListener("click", ()=>{
   navDrop.style.display === "block";
@@ -27,3 +28,40 @@ navLinks.addEventListener("click", e =>{
     element.classList.toggle("active");
   }
 });
+
+
+
+
+let screenWidth = window.outerWidth;
+
+if(screenWidth > 1024){
+  console.log(`screen width is: ${screenWidth}`);
+
+  const entirePage = document.querySelector(".grid-container");
+
+  window.addEventListener("scroll", ()=>{
+    console.log("scroll");
+    if(window.scrollY < 655){
+      aboutSection.style.backgroundAttachment = "scroll";
+      aboutSection.style.backgroundPosition = "top right";
+
+    }else if(window.scrollY > 2539){
+      aboutSection.style.backgroundAttachment = "scroll";
+      aboutSection.style.backgroundPosition = "bottom right";
+    }
+    else{
+      aboutSection.style.backgroundAttachment = "fixed";
+      aboutSection.style.backgroundPosition = "right";
+      aboutSection.style.backgroundPositionY = "45px";
+    }
+  });
+
+}
+
+// click function that shows scroll Y position
+entirePage.addEventListener("click", ()=>{
+  console.log(`Y scroll position is: ${window.scrollY}`);
+
+  
+});
+

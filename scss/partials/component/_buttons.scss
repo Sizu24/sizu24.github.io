@@ -12,7 +12,8 @@
     display: block;
   }
   @include mq($md){
-    font-size: 1.7em; 
+    // font-size: 1.7em; 
+    font-size: 1.2em;
   }
   @include mq($xl){
     padding-bottom: 400px;
