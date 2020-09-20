@@ -30,37 +30,40 @@ navLinks.addEventListener("click", e =>{
 });
 
 
-let screenWidth = window.outerWidth;
-
-if(screenWidth > 1024){
-  console.log(`screen width is: ${screenWidth}`);
-  aboutSection.style.scrollBehavior = "smooth";
+const scrollPostionFixed = (positionYOne, positionYTwo)=>{
   window.addEventListener("scroll", ()=>{
     console.log("scroll");
-    if(window.scrollY < 655){
+    if(window.scrollY < positionYOne){
       aboutSection.style.backgroundAttachment = "scroll";
       aboutSection.style.backgroundPosition = "top right";
-    
 
-    }else if(window.scrollY > 2539){
+    }else if(window.scrollY > positionYTwo){
       aboutSection.style.backgroundAttachment = "scroll";
       aboutSection.style.backgroundPosition = "bottom right";
-
     }
     else{
       aboutSection.style.backgroundAttachment = "fixed";
       aboutSection.style.backgroundPosition = "right";
       aboutSection.style.backgroundPositionY = "45px";
-
     }
   });
+}
 
+let screenWidth = window.outerWidth;
+
+if(screenWidth > 2550){
+  scrollPostionFixed(1405, 2283);
+  console.log("if");
+}else if(screenWidth > 1024){
+  scrollPostionFixed(655, 2539);
+  console.log("else if");
+}else{
+  console.log("small screen");
 }
 
 // click function that shows scroll Y position
+const entirePage = document.querySelector(".grid-container");
 entirePage.addEventListener("click", ()=>{
   console.log(`Y scroll position is: ${window.scrollY}`);
-
-  
+  console.log(`screen width is: ${screenWidth}`);
 });
-
