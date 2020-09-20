@@ -30,29 +30,28 @@ navLinks.addEventListener("click", e =>{
 });
 
 
-
-
 let screenWidth = window.outerWidth;
 
 if(screenWidth > 1024){
   console.log(`screen width is: ${screenWidth}`);
-
-  const entirePage = document.querySelector(".grid-container");
-
+  aboutSection.style.scrollBehavior = "smooth";
   window.addEventListener("scroll", ()=>{
     console.log("scroll");
     if(window.scrollY < 655){
       aboutSection.style.backgroundAttachment = "scroll";
       aboutSection.style.backgroundPosition = "top right";
+    
 
     }else if(window.scrollY > 2539){
       aboutSection.style.backgroundAttachment = "scroll";
       aboutSection.style.backgroundPosition = "bottom right";
+
     }
     else{
       aboutSection.style.backgroundAttachment = "fixed";
       aboutSection.style.backgroundPosition = "right";
       aboutSection.style.backgroundPositionY = "45px";
+
     }
   });
 
