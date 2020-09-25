@@ -776,11 +776,8 @@ footer {
 .projects {
   display: flex;
   overflow-x: scroll;
-  width: 90vw;
-  margin: 20px;
+  width: 100vw;
   padding-bottom: 2em;
-  justify-content: space-between;
-  border-radius: 35px;
   -webkit-overflow-scrolling: touch;
 }
 .projects::-webkit-scrollbar {
@@ -790,8 +787,7 @@ footer {
 .card {
   justify-content: space-around;
   flex-direction: column;
-  width: 360px;
-  min-width: 300px;
+  min-width: 360px;
   height: 480px;
   margin: 20px 10px;
   padding: 10px 30px 40px 30px;
