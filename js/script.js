@@ -2,6 +2,7 @@ const hamburger = document.getElementById("hamburger");
 const navDrop = document.querySelector("#nav-drop");
 const navLinks = document.querySelector("#nav-links");
 const aboutSection = document.getElementById("about");
+const aboutInfo = document.querySelector(".info");
 
 hamburger.addEventListener("click", ()=>{
   navDrop.style.display === "block";
@@ -20,7 +21,7 @@ const removeActive = ()=>{
   }
 };
 
-// on click if nav button is clicked, make active.
+// Click function. If nav button is clicked, make active.
 navLinks.addEventListener("click", e =>{
   const element = e.target;
   removeActive();
@@ -30,9 +31,10 @@ navLinks.addEventListener("click", e =>{
 });
 
 
+// Function listens for scroll, checks position of scroll Y, changes main pic to fixed or scroll
 const scrollPostionFixed = (positionYOne, positionYTwo)=>{
   window.addEventListener("scroll", ()=>{
-    console.log("scroll");
+    // console.log("scroll");
     if(window.scrollY < positionYOne){
       aboutSection.style.backgroundAttachment = "scroll";
       aboutSection.style.backgroundPosition = "top right";
@@ -64,6 +66,22 @@ if(screenWidth > 2550){
 // click function that shows scroll Y position
 const entirePage = document.querySelector(".grid-container");
 entirePage.addEventListener("click", ()=>{
-  console.log(`Y scroll position is: ${window.scrollY}`);
-  console.log(`screen width is: ${screenWidth}`);
+  // console.log(`Y scroll position is: ${window.scrollY}`);
+  // console.log(`screen width is: ${screenWidth}`);
 });
+
+if(screenWidth >= 1280){
+  $(".me").animate({"opacity": "0"}, 0);
+  $(".more-info").animate({"opacity": "0"});
+
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 206){
+      $(".me").animate({"opacity": '1'}, 2000);
+      // turn opacity ot 0 first in css, then opacity to 1.0 here .
+      // console.log("yellow");
+    }
+    if(window.scrollY > 1096){
+      $(".more-info").animate({"opacity": "1"}, 2000);
+    }
+  });
+}

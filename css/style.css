@@ -592,6 +592,12 @@ span {
   padding: 10px;
 }
 
+@media (min-width: 1024px) {
+  .summary {
+    width: 55%;
+  }
+}
+
 #projects h3 {
   font-size: 2.1em;
 }
@@ -769,17 +775,23 @@ footer {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  overflow-x: auto;
+  width: 100vw;
+  margin: 20px;
   padding-bottom: 2em;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 35px;
+  -webkit-overflow-scrolling: touch;
+}
+.projects::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
-  width: 360px;
+  flex-direction: column;
+  min-width: 360px;
   height: 480px;
-  margin: 20px auto;
+  margin: 20px 10px;
   padding: 10px 30px 40px 30px;
   border-radius: 15px;
   background-color: #333333;
