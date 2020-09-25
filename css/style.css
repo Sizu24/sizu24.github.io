@@ -775,8 +775,8 @@ footer {
 
 .projects {
   display: flex;
-  overflow-x: auto;
-  width: 100vw;
+  overflow-x: scroll;
+  width: 90vw;
   margin: 20px;
   padding-bottom: 2em;
   justify-content: space-between;
@@ -788,7 +788,9 @@ footer {
 }
 
 .card {
+  justify-content: space-around;
   flex-direction: column;
+  width: 360px;
   min-width: 300px;
   height: 480px;
   margin: 20px 10px;
