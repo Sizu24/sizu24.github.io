@@ -777,22 +777,33 @@ footer {
   display: flex;
   overflow-x: scroll;
   width: 100vw;
-  padding-bottom: 2em;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 2em;
 }
 .projects::-webkit-scrollbar {
   display: none;
 }
+@media (min-width: 1024px) {
+  .projects {
+    overflow-x: visible;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .card {
-  justify-content: space-around;
-  flex-direction: column;
   min-width: 360px;
   height: 480px;
   margin: 20px 10px;
   padding: 10px 30px 40px 30px;
   border-radius: 15px;
   background-color: #333333;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 360px;
+  }
 }
 .card:nth-child(1) {
   background-color: #F7C1C1;

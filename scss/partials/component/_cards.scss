@@ -4,24 +4,35 @@
   text-align: center;
 }
 .projects{
+
+  // horizontal scroll for cards
   display: flex;
   overflow-x: scroll;
   width: 100vw;
-  // margin: 20px;
-  padding-bottom: 2em;
-  // justify-content: space-between;
-  // border-radius: 35px;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
+  }
+  // code above is horizontal scroll for cards
+
+  padding-bottom: 2em;
+  // justify-content: space-between;
+  // border-radius: 35px;
+  @include mq($lg){
+    overflow-x: visible; 
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
 
 }
 
 .card{
-  justify-content: space-around;
-  flex-direction: column;
-  // width: 360px;
+
+  @include mq($md){
+    width: 360px;
+  }
   min-width: 360px;
   height: 480px;
   margin: 20px 10px;
