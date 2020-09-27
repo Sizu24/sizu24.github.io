@@ -432,12 +432,14 @@ span {
   width: 100%;
 }
 .info h2 {
-  left: 20px;
-  padding-left: 50px;
+  text-align: center;
   margin-bottom: 0;
 }
 @media (min-width: 1024px) {
   .info h2 {
+    left: 20px;
+    padding-left: 50px;
+    text-align: left;
     font-size: 4em;
     display: absolute;
     font-weight: 600;
@@ -447,6 +449,7 @@ span {
   }
 }
 .info p:nth-of-type(1) {
+  text-align: center;
   margin-top: 0;
   font-size: 2em;
   font-weight: 900;
@@ -454,6 +457,7 @@ span {
 }
 @media (min-width: 1024px) {
   .info p:nth-of-type(1) {
+    text-align: left;
     font-size: 4em;
     display: absolute;
     padding-top: 130px;

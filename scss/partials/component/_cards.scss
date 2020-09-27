@@ -16,8 +16,6 @@
   // code above is horizontal scroll for cards
 
   padding-bottom: 2em;
-  // justify-content: space-between;
-  // border-radius: 35px;
   @include mq($lg){
     overflow-x: visible; 
     margin: 20px;
@@ -33,6 +31,7 @@
   @include mq($md){
     width: 360px;
   }
+
   min-width: 360px;
   height: 480px;
   margin: 20px 10px;

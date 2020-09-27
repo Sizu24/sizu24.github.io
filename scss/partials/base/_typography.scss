@@ -80,14 +80,15 @@ span{
 .info {
   width: 100%;
   h2{
-    left: 20px;
-    padding-left: 50px;
+    text-align: center;
+
     margin-bottom: 0;
     @include mq($lg){
-
+      left: 20px;
+      padding-left: 50px;
+      text-align: left;
       &:nth-child(2){
         position: absolute;
-
       }
       font-size: 4em;
       display: absolute;
@@ -97,12 +98,13 @@ span{
   // name
   p{
     &:nth-of-type(1){
+      text-align: center;
       margin-top: 0;
       font-size: 2em;
       font-weight: 900;
       padding-left: 70px;
       @include mq($lg){
-
+        text-align: left;
         font-size: 4em;
         display: absolute;
         padding-top: 130px;
