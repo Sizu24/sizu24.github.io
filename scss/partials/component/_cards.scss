@@ -27,7 +27,6 @@
 }
 
 .card{
-
   @include mq($md){
     width: 360px;
   }
