@@ -812,6 +812,12 @@ footer {
 .card:nth-child(1) {
   background-color: #F7C1C1;
 }
+.card:nth-child(1) p {
+  margin-bottom: 0;
+}
+.card:nth-child(1) .go-button {
+  margin-top: 10px;
+}
 .card:nth-child(2) {
   background-color: #DCC1F7;
 }
@@ -821,11 +827,26 @@ footer {
 .card:nth-child(4) {
   background-color: #C1DEF7;
 }
+.card:nth-child(4) p {
+  margin-bottom: 0;
+}
+.card:nth-child(4) .go-button {
+  margin-top: 20px;
+}
 .card:nth-child(5) {
   background-color: #F7F7C1;
 }
+.card:nth-child(5) p {
+  margin-bottom: 0;
+}
+.card:nth-child(5) .go-button {
+  margin-top: 10px;
+}
 .card:nth-child(6) {
   background-color: #C1F7C9;
+}
+.card:nth-child(6) .go-button {
+  margin-top: 25px;
 }
 
 #background {
@@ -1022,14 +1043,19 @@ footer .copyright {
   color: #000;
 }
 
-.run-button {
+.go-button {
   font-size: 0.8em;
   background-color: transparent;
   color: #fff;
-  padding: 18px 32px;
-  border-radius: 10px;
+  padding: 10px 32px;
+  border-radius: 100px;
   border: 2px solid #fff;
   margin: 10px 5px;
+}
+.go-button:hover {
+  background-color: blue;
+  transition-duration: 1s;
+  border-color: blue;
 }
 
 .code-button {

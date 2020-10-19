@@ -40,6 +40,12 @@
   background-color: #333333;
   &:nth-child(1){
     background-color: #F7C1C1;
+    p{
+      margin-bottom: 0;
+    }
+    .go-button{
+      margin-top: 10px;
+    }
   }
   &:nth-child(2){
     background-color: #DCC1F7;
@@ -49,11 +55,26 @@
   }
   &:nth-child(4){
     background-color: #C1DEF7;
+    p{
+      margin-bottom: 0;
+    }
+    .go-button{
+      margin-top: 20px;
+    }
   }
   &:nth-child(5){
     background-color: #F7F7C1;
+    p{
+      margin-bottom: 0;
+    }
+    .go-button{
+      margin-top: 10px;
+    }
   }
   &:nth-child(6){
     background-color: #C1F7C9;
+    .go-button{
+      margin-top: 25px;
+    }
   }
 }
