@@ -1,16 +1,30 @@
+const page = document.querySelector("body");
 const hamburger = document.getElementById("hamburger");
 const navDrop = document.querySelector("#nav-drop");
 const navLinks = document.querySelector("#nav-links");
 const aboutSection = document.getElementById("about");
 const aboutInfo = document.querySelector(".info");
 
-hamburger.addEventListener("click", ()=>{
-  navDrop.style.display === "block";
-  if(navDrop.style.display === "block"){
-    navDrop.style.display = "none";
+window.addEventListener("click", e =>{
+  if(e.target.id === "hamburger"){
+    console.log("yes");
+    navDrop.style.display === "block";
+    if(navDrop.style.display === "block"){
+      navDrop.style.display = "none";
+    }else{
+      navDrop.style.display = "block";
+    }
   }else{
-    navDrop.style.display = "block";
+    console.log("no");
+    if(navDrop.style.display === "block"){
+      navDrop.style.display = "none";
+    }
   }
+  
+});
+
+document.addEventListener("click", ()=>{
+  navDrop.style.display === "none";
 });
 
 

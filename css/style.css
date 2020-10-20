@@ -490,6 +490,12 @@ span {
   font-weight: 100;
   margin-top: 10px;
   color: #000;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .info p {
+    text-align: left;
+  }
 }
 @media (min-width: 1024px) {
   .info p:nth-of-type(2) {
@@ -515,7 +521,6 @@ span {
 }
 
 .more-info h2 {
-  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -734,6 +739,7 @@ footer {
   background-color: #292929;
   opacity: 0.9;
   transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
 }
 .nav-button:hover {
   opacity: 1;
@@ -988,6 +994,7 @@ footer .copyright {
   border-radius: 15px;
   border: 3px solid #fff;
   background-color: transparent;
+  transition-timing-function: ease-in-out;
   transition: 700ms;
   font-weight: 400;
   font-size: 1.2em;
@@ -996,7 +1003,6 @@ footer .copyright {
 }
 .button:hover {
   background-color: #1f1f1f;
-  transition: 700ms;
   color: #fff;
   border-color: #1f1f1f;
 }
@@ -1049,13 +1055,13 @@ footer .copyright {
   color: #fff;
   padding: 10px 32px;
   border-radius: 100px;
-  border: 2px solid #fff;
+  border: none;
   margin: 10px 5px;
+  background-color: #1c9cf1;
 }
 .go-button:hover {
   background-color: blue;
   transition-duration: 1s;
-  border-color: blue;
 }
 
 .code-button {
