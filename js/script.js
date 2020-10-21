@@ -5,9 +5,9 @@ const navLinks = document.querySelector("#nav-links");
 const aboutSection = document.getElementById("about");
 const aboutInfo = document.querySelector(".info");
 
+// Open and close hamburger menu
 window.addEventListener("click", e =>{
-  if(e.target.id === "hamburger"){
-    console.log("yes");
+  if(e.target.id === "hamburger" || e.target.className === "line"){
     navDrop.style.display === "block";
     if(navDrop.style.display === "block"){
       navDrop.style.display = "none";
@@ -15,18 +15,11 @@ window.addEventListener("click", e =>{
       navDrop.style.display = "block";
     }
   }else{
-    console.log("no");
     if(navDrop.style.display === "block"){
       navDrop.style.display = "none";
     }
   }
-  
 });
-
-document.addEventListener("click", ()=>{
-  navDrop.style.display === "none";
-});
-
 
 const removeActive = ()=>{
   let buttonList = document.querySelectorAll(".nav-button");
@@ -43,7 +36,6 @@ navLinks.addEventListener("click", e =>{
     element.classList.toggle("active");
   }
 });
-
 
 // Function listens for scroll, checks position of scroll Y, changes main pic to fixed or scroll
 const scrollPostionFixed = (positionYOne, positionYTwo)=>{
