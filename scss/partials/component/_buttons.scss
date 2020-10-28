@@ -36,6 +36,7 @@
     background-color: rgb(31, 31, 31);
     color: #fff;
     border-color: rgb(31, 31, 31);
+    cursor: pointer;
   }
 
 // Landing page Button One
@@ -104,7 +105,7 @@
   &:hover{
     background-color: blue;
     transition-duration: 1s;
-
+    cursor: pointer;
   }
 }
 .code-button{

@@ -76,6 +76,7 @@ entirePage.addEventListener("click", ()=>{
   // console.log(`screen width is: ${screenWidth}`);
 });
 
+// fade in text in About Me section
 if(screenWidth >= 1280){
   $(".me").animate({"opacity": "0"}, 0);
   $(".more-info").animate({"opacity": "0"});

@@ -506,7 +506,6 @@ span {
 }
 
 .me {
-  padding-top: 100px;
   padding-bottom: 40px;
 }
 .me span {
@@ -1005,6 +1004,7 @@ footer .copyright {
   background-color: #1f1f1f;
   color: #fff;
   border-color: #1f1f1f;
+  cursor: pointer;
 }
 .button.one {
   padding: 10px 85px;
@@ -1062,6 +1062,7 @@ footer .copyright {
 .go-button:hover {
   background-color: blue;
   transition-duration: 1s;
+  cursor: pointer;
 }
 
 .code-button {
