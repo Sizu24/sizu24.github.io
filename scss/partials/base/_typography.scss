@@ -142,9 +142,9 @@ span{
     color: #000;
     text-align: center;
 
-    @include mq($md){
-      text-align: left;
+    @include mq($lg){
       width: 60%; 
+      text-align: left;
     }
     &:nth-of-type(2){
       @include mq($lg){
@@ -155,9 +155,6 @@ span{
       }
     }
   }
-  // @include mq($lg){
-  //   width: 90%;
-  // }
 }
 .me {
   // padding-top: 100px;
@@ -165,12 +162,6 @@ span{
   span{
     font-weight: 600;
     color: #000;
-  }
-  @include mq($lg){
-    // position: relative;
-    // width: 100vw;
-    // width: 55%;
-    
   }
 }
 

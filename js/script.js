@@ -37,41 +37,7 @@ navLinks.addEventListener("click", e =>{
   }
 });
 
-// Function listens for scroll, checks position of scroll Y, changes main pic to fixed or scroll
-// const scrollPostionFixed = (positionYOne, positionYTwo)=>{
-//   window.addEventListener("scroll", ()=>{
-//     // console.log("scroll");
-//       // position for top of section
-//     if(window.scrollY < positionYOne){
-//       aboutSection.style.backgroundAttachment = "scroll";
-//       aboutSection.style.backgroundPosition = "top right";
-//       // position for bottom of section
-//     }else if(window.scrollY > positionYTwo){
-//       aboutSection.style.backgroundAttachment = "scroll";
-//       aboutSection.style.backgroundPosition = "bottom right";
-//     }
-//     else{
-//       aboutSection.style.backgroundAttachment = "fixed";
-//       aboutSection.style.backgroundPosition = "right";
-//       aboutSection.style.backgroundPositionY = "45px";
-//     }
-//   });
-// }
-
-
-// fixed main image
 let screenWidth = window.outerWidth;
-
-// if(screenWidth > 2550){
-//   // position for (top, bottom)
-//   scrollPostionFixed(1405, 2283);
-//   console.log("if");
-// }else if(screenWidth > 1024){
-//   scrollPostionFixed(655, 2370);
-//   console.log("else if");
-// }else{
-//   console.log("small screen");
-// }
 
 // click function that shows scroll Y position
 const entirePage = document.querySelector(".grid-container");
@@ -82,17 +48,21 @@ entirePage.addEventListener("click", ()=>{
 
 // fade in text in About Me section
 if(screenWidth >= 1280){
-  $(".me").animate({"opacity": "0"}, 0);
+  $(".text").animate({"opacity": "0"}, 0);
   $(".more-info").animate({"opacity": "0"});
+  $(".summary").animate({"opacity": "0"});
 
+  // if scroll Y position greater than x, fade in
   window.addEventListener("scroll", ()=>{
     if(window.scrollY > 206){
-      $(".me").animate({"opacity": '1'}, 2000);
+      $(".text").animate({"opacity": "1"}, 2000);
       // turn opacity ot 0 first in css, then opacity to 1.0 here .
-      // console.log("yellow");
     }
     if(window.scrollY > 1096){
       $(".more-info").animate({"opacity": "1"}, 2000);
+    }
+    if(window.scrollY > 1615){
+      $(".summary").animate({"opacity": "1"}, 2000);
     }
   });
 }

@@ -494,10 +494,10 @@ span {
   color: #000;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .info p {
-    text-align: left;
     width: 60%;
+    text-align: left;
   }
 }
 @media (min-width: 1024px) {
@@ -516,6 +516,7 @@ span {
   font-weight: 600;
   color: #000;
 }
+
 .more-info h2 {
   padding-bottom: 20px;
 }
