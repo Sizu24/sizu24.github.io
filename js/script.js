@@ -4,6 +4,7 @@ const navDrop = document.querySelector("#nav-drop");
 const navLinks = document.querySelector("#nav-links");
 const aboutSection = document.getElementById("about");
 const aboutInfo = document.querySelector(".info");
+let screenWidth = window.outerWidth;
 
 // Open and close hamburger menu
 window.addEventListener("click", e =>{
@@ -37,7 +38,9 @@ navLinks.addEventListener("click", e =>{
   }
 });
 
-let screenWidth = window.outerWidth;
+if(screenWidth > 767){
+  navLinks.classList.toggle("active");
+}
 
 // click function that shows scroll Y position
 const entirePage = document.querySelector(".grid-container");
@@ -55,14 +58,34 @@ if(screenWidth >= 1280){
   // if scroll Y position greater than x, fade in
   window.addEventListener("scroll", ()=>{
     if(window.scrollY > 206){
-      $(".text").animate({"opacity": "1"}, 2000);
+      $(".text").animate({"opacity": "1"}, 1200);
       // turn opacity ot 0 first in css, then opacity to 1.0 here .
     }
     if(window.scrollY > 1096){
-      $(".more-info").animate({"opacity": "1"}, 2000);
+      $(".more-info").animate({"opacity": "1"}, 1200);
     }
     if(window.scrollY > 1615){
-      $(".summary").animate({"opacity": "1"}, 2000);
+      $(".summary").animate({"opacity": "1"}, 1200);
     }
   });
+}
+
+if(screenWidth < 577){
+  $(".text").animate({"opacity": "0"}, 0);
+  $(".more-info").animate({"opacity": "0"});
+  $(".summary").animate({"opacity": "0"});
+
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 482){
+      $(".text").animate({"opacity": "1"}, 1200);
+      // turn opacity ot 0 first in css, then opacity to 1.0 here .
+    }
+    if(window.scrollY > 1178){
+      $(".more-info").animate({"opacity": "1"}, 1200);
+    }
+    if(window.scrollY > 1830){
+      $(".summary").animate({"opacity": "1"}, 1200);
+    }
+  });
+
 }

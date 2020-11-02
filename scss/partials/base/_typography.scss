@@ -79,7 +79,6 @@ span{
 // About section 
 .info {
 
-  width: 100%;
   h2{
     text-align: center;
 
@@ -143,7 +142,6 @@ span{
     text-align: center;
 
     @include mq($lg){
-      width: 60%; 
       text-align: left;
     }
     &:nth-of-type(2){
@@ -156,8 +154,12 @@ span{
     }
   }
 }
+.description{
+  @include mq($lg){
+    width: 60%; 
+  }
+}
 .me {
-  // padding-top: 100px;
   padding-bottom: 40px;
   span{
     font-weight: 600;
@@ -171,13 +173,18 @@ span{
   }
 }
 
-.about-info{
+// offset for anchor tag that links to about me section to land on correct position
+#about{
+  &::before{
+    display: block;
+    content: " ";
+    margin-top: -45px;
+    height: 45px;
+    visibility: hidden;
+    pointer-events: none;
 
-  float: left;
-  // clear: both;
-
+  }
 }
-
 .text{
   @include mq($md){
     p{
@@ -267,7 +274,6 @@ span{
       width: 55%;
     }
 }
-
 
 // Projects cards
 #projects h3{
