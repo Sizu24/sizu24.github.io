@@ -78,6 +78,7 @@ span{
 
 // About section 
 .info {
+
   width: 100%;
   h2{
     text-align: center;
@@ -85,7 +86,9 @@ span{
     margin-bottom: 0;
     @include mq($lg){
       left: 20px;
-      padding-left: 50px;
+      margin-top: 0;
+      padding-top: 50px;
+      padding-left: 75px;
       text-align: left;
       &:nth-child(2){
         position: absolute;
@@ -107,7 +110,8 @@ span{
         text-align: left;
         font-size: 4em;
         display: absolute;
-        padding-top: 130px;
+        width: 100%;
+        // padding-top: 130px;
         padding-left: 70px;
         margin-bottom: 0;
       }
@@ -131,7 +135,7 @@ span{
     }
   }
   p{
-    padding: 20px 70px;
+    padding: 0px 70px 20px 70px;
     font-size: 1.1em;
     font-weight: 100;
     margin-top: 10px;
@@ -140,12 +144,14 @@ span{
 
     @include mq($md){
       text-align: left;
+      width: 60%; 
     }
     &:nth-of-type(2){
       @include mq($lg){
         padding-top: 0px;
         margin-top: 0px;
         font-size: 2em;
+        width: 100%;
       }
     }
   }
@@ -161,16 +167,30 @@ span{
     color: #000;
   }
   @include mq($lg){
-    position: relative;
+    // position: relative;
     // width: 100vw;
-    width: 55%;
+    // width: 55%;
+    
   }
 }
 
 .more-info {
   h2{
     padding-bottom: 20px;
+  }
+}
 
+.about-info{
+
+  float: left;
+  // clear: both;
+
+}
+
+.text{
+  @include mq($md){
+    p{
+    }
   }
 }
 .languages{

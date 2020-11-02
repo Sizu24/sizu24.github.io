@@ -38,42 +38,46 @@ navLinks.addEventListener("click", e =>{
 });
 
 // Function listens for scroll, checks position of scroll Y, changes main pic to fixed or scroll
-const scrollPostionFixed = (positionYOne, positionYTwo)=>{
-  window.addEventListener("scroll", ()=>{
-    // console.log("scroll");
-    if(window.scrollY < positionYOne){
-      aboutSection.style.backgroundAttachment = "scroll";
-      aboutSection.style.backgroundPosition = "top right";
+// const scrollPostionFixed = (positionYOne, positionYTwo)=>{
+//   window.addEventListener("scroll", ()=>{
+//     // console.log("scroll");
+//       // position for top of section
+//     if(window.scrollY < positionYOne){
+//       aboutSection.style.backgroundAttachment = "scroll";
+//       aboutSection.style.backgroundPosition = "top right";
+//       // position for bottom of section
+//     }else if(window.scrollY > positionYTwo){
+//       aboutSection.style.backgroundAttachment = "scroll";
+//       aboutSection.style.backgroundPosition = "bottom right";
+//     }
+//     else{
+//       aboutSection.style.backgroundAttachment = "fixed";
+//       aboutSection.style.backgroundPosition = "right";
+//       aboutSection.style.backgroundPositionY = "45px";
+//     }
+//   });
+// }
 
-    }else if(window.scrollY > positionYTwo){
-      aboutSection.style.backgroundAttachment = "scroll";
-      aboutSection.style.backgroundPosition = "bottom right";
-    }
-    else{
-      aboutSection.style.backgroundAttachment = "fixed";
-      aboutSection.style.backgroundPosition = "right";
-      aboutSection.style.backgroundPositionY = "45px";
-    }
-  });
-}
 
+// fixed main image
 let screenWidth = window.outerWidth;
 
-if(screenWidth > 2550){
-  scrollPostionFixed(1405, 2283);
-  console.log("if");
-}else if(screenWidth > 1024){
-  scrollPostionFixed(655, 2539);
-  console.log("else if");
-}else{
-  console.log("small screen");
-}
+// if(screenWidth > 2550){
+//   // position for (top, bottom)
+//   scrollPostionFixed(1405, 2283);
+//   console.log("if");
+// }else if(screenWidth > 1024){
+//   scrollPostionFixed(655, 2370);
+//   console.log("else if");
+// }else{
+//   console.log("small screen");
+// }
 
 // click function that shows scroll Y position
 const entirePage = document.querySelector(".grid-container");
 entirePage.addEventListener("click", ()=>{
-  // console.log(`Y scroll position is: ${window.scrollY}`);
-  // console.log(`screen width is: ${screenWidth}`);
+  console.log(`Y scroll position is: ${window.scrollY}`);
+  console.log(`screen width is: ${screenWidth}`);
 });
 
 // fade in text in About Me section
