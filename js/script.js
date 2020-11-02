@@ -38,10 +38,6 @@ navLinks.addEventListener("click", e =>{
   }
 });
 
-if(screenWidth > 767){
-  navLinks.classList.toggle("active");
-}
-
 // click function that shows scroll Y position
 const entirePage = document.querySelector(".grid-container");
 entirePage.addEventListener("click", ()=>{
@@ -77,14 +73,14 @@ if(screenWidth < 577){
 
   window.addEventListener("scroll", ()=>{
     if(window.scrollY > 482){
-      $(".text").animate({"opacity": "1"}, 1200);
+      $(".text").animate({"opacity": "1"}, 2000);
       // turn opacity ot 0 first in css, then opacity to 1.0 here .
     }
     if(window.scrollY > 1178){
-      $(".more-info").animate({"opacity": "1"}, 1200);
+      $(".more-info").animate({"opacity": "1"}, 2000);
     }
     if(window.scrollY > 1830){
-      $(".summary").animate({"opacity": "1"}, 1200);
+      $(".summary").animate({"opacity": "1"}, 2000);
     }
   });
 
