@@ -558,7 +558,7 @@ span {
   margin: 15px 0px;
   padding: 10px;
 }
-@media (min-width: 376px) {
+@media (min-width: 320px) {
   .languages ul li {
     font-size: 1.2em;
   }
@@ -996,9 +996,13 @@ footer .copyright {
   transition-timing-function: ease-in-out;
   transition: 700ms;
   font-weight: 400;
-  font-size: 1.2em;
   color: #fff;
   margin: 10px 30px;
+}
+@media (min-width: xs) {
+  .button {
+    font-size: 1.2em;
+  }
 }
 .button:hover {
   background-color: #1f1f1f;
@@ -1007,9 +1011,14 @@ footer .copyright {
   cursor: pointer;
 }
 .button.one {
-  padding: 10px 85px;
+  padding: 5px 65px;
   color: #000;
   background-color: #fff;
+}
+@media (min-width: xs) {
+  .button.one {
+    padding: 10px 85px;
+  }
 }
 @media (min-width: 768px) {
   .button.one {
@@ -1027,7 +1036,12 @@ footer .copyright {
   color: #fff;
 }
 .button.two {
-  padding: 10px 95px;
+  padding: 5px 75px;
+}
+@media (min-width: xs) {
+  .button.two {
+    padding: 10px 95px;
+  }
 }
 @media (min-width: 768px) {
   .button.two {
