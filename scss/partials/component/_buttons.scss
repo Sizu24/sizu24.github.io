@@ -32,7 +32,10 @@
   font-size: 0.7em;
   color: #fff;
   margin: 10px 30px;
-  @include mq($sm){
+  @include mq($xs){
+    font-size: 1.1em;
+  }
+  @include mq($md){
     font-size: 1.2em;
   }
   &:hover{
