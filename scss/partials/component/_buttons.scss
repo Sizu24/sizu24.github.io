@@ -32,7 +32,7 @@
   font-size: 0.7em;
   color: #fff;
   margin: 10px 30px;
-  @include mq($xs){
+  @include mq($sm){
     font-size: 1.2em;
   }
   &:hover{
@@ -71,7 +71,7 @@
       padding: 10px 95px;
     }
     @include mq($md){
-      padding: 10px 120px;
+      padding: 10px 113px;
     }
     @include mq($lg){
       padding: 8px 65px;

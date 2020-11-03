@@ -519,6 +519,9 @@ span {
   color: #000;
 }
 
+.more-info {
+  margin-top: 50px;
+}
 .more-info h2 {
   padding-bottom: 20px;
 }
@@ -1000,7 +1003,7 @@ footer .copyright {
   color: #fff;
   margin: 10px 30px;
 }
-@media (min-width: 321px) {
+@media (min-width: 576px) {
   .button {
     font-size: 1.2em;
   }
@@ -1046,7 +1049,7 @@ footer .copyright {
 }
 @media (min-width: 768px) {
   .button.two {
-    padding: 10px 120px;
+    padding: 10px 113px;
   }
 }
 @media (min-width: 1024px) {
