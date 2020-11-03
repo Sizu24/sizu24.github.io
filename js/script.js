@@ -1,9 +1,5 @@
-const page = document.querySelector("body");
-const hamburger = document.getElementById("hamburger");
 const navDrop = document.querySelector("#nav-drop");
 const navLinks = document.querySelector("#nav-links");
-const aboutSection = document.getElementById("about");
-const aboutInfo = document.querySelector(".info");
 let screenWidth = window.outerWidth;
 
 // Open and close hamburger menu
