@@ -29,9 +29,10 @@
   transition-timing-function: ease-in-out;
   transition: 700ms;
   font-weight: 400;
+  font-size: 0.7em;
   color: #fff;
   margin: 10px 30px;
-  @include mq(xs){
+  @include mq($xs){
     font-size: 1.2em;
   }
   &:hover{
@@ -43,12 +44,11 @@
 
 // Landing page Button One
   &.one{
-    
-    padding: 5px 65px;
-  
-    @include mq(xs){
+    padding: 5px 75px;
+    @include mq($xs){
       padding: 10px 85px;
     }
+
     color: #000;
     background-color: #fff;
     @include mq($md){
@@ -66,10 +66,8 @@
 
 // Landing page Button Two  
   &.two{
-
-    padding: 5px 75px;
-
-    @include mq(xs){
+    padding: 5px 85px;
+    @include mq($xs){
       padding: 10px 95px;
     }
     @include mq($md){
