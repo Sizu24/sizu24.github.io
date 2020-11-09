@@ -113,7 +113,10 @@
   padding: 10px 32px;
   border-radius: 100px;
   border: none;
-  margin: 10px 5px;
+  @include mq($sm){
+    margin: 10px 5px;
+  }
+  margin: 25px 5px 10px 5px;
   background-color: rgb(28, 156, 241);
   &:hover{
     background-color: blue;

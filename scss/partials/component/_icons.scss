@@ -27,30 +27,49 @@ a{
   }
 }
 
-#image-icon{
-  padding-top: 25px;
-  width: 200px;
-}
-#dashboard-icon{
+// change button position using padding on other elments for less than 375px
+.icon{
+  @include mq($sm){
+    width: 200px;
+  }
+
+  width: 150px;
   padding-top: 50px;
-  width: 200px;
+
 }
-#form-icon{
-  padding-top: 50px;
-  width: 200px;
-}
-#employee-icon{
-  padding-top: 50px;
-  width: 200px;
-}
-#wheel-icon{
-  padding-top: 50px;
-  width: 200px;
-}
-#memory-icon{
-  padding-top: 50px;
-  width: 200px;
-}
+
+  #image-icon{
+    padding-top: 25px;
+  }
+  #wheel-icon{
+    padding-top: 20px;
+    @include mq($sm){
+      padding-top: 50px;
+    }
+  }
+  #memory-icon{
+    padding-top: 20px;
+    @include mq($sm){
+      padding-top: 50px;
+    }
+  }
+  #dashboard-icon{
+
+  }
+  #employee-icon{
+    padding-top: 5px;
+    @include mq($sm){
+      padding-top: 50px;
+    }
+  }
+  #form-icon{
+    padding-top: 25px;
+    @include mq($sm){
+      padding-top: 50px;
+    }
+  }
+
+
 footer .copyright{
   color: #efefef;
   text-align: center;

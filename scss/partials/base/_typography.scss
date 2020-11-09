@@ -17,8 +17,6 @@ h1{
     font-size: 6.0em;
     padding: 0 27px;
   }
-
-
 }
 
 h2{
@@ -282,12 +280,20 @@ span{
 }
 
 .card{
+  &:nth-of-type(1){
+    @include mqsmall($sm){
+      h4{
+        margin-top: 10px;
+      }
+    }
+  }
   h4 {
     text-align: left;
     font-weight: 400;
     font-size: 1.6em;
     color: #000;
     padding-left: 10px;
+ 
     // text-transform: uppercase;
   }
   &-description{

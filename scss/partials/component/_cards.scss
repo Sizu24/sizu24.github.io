@@ -8,10 +8,17 @@
   // horizontal scroll for cards
   display: flex;
   overflow-x: scroll;
+
   width: 100vw;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
-    display: none;
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgba(126, 126, 126, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   }
   // code above is horizontal scroll for cards
 
@@ -27,11 +34,17 @@
 }
 
 .card{
-  @include mq($md){
-    width: 360px;
-  }
 
-  min-width: 360px;
+  @include mqsmall($xs){
+    h4{
+      margin-top: 0;
+    }
+    min-width: 260px;
+  }
+  @include mq($sm){
+    min-width: 360px;
+  }
+  width: 360px;
   height: 480px;
   margin: 20px 10px;
   padding: 10px 30px 40px 30px;
