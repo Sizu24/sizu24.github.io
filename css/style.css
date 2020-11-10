@@ -695,7 +695,6 @@ footer {
   }
 }
 
-/* ----------------------- Nav ----------------------- */
 #nav {
   position: fixed;
   top: 0;
@@ -711,7 +710,14 @@ footer {
   display: none;
   color: #fff;
   z-index: 1000;
-  right: 40px;
+  right: -15px;
+  top: 46px;
+}
+@media (min-width: 768px) {
+  #nav-drop {
+    right: 25px;
+    top: 3px;
+  }
 }
 @media (min-width: 768px) {
   #nav-drop {
@@ -737,13 +743,17 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 1.2em;
-  font-size: 1.2em;
 }
-@media (min-width: 414px) {
+@media (min-width: 321px) {
   #nav-links a {
     font-size: 0.8em;
     border: none;
     margin: 0 6%;
+    padding: 15px 10px;
+  }
+}
+@media (min-width: 768px) {
+  #nav-links a {
     padding: 5px 10px;
   }
 }
