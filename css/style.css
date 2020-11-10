@@ -770,7 +770,7 @@ footer {
 
 .nav-button {
   background-color: #292929;
-  opacity: 0.9;
+  opacity: 0.99;
   transition-duration: 0.6s;
   transition-timing-function: ease-in-out;
 }
