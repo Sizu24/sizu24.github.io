@@ -93,7 +93,6 @@ span{
         position: absolute;
       }
       font-size: 4em;
-      display: absolute;
       font-weight: 600;
     }
   }
@@ -108,7 +107,6 @@ span{
       @include mq($lg){
         text-align: left;
         font-size: 4em;
-        display: absolute;
         width: 100%;
         // padding-top: 130px;
         padding-left: 70px;

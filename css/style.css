@@ -443,7 +443,6 @@ span {
     padding-left: 75px;
     text-align: left;
     font-size: 4em;
-    display: absolute;
     font-weight: 600;
   }
   .info h2:nth-child(2) {
@@ -461,7 +460,6 @@ span {
   .info p:nth-of-type(1) {
     text-align: left;
     font-size: 4em;
-    display: absolute;
     width: 100%;
     padding-left: 70px;
     margin-bottom: 0;
