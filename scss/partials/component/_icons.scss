@@ -59,7 +59,7 @@ a{
 }
 #dashboard-icon{
   padding-top: 70px;
-  @include mq($md){
+  @include mq($sm){
     padding-top: 50px;
   }
 }
