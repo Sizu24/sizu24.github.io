@@ -757,7 +757,7 @@ footer {
     margin: 0 6%;
   }
   #nav-links a:nth-of-type(4) {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
 #nav-links a:link {
