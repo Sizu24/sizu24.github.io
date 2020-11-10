@@ -1,3 +1,5 @@
+/* ----------------------- Mixins ----------------------- */
+/* ----------------------- Variables ----------------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,6 +339,7 @@ template {
   display: none;
 }
 
+/* ----------------------- Typography ----------------------- */
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -646,6 +649,7 @@ span {
   }
 }
 
+/* ----------------------- Grid ----------------------- */
 .grid-container {
   width: 100vw;
   height: 100vh;
@@ -691,6 +695,7 @@ footer {
   }
 }
 
+/* ----------------------- Nav ----------------------- */
 #nav {
   position: fixed;
   top: 0;
@@ -798,6 +803,7 @@ footer {
   float: left;
 }
 
+/* ----------------------- Cards ----------------------- */
 #projects {
   padding-top: 80px;
   background-color: #ffffff;
@@ -886,6 +892,7 @@ footer {
   background-color: #C1F7C9;
 }
 
+/* ----------------------- Images ----------------------- */
 #background {
   background-image: url("../img/city.jpeg");
   background-size: cover;
@@ -920,6 +927,7 @@ footer {
   }
 }
 
+/* ----------------------- Icons ----------------------- */
 footer ul {
   text-align: center;
   list-style-type: none;
@@ -959,6 +967,11 @@ a:hover {
 
 #image-icon {
   padding-top: 55px;
+}
+@media (min-width: 321px) {
+  #image-icon {
+    padding-top: 55px;
+  }
 }
 @media (min-width: 414px) {
   #image-icon {
@@ -1035,6 +1048,7 @@ footer .copyright {
   position: relative;
 }
 
+/* ----------------------- Buttons ----------------------- */
 #buttons {
   padding-bottom: 200px;
   margin-top: 80px;

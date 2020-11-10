@@ -1,3 +1,5 @@
+/* ----------------------- Icons ----------------------- */
+
 // icons in footer
 footer ul{
   text-align: center;
@@ -38,6 +40,9 @@ a{
 
 #image-icon{
   padding-top: 55px;
+  @include mq($xs){
+    padding-top: 55px;
+  }
   @include mq($sm){
     padding-top: 45px;
   }
