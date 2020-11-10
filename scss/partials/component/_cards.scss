@@ -41,6 +41,9 @@
     }
     min-width: 260px;
   }
+  @include mq($xi){
+    min-width: 320px;
+  }
   @include mq($sm){
     min-width: 360px;
   }
@@ -55,9 +58,6 @@
     background-color: #F7C1C1;
     p{
       margin-bottom: 0;
-    }
-    .go-button{
-      margin-top: 10px;
     }
   }
   &:nth-child(2){
@@ -80,14 +80,8 @@
     p{
       margin-bottom: 0;
     }
-    .go-button{
-      margin-top: 10px;
-    }
   }
   &:nth-child(6){
     background-color: #C1F7C9;
-    .go-button{
-      margin-top: 25px;
-    }
   }
 }

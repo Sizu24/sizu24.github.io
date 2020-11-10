@@ -124,6 +124,67 @@
     cursor: pointer;
   }
 }
+
+// Card 1 Go button
+.card:nth-of-type(1){
+  button{
+    margin-top: 10px;
+  }
+
+  @include mq($xi){
+    button{
+      margin-top: 30px;
+    }
+  }
+  @include mq($sm){
+      button{
+        margin-top: 10px;
+      }
+  }
+}
+// Card 3 Go button
+.card:nth-of-type(3){
+  button {
+    margin-top: 10px;
+  }
+  @include mq($xi){
+    button{
+      margin-top: 25px;
+    }
+  }
+  @include mq($sm){
+    button{
+      margin-top: 10px;
+    }
+
+  }
+}
+// Card 5 Go button
+.card:nth-of-type(5){
+  button{
+    margin-top: 15px;
+  }
+  
+  @include mq($xs){
+    button{
+      margin-top: 10px;
+    }
+  }
+
+}
+// Card 6 Go button
+.card:nth-of-type(6){
+  button{
+    margin-top: 35px;
+  }
+  @include mq($xs){
+    button{
+      margin-top: 25px;
+    }
+  }
+
+}
+
 .code-button{
   font-size: 0.8em;
   background-color: transparent;

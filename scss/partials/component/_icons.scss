@@ -59,17 +59,26 @@ a{
 }
 #dashboard-icon{
   padding-top: 70px;
+  @include mq($xi){
+    padding-top: 55px;
+  }
   @include mq($sm){
     padding-top: 50px;
   }
 }
 #employee-icon{
   padding-top: 35px;
+  @include mq($xi){
+    padding-top: 25px;
+  }
   @include mq($sm){
     padding-top: 50px;
   }
 }
 #form-icon{
+  @include mq($xi){
+    padding-top: 55px;
+  }
   @include mq($sm){
     padding-top: 50px;
   }
