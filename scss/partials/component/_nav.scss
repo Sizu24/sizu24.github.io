@@ -75,9 +75,9 @@
   &:hover{
     opacity: 1.0;
     background-color: rgb(97, 97, 97);
-    border-radius: 4px;
-
-
+    @include mq($md){
+      border-radius: 4px;
+    }
   }
 }
 #hamburger{

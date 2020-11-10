@@ -777,7 +777,11 @@ footer {
 .nav-button:hover {
   opacity: 1;
   background-color: #616161;
-  border-radius: 4px;
+}
+@media (min-width: 768px) {
+  .nav-button:hover {
+    border-radius: 4px;
+  }
 }
 
 #hamburger {
