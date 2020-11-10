@@ -32,42 +32,48 @@ a{
   @include mq($sm){
     width: 200px;
   }
-
   width: 150px;
   padding-top: 50px;
-
 }
 
-  #image-icon{
+#image-icon{
+  padding-top: 55px;
+  @include mq($sm){
+    padding-top: 45px;
+  }
+  @include mq($md){
     padding-top: 25px;
   }
-  #wheel-icon{
-    padding-top: 20px;
-    @include mq($sm){
-      padding-top: 50px;
-    }
+}
+#wheel-icon{
+  padding-top: 40px;
+  @include mq($sm){
+    padding-top: 50px;
   }
-  #memory-icon{
-    padding-top: 20px;
-    @include mq($sm){
-      padding-top: 50px;
-    }
+}
+#memory-icon{
+  padding-top: 40px;
+  @include mq($sm){
+    padding-top: 50px;
   }
-  #dashboard-icon{
-
+}
+#dashboard-icon{
+  padding-top: 70px;
+  @include mq($md){
+    padding-top: 50px;
   }
-  #employee-icon{
-    padding-top: 5px;
-    @include mq($sm){
-      padding-top: 50px;
-    }
+}
+#employee-icon{
+  padding-top: 35px;
+  @include mq($sm){
+    padding-top: 50px;
   }
-  #form-icon{
-    padding-top: 25px;
-    @include mq($sm){
-      padding-top: 50px;
-    }
+}
+#form-icon{
+  @include mq($sm){
+    padding-top: 50px;
   }
+}
 
 
 footer .copyright{

@@ -300,6 +300,9 @@ span{
     color: #000;
     text-align: left;
     font-size: 0.9em;
-    padding: 5px;
+    padding: 10px;
+    @include mq($sm){
+      padding: 5px;
+    }
   }
 }

@@ -638,7 +638,12 @@ span {
   color: #000;
   text-align: left;
   font-size: 0.9em;
-  padding: 5px;
+  padding: 10px;
+}
+@media (min-width: 414px) {
+  .card-description {
+    padding: 5px;
+  }
 }
 
 .grid-container {
@@ -957,11 +962,21 @@ a:hover {
 }
 
 #image-icon {
-  padding-top: 25px;
+  padding-top: 55px;
+}
+@media (min-width: 414px) {
+  #image-icon {
+    padding-top: 45px;
+  }
+}
+@media (min-width: 768px) {
+  #image-icon {
+    padding-top: 25px;
+  }
 }
 
 #wheel-icon {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 @media (min-width: 414px) {
   #wheel-icon {
@@ -970,7 +985,7 @@ a:hover {
 }
 
 #memory-icon {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 @media (min-width: 414px) {
   #memory-icon {
@@ -978,8 +993,17 @@ a:hover {
   }
 }
 
+#dashboard-icon {
+  padding-top: 70px;
+}
+@media (min-width: 768px) {
+  #dashboard-icon {
+    padding-top: 50px;
+  }
+}
+
 #employee-icon {
-  padding-top: 5px;
+  padding-top: 35px;
 }
 @media (min-width: 414px) {
   #employee-icon {
@@ -987,9 +1011,6 @@ a:hover {
   }
 }
 
-#form-icon {
-  padding-top: 25px;
-}
 @media (min-width: 414px) {
   #form-icon {
     padding-top: 50px;
