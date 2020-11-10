@@ -747,6 +747,9 @@ footer {
     border: none;
     padding: 15px 10px;
   }
+  #nav-links a:nth-of-type(4) {
+    padding-bottom: 35px;
+  }
 }
 @media (min-width: 768px) {
   #nav-links a {

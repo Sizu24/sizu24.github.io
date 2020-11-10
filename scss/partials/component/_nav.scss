@@ -39,12 +39,14 @@
       text-align: center;
       padding: 10px;
       font-size: 1.2em;
-      // margin-bottom: 5px;
+ 
       @include mq($xs){
         font-size: 0.8em;
         border: none;
-
         padding: 15px 10px;
+        &:nth-of-type(4){
+          padding-bottom: 35px;
+        }
       }
       @include mq($md){
         padding: 5px 10px;
