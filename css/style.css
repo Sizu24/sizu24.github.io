@@ -756,6 +756,9 @@ footer {
     padding: 5px 10px;
     margin: 0 6%;
   }
+  #nav-links a:nth-of-type(4) {
+    padding-bottom: 10px;
+  }
 }
 #nav-links a:link {
   text-decoration: none;
