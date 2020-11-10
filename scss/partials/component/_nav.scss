@@ -7,12 +7,11 @@
     font-size: 1em;
     color: rgb(71, 71, 71);
     height: 180px;
-    width: 200px;
+    width: 100%;
     position: absolute;
     display: none;
     color: #fff;
     z-index: 1000;
-    right: -15px;
     top: 46px;
     @include mq($md){
       right: 25px;
@@ -44,11 +43,12 @@
       @include mq($xs){
         font-size: 0.8em;
         border: none;
-        margin: 0 6%;
+
         padding: 15px 10px;
       }
       @include mq($md){
         padding: 5px 10px;
+        margin: 0 6%;
       }
       &:link{
         text-decoration: none;
