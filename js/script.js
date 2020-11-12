@@ -41,6 +41,20 @@ entirePage.addEventListener("click", ()=>{
   console.log(`screen width is: ${screenWidth}`);
 });
 
+// function to fade in text 
+const textFadeIn = (screenPositionOne, screenPositionTwo, screenPositionThree)=>{
+  if(window.scrollY > screenPositionOne){
+    $(".text").animate({"opacity": "1"}, 2000);
+    // turn opacity ot 0 first in css, then opacity to 1.0 here .
+  }
+  if(window.scrollY > screenPositionTwo){
+    $(".more-info").animate({"opacity": "1"}, 2000);
+  }
+  if(window.scrollY > screenPositionThree){
+    $(".summary").animate({"opacity": "1"}, 2000);
+  }
+}
+
 // fade in text in About Me section
 if(screenWidth >= 1280){
   $(".text").animate({"opacity": "0"}, 0);
@@ -68,16 +82,9 @@ if(screenWidth < 577){
   $(".summary").animate({"opacity": "0"});
 
   window.addEventListener("scroll", ()=>{
-    if(window.scrollY > 482){
-      $(".text").animate({"opacity": "1"}, 2000);
-      // turn opacity ot 0 first in css, then opacity to 1.0 here .
-    }
-    if(window.scrollY > 1178){
-      $(".more-info").animate({"opacity": "1"}, 2000);
-    }
-    if(window.scrollY > 1830){
-      $(".summary").animate({"opacity": "1"}, 2000);
-    }
+    textFadeIn(482, 1178, 1830);
   });
 
 }
+
+

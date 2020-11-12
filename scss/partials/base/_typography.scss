@@ -132,13 +132,18 @@ span{
     }
   }
   p{
-    padding: 0px 70px 20px 70px;
+    padding: 0px 50px 20px 50px;
     font-size: 1.1em;
     font-weight: 100;
     margin-top: 10px;
     color: #000;
     text-align: center;
+    line-height: 1.6;
 
+    @include mq($md){
+      line-height: 1.5;
+      padding: 0px 70px 20px 70px;
+    }
     @include mq($lg){
       text-align: left;
     }
@@ -198,7 +203,7 @@ span{
   }
   ul{
     margin: 0 auto;
-    padding: 0 60px 50px 60px;
+    padding: 20px 30px 50px 30px;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
