@@ -41,6 +41,13 @@ entirePage.addEventListener("click", ()=>{
   console.log(`screen width is: ${screenWidth}`);
 });
 
+// function to make text 0 opacity to help setup textFadeIn after scroll
+const zeroOpacityText = ()=>{
+  $(".text").animate({"opacity": "0"}, 0);
+  $(".more-info").animate({"opacity": "0"});
+  $(".summary").animate({"opacity": "0"});
+}
+
 // function to fade in text 
 const textFadeIn = (screenPositionOne, screenPositionTwo, screenPositionThree)=>{
   if(window.scrollY > screenPositionOne){
@@ -55,36 +62,23 @@ const textFadeIn = (screenPositionOne, screenPositionTwo, screenPositionThree)=>
   }
 }
 
-// fade in text in About Me section
+// larger screen fade in text in About Me section for screen width that's greater or equal to 1280px
 if(screenWidth >= 1280){
-  $(".text").animate({"opacity": "0"}, 0);
-  $(".more-info").animate({"opacity": "0"});
-  $(".summary").animate({"opacity": "0"});
-
-  // if scroll Y position greater than x, fade in
+  // set opacity to 0
+  zeroOpacityText();
+  // Run textFadeIn function to see if scroll Y position greater than x, fade in
   window.addEventListener("scroll", ()=>{
-    if(window.scrollY > 206){
-      $(".text").animate({"opacity": "1"}, 1200);
-      // turn opacity ot 0 first in css, then opacity to 1.0 here .
-    }
-    if(window.scrollY > 1096){
-      $(".more-info").animate({"opacity": "1"}, 1200);
-    }
-    if(window.scrollY > 1615){
-      $(".summary").animate({"opacity": "1"}, 1200);
-    }
+    textFadeIn(206, 1096, 1615);
   });
 }
 
+// smaller screen fade in text in About Me section for screen width that's less than 577px
 if(screenWidth < 577){
-  $(".text").animate({"opacity": "0"}, 0);
-  $(".more-info").animate({"opacity": "0"});
-  $(".summary").animate({"opacity": "0"});
-
+  zeroOpacityText();
+  // Run textFadeIn function to see if scroll Y position greater than x, fade in
   window.addEventListener("scroll", ()=>{
     textFadeIn(482, 1178, 1830);
   });
-
 }
 
 
