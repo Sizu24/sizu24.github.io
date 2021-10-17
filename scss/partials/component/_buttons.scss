@@ -106,93 +106,93 @@
   }
 }
 
-// Project section card buttons
+// // Project section card buttons
 
-.go-button{
-  font-size: 0.8em;
-  background-color: transparent;
-  color: #fff;
-  padding: 10px 32px;
-  border-radius: 5px;
-  border: none;
-  margin: 25px 5px 10px 5px;
-  background-color: rgb(28, 156, 241);
-  &:hover{
-    background-color: blue;
-    transition-duration: 1s;
-    cursor: pointer;
-  }
-  @include mq($sm){
-    margin: 10px 5px;
-  }
-}
+// .go-button{
+//   font-size: 0.8em;
+//   background-color: transparent;
+//   color: #fff;
+//   padding: 10px 32px;
+//   border-radius: 5px;
+//   border: none;
+//   margin: 25px 5px 10px 5px;
+//   background-color: rgb(28, 156, 241);
+//   &:hover{
+//     background-color: blue;
+//     transition-duration: 1s;
+//     cursor: pointer;
+//   }
+//   @include mq($sm){
+//     margin: 10px 5px;
+//   }
+// }
 
-// Card 1 Go button
-.card:nth-of-type(1){
-  button{
-    margin-top: 10px;
-  }
+// // Card 1 Go button
+// .card:nth-of-type(1){
+//   button{
+//     margin-top: 10px;
+//   }
 
-  @include mq($xi){
-    button{
-      margin-top: 30px;
-    }
-  }
-  @include mq($sm){
-      button{
-        margin-top: 10px;
-      }
-  }
-}
-// Card 3 Go button
-.card:nth-of-type(3){
-  button {
-    margin-top: 10px;
-  }
-  @include mq($xi){
-    button{
-      margin-top: 25px;
-    }
-  }
-  @include mq($sm){
-    button{
-      margin-top: 10px;
-    }
+//   @include mq($xi){
+//     button{
+//       margin-top: 30px;
+//     }
+//   }
+//   @include mq($sm){
+//       button{
+//         margin-top: 10px;
+//       }
+//   }
+// }
+// // Card 3 Go button
+// .card:nth-of-type(3){
+//   button {
+//     margin-top: 10px;
+//   }
+//   @include mq($xi){
+//     button{
+//       margin-top: 25px;
+//     }
+//   }
+//   @include mq($sm){
+//     button{
+//       margin-top: 10px;
+//     }
 
-  }
-}
-// Card 5 Go button
-.card:nth-of-type(5){
-  button{
-    margin-top: 15px;
-  }
+//   }
+// }
+// // Card 5 Go button
+// .card:nth-of-type(5){
+//   button{
+//     margin-top: 15px;
+//   }
   
-  @include mq($xs){
-    button{
-      margin-top: 10px;
-    }
-  }
+//   @include mq($xs){
+//     button{
+//       margin-top: 10px;
+//     }
+//   }
 
-}
-// Card 6 Go button
-.card:nth-of-type(6){
-  button{
-    margin-top: 35px;
-  }
-  @include mq($xs){
-    button{
-      margin-top: 25px;
-    }
-  }
+// }
+// // Card 6 Go button
+// .card:nth-of-type(6){
+//   button{
+//     margin-top: 35px;
+//   }
+//   @include mq($xs){
+//     button{
+//       margin-top: 25px;
+//     }
+//   }
 
-}
+// }
 
-.code-button{
-  font-size: 0.8em;
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 18px 38px;
-  border-radius: 10px;
-  margin: 0 5px;
-}
+// .code-button{
+//   font-size: 0.8em;
+//   background-color: transparent;
+//   border: 2px solid #fff;
+//   color: #fff;
+//   padding: 18px 38px;
+//   border-radius: 10px;
+//   margin: 0 5px;
+// }
