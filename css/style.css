@@ -860,6 +860,7 @@ footer {
 }
 
 .card {
+  transition: box-shadow 200ms ease-in-out;
   width: 360px;
   height: 480px;
   margin: 20px 10px;
@@ -884,6 +885,10 @@ footer {
   .card {
     min-width: 360px;
   }
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 16px rgba(219, 219, 219, 0.5);
 }
 .card:nth-child(1) {
   background-color: #F7C1C1;
@@ -1186,20 +1191,20 @@ footer .copyright {
   background-color: transparent;
   color: #fff;
   padding: 10px 32px;
-  border-radius: 100px;
+  border-radius: 5px;
   border: none;
   margin: 25px 5px 10px 5px;
   background-color: #1c9cf1;
-}
-@media (min-width: 414px) {
-  .go-button {
-    margin: 10px 5px;
-  }
 }
 .go-button:hover {
   background-color: blue;
   transition-duration: 1s;
   cursor: pointer;
+}
+@media (min-width: 414px) {
+  .go-button {
+    margin: 10px 5px;
+  }
 }
 
 .card:nth-of-type(1) button {

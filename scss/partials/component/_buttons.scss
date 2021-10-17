@@ -113,17 +113,17 @@
   background-color: transparent;
   color: #fff;
   padding: 10px 32px;
-  border-radius: 100px;
+  border-radius: 5px;
   border: none;
-  @include mq($sm){
-    margin: 10px 5px;
-  }
   margin: 25px 5px 10px 5px;
   background-color: rgb(28, 156, 241);
   &:hover{
     background-color: blue;
     transition-duration: 1s;
     cursor: pointer;
+  }
+  @include mq($sm){
+    margin: 10px 5px;
   }
 }
 
