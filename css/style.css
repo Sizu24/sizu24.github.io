@@ -837,6 +837,7 @@ footer {
 .websites {
   margin-top: 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .websites-card:hover {
@@ -972,7 +973,7 @@ footer {
 }
 
 .website-image {
-  width: 300px;
+  width: 280px;
   border-radius: 10px;
   box-shadow: 0 10px 25px 2px rgba(219, 219, 219, 0.5);
 }
