@@ -1,5 +1,16 @@
 /* ----------------------- Cards ----------------------- */
 
+.websites{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  &-card{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
 #projects{
   padding-top: 80px;
   background-color: #ffffff;

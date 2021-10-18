@@ -103,6 +103,7 @@ span{
       margin-top: 0;
       font-size: 2em;
       font-weight: 900;
+      color: #000;
       padding-left: 70px;
       @include mq($lg){
         text-align: left;
@@ -134,9 +135,9 @@ span{
   p{
     padding: 0px 50px 20px 50px;
     font-size: 1.1em;
-    font-weight: 100;
+    font-weight: 400;
     margin-top: 10px;
-    color: #000;
+    color: rgb(83, 83, 83);
     text-align: left;
     line-height: 1.6;
 
@@ -279,6 +280,12 @@ span{
     }
 }
 
+// Websites
+#websites {
+  font-size: 2.0em;
+  text-align: center;
+}
+
 // Projects cards
 #projects h3{
   font-size: 2.1em;
@@ -292,7 +299,7 @@ span{
       }
     }
   }
-  h4 {
+  h4{
     text-align: left;
     font-weight: 400;
     font-size: 1.6em;

@@ -454,6 +454,7 @@ span {
   margin-top: 0;
   font-size: 2em;
   font-weight: 900;
+  color: #000;
   padding-left: 70px;
 }
 @media (min-width: 1024px) {
@@ -487,9 +488,9 @@ span {
 .info p {
   padding: 0px 50px 20px 50px;
   font-size: 1.1em;
-  font-weight: 100;
+  font-weight: 400;
   margin-top: 10px;
-  color: #000;
+  color: #535353;
   text-align: left;
   line-height: 1.6;
 }
@@ -624,6 +625,11 @@ span {
   .summary {
     width: 55%;
   }
+}
+
+#websites {
+  font-size: 2em;
+  text-align: center;
 }
 
 #projects h3 {
@@ -828,6 +834,15 @@ footer {
 }
 
 /* ----------------------- Cards ----------------------- */
+.websites {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.websites-card:hover {
+  cursor: pointer;
+}
+
 #projects {
   padding-top: 80px;
   background-color: #ffffff;
@@ -954,6 +969,30 @@ footer {
     top: 45px;
     float: right;
   }
+}
+
+.website-image {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 2px rgba(219, 219, 219, 0.5);
+}
+@media (min-width: 360px) {
+  .website-image {
+    width: 340px;
+  }
+}
+@media (min-width: 414px) {
+  .website-image {
+    width: 390px;
+  }
+}
+@media (min-width: 768px) {
+  .website-image {
+    width: 500px;
+  }
+}
+.website-image:hover {
+  box-shadow: 0 10px 30px 3px rgba(100, 100, 100, 0.5);
 }
 
 /* ----------------------- Icons ----------------------- */
