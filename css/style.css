@@ -989,6 +989,7 @@ footer {
   width: 280px;
   border-radius: 10px;
   box-shadow: 0 10px 25px 2px rgba(219, 219, 219, 0.5);
+  transition: box-shadow 300ms ease-in-out;
 }
 @media (min-width: 360px) {
   .website-image {
