@@ -61,10 +61,11 @@
   @include mq($sm){
     min-width: 360px;
   }
-  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow, transform 200ms ease-in-out;
   &:hover{
     cursor: pointer;
     box-shadow: 0 10px 16px rgba(219, 219, 219, 0.5); 
+    transform: translate(0px,-5px);
   }
   width: 360px;
   height: 480px;
