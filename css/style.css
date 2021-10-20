@@ -631,14 +631,6 @@ span {
   font-size: 2em;
   text-align: center;
 }
-#websites::before {
-  display: block;
-  content: " ";
-  margin-top: -45px;
-  height: 45px;
-  visibility: hidden;
-  pointer-events: none;
-}
 
 .coming-soon {
   font-size: 0.8rem;
@@ -717,6 +709,19 @@ footer {
   #about .container {
     position: relative;
   }
+}
+
+#websites {
+  max-width: 100%;
+  margin: 0;
+}
+#websites::before {
+  display: block;
+  content: " ";
+  margin-top: -45px;
+  height: 45px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 #nav {

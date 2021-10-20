@@ -61,3 +61,17 @@ footer{
     }
   }
 }
+// Websites
+#websites {
+  max-width: 100%;
+  margin: 0;
+  // anchor tag offset to correct position when clicking link
+  &::before{
+    display: block;
+    content: " ";
+    margin-top: -45px;
+    height: 45px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
