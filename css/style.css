@@ -514,6 +514,10 @@ span {
   }
 }
 
+ul .description {
+  padding: 0px 50px 20px 50px;
+}
+
 @media (min-width: 1024px) {
   .description {
     width: 60%;
