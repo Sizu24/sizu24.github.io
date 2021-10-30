@@ -12,13 +12,26 @@
   }
 }
 
+.modal-overlay{
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px 5px rgba(200, 200, 200, 0.5);
+
+  height: 400px;
+  width: 600px;
+}
+.hidden{
+  display: none;
+}
+
 #projects{
   padding-top: 80px;
   background-color: #ffffff;
   text-align: center;
 }
 .projects{
-
   // horizontal scroll for cards
   display: flex;
   overflow-x: scroll;
@@ -44,11 +57,9 @@
     justify-content: center;
 
   }
-
 }
 
 .card{
-
   @include mqsmall($xs){
     h4{
       margin-top: 0;

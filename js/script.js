@@ -81,4 +81,47 @@ if(screenWidth < 577){
   });
 }
 
+// Pop up modal
+const modalPopUp = index =>{
+let {image, title, description} = index;
 
+  const modalHTML = `
+    <div class="modal">
+      <p class="modal-close">X</p>
+      <div id="modal-content>
+        <div class="modal-image">
+          <img scr="${image}" alt="image preview of website">
+        </div>
+        <div class="modal-info">
+          <p>${title}</p>
+          <p>${description}
+        </div>
+      </div>
+    </div
+  `
+  // select modal from HTML and hide
+  
+  // add html to container for modal
+  modalContainer.innerHTML = modalHTML;
+};
+
+// modal info for each website
+const siteOne = {
+  img: "img/site1.jpg",
+  title: "Mobile Auto Spa",
+  description: "Developed auto detailing company site in HTML, \
+                CSS, and JavaScript. This project has an appointment \
+                booking implementation"
+  ;
+}
+const siteTwo = {
+  img: "img/site2.jpg",
+  title: "Nevada Audio Video",
+  description: "Local business site  built in wordpress, \
+                with custom CSS that I used to add personal styling.\
+                This project also has an appointment \
+                booking implementation, as well as payment setup"
+  ;
+}
+
+// function onclick to run modalPopUp function
