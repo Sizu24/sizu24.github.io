@@ -2,6 +2,7 @@ const navDrop = document.querySelector("#nav-drop");
 const navLinks = document.querySelector("#nav-links");
 let screenWidth = window.outerWidth;
 
+
 // Open and close hamburger menu
 window.addEventListener("click", e =>{
   if(e.target.id === "hamburger" || e.target.className === "line"){
@@ -82,11 +83,28 @@ if(screenWidth < 577){
 }
 
 // Pop up modal
+// modal info for each website
+const siteOne = {
+  img: "img/site1.jpg",
+  title: "Mobile Auto Spa",
+  description: "Developed auto detailing company site in HTML, \
+                CSS, and JavaScript. This project has an appointment \
+                booking implementation"
+}
+const siteTwo = {
+  img: "img/site2.jpg",
+  title: "Nevada Audio Video",
+  description: "Local business site  built in wordpress, \
+                with custom CSS that I used to add personal styling.\
+                This project also has an appointment \
+                booking implementation, as well as payment setup"
+}
+
 const modalPopUp = index =>{
 let {image, title, description} = index;
 
   const modalHTML = `
-    <div class="modal">
+    <div class="modal-overlay">
       <p class="modal-close">X</p>
       <div id="modal-content>
         <div class="modal-image">
@@ -98,30 +116,22 @@ let {image, title, description} = index;
         </div>
       </div>
     </div
-  `
-  // select modal from HTML and hide
-  
-  // add html to container for modal
-  modalContainer.innerHTML = modalHTML;
+  `;
+  return modalHTML;
 };
+  const modalContainer = document.createElement("DIV");
+  
+  // select modal from HTML and hide
+  const websitesCard = document.querySelector("#websites");
+  websitesCard.addEventListener("click", e =>{
+     // add html to container for modal
+    if(e.target.className === "website-image"){
+      console.log(e.target.className);
+      e.target.parentNode.appendChild(modalContainer);
+    }
+    modalContainer.innerHTML = modalPopUp(siteOne);
+  });
 
-// modal info for each website
-const siteOne = {
-  img: "img/site1.jpg",
-  title: "Mobile Auto Spa",
-  description: "Developed auto detailing company site in HTML, \
-                CSS, and JavaScript. This project has an appointment \
-                booking implementation"
-  ;
-}
-const siteTwo = {
-  img: "img/site2.jpg",
-  title: "Nevada Audio Video",
-  description: "Local business site  built in wordpress, \
-                with custom CSS that I used to add personal styling.\
-                This project also has an appointment \
-                booking implementation, as well as payment setup"
-  ;
-}
+
 
 // function onclick to run modalPopUp function
