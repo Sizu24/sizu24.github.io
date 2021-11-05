@@ -82,56 +82,83 @@ if(screenWidth < 577){
   });
 }
 
-// Pop up modal
-// modal info for each website
-const siteOne = {
-  img: "img/site1.jpg",
-  title: "Mobile Auto Spa",
-  description: "Developed auto detailing company site in HTML, \
-                CSS, and JavaScript. This project has an appointment \
-                booking implementation"
-}
-const siteTwo = {
-  img: "img/site2.jpg",
-  title: "Nevada Audio Video",
-  description: "Local business site  built in wordpress, \
-                with custom CSS that I used to add personal styling.\
-                This project also has an appointment \
-                booking implementation, as well as payment setup"
-}
+// // Pop up modal
+// // modal info for each website
+// const siteOne = {
+//   img: "img/site1.jpg",
+//   title: "Mobile Auto Spa",
+//   description: "Developed auto detailing company site in HTML, \
+//                 CSS, and JavaScript. This project has an appointment \
+//                 booking implementation"
+// }
+// const siteTwo = {
+//   img: "img/site2.jpg",
+//   title: "Nevada Audio Video",
+//   description: "Local business site  built in wordpress, \
+//                 with custom CSS that I used to add personal styling.\
+//                 This project also has an appointment \
+//                 booking implementation, as well as payment setup"
+// }
 
-const modalPopUp = index =>{
-let {image, title, description} = index;
+// // Modal HTML code
+// const modalPopUp = index =>{
+// let {image, title, description} = index;
 
-  const modalHTML = `
-    <div class="modal-overlay">
-      <p class="modal-close">X</p>
-      <div id="modal-content>
-        <div class="modal-image">
-          <img scr="${image}" alt="image preview of website">
-        </div>
-        <div class="modal-info">
-          <p>${title}</p>
-          <p>${description}
-        </div>
-      </div>
-    </div
-  `;
-  return modalHTML;
-};
-  const modalContainer = document.createElement("DIV");
+//   const modalHTML = `
+//     <div id="modal-overlay">
+//       <p id="modal-close">X</p>
+//       <div id="modal-content>
+//         <div class="modal-image">
+//           <img scr="${image}" alt="image preview of website">
+//         </div>
+//         <div class="modal-info">
+//           <p>${title}</p>
+//           <p>${description}
+//         </div>
+//       </div>
+//     </div
+//   `;
+//   return modalHTML;
+// };
+//   const modalContainer = document.createElement("DIV");
   
-  // select modal from HTML and hide
-  const websitesCard = document.querySelector("#websites");
-  websitesCard.addEventListener("click", e =>{
-     // add html to container for modal
-    if(e.target.className === "website-image"){
-      console.log(e.target.className);
-      e.target.parentNode.appendChild(modalContainer);
-    }
-    modalContainer.innerHTML = modalPopUp(siteOne);
-  });
+//   // select modal from HTML and hide
+//   const websitesCard = document.querySelector("#websites");
+//   const websitesSection = document.querySelectorAll(".websites-card");
+  
 
+
+
+//   websitesCard.addEventListener("click", e =>{
+//      // add html to container for modal
+//     if(e.target.className === "website-image"){
+//       e.target.classList.add("showModal");
+//       e.target.parentNode.appendChild(modalContainer);
+//       modalContainer.innerHTML = modalPopUp(siteOne);
+
+//       const modalCloseButton = document.querySelector("#modal-close");
+
+//       // Remove modal if X button is clicked
+//       modalCloseButton.addEventListener("click", e =>{
+//         if(e.target.id === "modal-close"){
+//           e.target.parentNode.parentNode.remove();
+//           e.target.parentNode.parentNode.classList.remove("showModal");
+//           console.log("click");
+//         }
+//       });    
+//     }
+//   });
+
+//   // 
+//   const findModal = () =>{
+//     let num = 0;
+//     for(let i = 0; i < websitesSection.length; i++){
+//       // if showModal is a class name
+//       return num - 1;
+//     }
+//   }
 
 
 // function onclick to run modalPopUp function
+
+

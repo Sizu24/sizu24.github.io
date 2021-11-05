@@ -25,7 +25,7 @@
 
 .button{
   opacity: 1.0;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 3px solid #fff;
   background-color: transparent;
   transition-timing-function: ease-in-out;
@@ -49,7 +49,7 @@
 
 // Landing page Button One
   &.one{
-    padding: 5px 75px;
+    padding: 10px 75px;
     @include mq($xs){
       padding: 10px 85px;
     }
@@ -102,6 +102,19 @@
     }
     &:visited{
       color: #000;
+    }
+  }
+}
+
+// Websites buttons
+.websites-info {
+  button{
+    background-color: #000;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 0 10px;
+    &:first-of-type{
+      background-color: #fff;
     }
   }
 }

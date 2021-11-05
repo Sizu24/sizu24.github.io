@@ -6,11 +6,17 @@
 }
 h1{
   text-align: center;
-  font-size: 2.9em;
+  font-size: 2.3em;
   font-weight: 900;
   text-transform: uppercase;
   padding: 0 6px;
  
+  @include mq($xi){
+    font-size: 2.7em;
+  }
+  @include mq($sm){
+    font-size: 2.9em;
+  }
   @include mq($md){
     font-size: 6.0em;
     margin-bottom: 40px;
@@ -287,6 +293,18 @@ ul .description{
 #websites {
   font-size: 2.0em;
   text-align: center;
+}
+.websites-info {
+  p{
+    font-size: 14px;
+  }
+  button{
+    color: #fff;
+    font-size: 12px;
+    &:first-of-type{
+      color: #000;
+    }
+  }
 }
 .coming-soon{
   font-size: 0.8rem;

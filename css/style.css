@@ -347,10 +347,20 @@ template {
 
 h1 {
   text-align: center;
-  font-size: 2.9em;
+  font-size: 2.3em;
   font-weight: 900;
   text-transform: uppercase;
   padding: 0 6px;
+}
+@media (min-width: 360px) {
+  h1 {
+    font-size: 2.7em;
+  }
+}
+@media (min-width: 414px) {
+  h1 {
+    font-size: 2.9em;
+  }
 }
 @media (min-width: 768px) {
   h1 {
@@ -636,6 +646,17 @@ ul .description {
   text-align: center;
 }
 
+.websites-info p {
+  font-size: 14px;
+}
+.websites-info button {
+  color: #fff;
+  font-size: 12px;
+}
+.websites-info button:first-of-type {
+  color: #000;
+}
+
 .coming-soon {
   font-size: 0.8rem;
   margin-top: 0;
@@ -726,6 +747,10 @@ footer {
   height: 45px;
   visibility: hidden;
   pointer-events: none;
+}
+
+.websites {
+  padding: 0 20px;
 }
 
 #nav {
@@ -866,10 +891,11 @@ footer {
   cursor: pointer;
 }
 
-.modal-overlay {
+#modal-overlay {
   position: absolute;
+  top: 200px;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #555555;
   border-radius: 20px;
   box-shadow: 0 10px 35px 5px rgba(200, 200, 200, 0.5);
   height: 400px;
@@ -1186,7 +1212,7 @@ footer .copyright {
 
 .button {
   opacity: 1;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 3px solid #fff;
   background-color: transparent;
   transition-timing-function: ease-in-out;
@@ -1213,7 +1239,7 @@ footer .copyright {
   cursor: pointer;
 }
 .button.one {
-  padding: 5px 75px;
+  padding: 10px 75px;
   color: #000;
   background-color: #fff;
 }
@@ -1263,6 +1289,16 @@ footer .copyright {
 }
 .button a:visited {
   color: #000;
+}
+
+.websites-info button {
+  background-color: #000;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.websites-info button:first-of-type {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,10 +12,11 @@
   }
 }
 
-.modal-overlay{
+#modal-overlay{
   position: absolute;
+  top: 200px;
   z-index: 1000;
-  background-color: #fff;
+  background-color: rgb(85, 85, 85);
   border-radius: 20px;
   box-shadow: 0 10px 35px 5px rgba(200, 200, 200, 0.5);
 
