@@ -650,11 +650,7 @@ ul .description {
   font-size: 14px;
 }
 .websites-info button {
-  color: #fff;
   font-size: 12px;
-}
-.websites-info button:first-of-type {
-  color: #000;
 }
 
 .coming-soon {
@@ -897,9 +893,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.websites-card:hover {
-  cursor: pointer;
-}
 
 #modal-overlay {
   position: absolute;
@@ -1069,6 +1062,7 @@ footer {
 .website-image:hover {
   box-shadow: 0 10px 30px 3px rgba(100, 100, 100, 0.5);
   transform: translate(0px, -5px);
+  cursor: pointer;
 }
 
 /* ----------------------- Icons ----------------------- */
@@ -1302,7 +1296,8 @@ footer .copyright {
 }
 
 .websites-info button {
-  background-color: #000;
+  background-color: #fff;
+  color: #000;
   padding: 10px 25px;
   border-radius: 5px;
   margin: 0 10px;
@@ -1310,16 +1305,18 @@ footer .copyright {
   transition: color, 200ms ease-in-out;
 }
 .websites-info button:hover {
-  background-color: #fff;
-  color: #000;
-}
-.websites-info button:first-of-type {
-  background-color: #fff;
-  border-color: #000;
-}
-.websites-info button:first-of-type:hover {
   background-color: #000;
   color: #fff;
+  cursor: pointer;
+}
+.websites-info button:first-of-type {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+.websites-info button:first-of-type:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
