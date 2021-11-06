@@ -758,8 +758,8 @@ footer {
   }
 }
 @media (min-width: 1024px) {
-  .websites {
-    padding: 0 190px;
+  .websites p {
+    padding: 0 350px;
   }
 }
 
@@ -1309,6 +1309,7 @@ footer .copyright {
 }
 .websites-info button:first-of-type {
   background-color: #fff;
+  border-color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

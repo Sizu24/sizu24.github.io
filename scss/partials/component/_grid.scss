@@ -80,7 +80,9 @@ footer{
   @include mq($md){
     padding: 0 60px;
   }
-  @include mq($lg){
-    padding: 0 190px;
+  p{
+    @include mq($lg){
+      padding: 0 350px;
+    }
   }
 }
