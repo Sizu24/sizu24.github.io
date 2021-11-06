@@ -76,11 +76,11 @@ footer{
   }
 }
 .websites{
-  padding: 0 20px;
-  @include mq($md){
-    padding: 0 60px;
-  }
   p{
+    padding: 0 30px;
+    @include mq($md){
+      padding: 0 60px;
+    }
     @include mq($lg){
       padding: 0 350px;
     }

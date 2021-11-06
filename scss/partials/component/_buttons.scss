@@ -113,9 +113,19 @@
     padding: 10px 25px;
     border-radius: 5px;
     margin: 0 10px;
+    transition: background-color, 200ms ease-in-out;
+    transition: color, 200ms ease-in-out;
+    &:hover{
+      background-color: #fff;
+      color: #000;
+    }
     &:first-of-type{
       background-color: #fff;
       border-color: #000;
+      &:hover{
+        background-color: #000;
+        color: #fff;
+      }
     }
   }
 }

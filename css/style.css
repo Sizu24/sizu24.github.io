@@ -749,11 +749,11 @@ footer {
   pointer-events: none;
 }
 
-.websites {
-  padding: 0 20px;
+.websites p {
+  padding: 0 30px;
 }
 @media (min-width: 768px) {
-  .websites {
+  .websites p {
     padding: 0 60px;
   }
 }
@@ -1306,10 +1306,20 @@ footer .copyright {
   padding: 10px 25px;
   border-radius: 5px;
   margin: 0 10px;
+  transition: background-color, 200ms ease-in-out;
+  transition: color, 200ms ease-in-out;
+}
+.websites-info button:hover {
+  background-color: #fff;
+  color: #000;
 }
 .websites-info button:first-of-type {
   background-color: #fff;
   border-color: #000;
+}
+.websites-info button:first-of-type:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
