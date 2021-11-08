@@ -686,6 +686,25 @@ ul .description {
   }
 }
 
+#email-link {
+  text-align: center;
+  margin: 10px;
+}
+#email-link a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s;
+}
+#email-link a:hover {
+  color: #d4d4d4;
+}
+
+footer .copyright {
+  color: #efefef;
+  padding: 10px;
+  text-align: center;
+}
+
 /* ----------------------- Grid ----------------------- */
 .grid-container {
   width: 100vw;
@@ -719,7 +738,7 @@ main {
 
 footer {
   grid-area: footer;
-  height: 120px;
+  height: 140px;
   background-color: #292929;
 }
 
@@ -1080,7 +1099,7 @@ a.social {
   width: 30px;
   height: 30px;
   margin: 10px 5px 0;
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.6s;
 }
 a.twitter {
@@ -1090,7 +1109,7 @@ a.github {
   background-image: url("../img/github.svg");
 }
 a:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .icon {
@@ -1177,13 +1196,6 @@ a:hover {
   #form-icon {
     padding-top: 50px;
   }
-}
-
-footer .copyright {
-  color: #efefef;
-  text-align: center;
-  top: -8px;
-  position: relative;
 }
 
 /* ----------------------- Buttons ----------------------- */
