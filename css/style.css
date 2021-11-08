@@ -1309,6 +1309,7 @@ a:hover {
 
 .websites-info button {
   background-color: #fff;
+  border-color: #000;
   color: #000;
   padding: 10px 25px;
   border-radius: 5px;
