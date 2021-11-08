@@ -832,16 +832,16 @@ footer {
     border: none;
     padding: 15px 10px;
   }
-  #nav-links a:nth-of-type(4) {
+  #nav-links a:nth-of-type(5) {
     padding-bottom: 35px;
   }
 }
 @media (min-width: 768px) {
   #nav-links a {
     padding: 5px 10px;
-    margin: 0 6%;
+    margin: 0 4%;
   }
-  #nav-links a:nth-of-type(4) {
+  #nav-links a:nth-of-type(5) {
     padding-bottom: 5px;
   }
 }
