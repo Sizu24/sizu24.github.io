@@ -1085,6 +1085,29 @@ footer {
   cursor: pointer;
 }
 
+.website-mobile-image {
+  width: 100px;
+  transition: box-shadow, transform 200ms ease-in-out;
+}
+@media (min-width: 360px) {
+  .website-mobile-image {
+    width: 100px;
+  }
+}
+@media (min-width: 414px) {
+  .website-mobile-image {
+    width: 190px;
+  }
+}
+@media (min-width: 768px) {
+  .website-mobile-image {
+    width: 300px;
+  }
+}
+.website-mobile-image:hover {
+  cursor: pointer;
+}
+
 /* ----------------------- Icons ----------------------- */
 footer ul {
   text-align: center;

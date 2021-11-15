@@ -60,3 +60,23 @@
     cursor: pointer;
   }
 }
+.website-mobile-image{
+  width: 100px;
+  @include mq($xi){
+    width: 100px;
+  }
+  @include mq($sm){
+    width: 190px;
+  }
+  @include mq($md){
+    width: 300px;
+  }
+  // border-radius: 10px;
+  // box-shadow: 0 10px 25px 2px rgba(219,219,219,0.5);
+  transition: box-shadow, transform 200ms ease-in-out;
+  &:hover{
+    // box-shadow: 0 10px 30px 3px rgba(100,100,100,0.5);
+    // transform: translate(0px,-5px);
+    cursor: pointer;
+  }
+}
