@@ -917,6 +917,9 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.websites-card {
+  margin-bottom: 50px;
+}
 
 #modal-overlay {
   position: absolute;
