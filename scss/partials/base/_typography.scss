@@ -297,11 +297,21 @@ ul .description{
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 400;
+    font-size: 0.7em;
+    @include mq($md){
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
   }
 }
 .websites-info {
   p{
     font-size: 14px;
+  }
+  @include mq($md){
+    p{
+      font-size: 0.5em;
+    }
   }
   button{
     font-size: 12px;
