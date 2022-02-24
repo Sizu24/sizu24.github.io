@@ -594,7 +594,7 @@ ul .description {
     padding: 0 10px;
   }
 }
-.languages ul li:nth-child(-n+3) {
+.languages ul li:nth-child(-n+5) {
   font-weight: 600;
 }
 
