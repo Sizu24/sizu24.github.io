@@ -415,6 +415,21 @@ h2 {
   }
 }
 
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5.5s steps(50, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 #language-icons {
   list-style-type: none;
   padding-left: 0;
