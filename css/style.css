@@ -419,7 +419,7 @@ h2 {
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 5.5s steps(50, end) forwards;
+  animation: typing 2.5s steps(40, end) forwards;
 }
 
 @keyframes typing {
