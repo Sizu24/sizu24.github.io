@@ -81,7 +81,8 @@ if(screenWidth < 577){
     textFadeIn(482, 1178, 1830);
   });
 }
-
+const subtitle = document.querySelectorAll(".subtitle");
+$(".subtitle").animate({"opacity": "1"}, 1000);
 // // Pop up modal
 // // modal info for each website
 // const siteOne = {

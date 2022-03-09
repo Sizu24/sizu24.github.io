@@ -31,6 +31,7 @@ h2{
   color: #000;
   @include mq($md){
     text-align: left;
+
   }
 
 }
@@ -46,7 +47,7 @@ h2{
     padding-top: 20px;
   }
   h2{
-    margin: 0;
+    opacity: 0;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -62,10 +63,14 @@ h2{
 }
 
 .typing{
+
+  margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 2.5s steps(40, end) forwards;
+  animation: typing 1.5s steps(70, end);
+  @include mq($md){
+    animation: typing 3.5s steps(70, end);
+  }
 }
 @keyframes typing {
   from {width: 0}
