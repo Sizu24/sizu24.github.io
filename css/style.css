@@ -654,12 +654,6 @@ ul .description {
   font-size: 2em;
   text-align: center;
 }
-#websites a {
-  text-decoration: none;
-}
-#websites a:visited {
-  color: #000;
-}
 #websites h4 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -1370,28 +1364,38 @@ a.github {
   transition: background-color, 200ms ease-in-out;
   transition: color, 200ms ease-in-out;
 }
+.websites-info button:first-of-type {
+  background-color: #000;
+  color: #fff;
+}
+.websites-info button:first-of-type:hover {
+  background-color: #fff;
+}
+.websites-info button:first-of-type:hover a:link {
+  color: #000;
+}
+.websites-info button:first-of-type:hover a:visited {
+  color: #000 !important;
+}
+.websites-info button:first-of-type a:visited {
+  color: #fff;
+}
+.websites-info button:first-of-type a:link {
+  color: #fff;
+}
+.websites-info button a:link {
+  color: #000;
+  text-decoration: none;
+}
 .websites-info button:hover {
   background-color: #000;
-  color: #fff !important;
   cursor: pointer;
 }
 .websites-info button:hover a:visited {
   color: #fff !important;
 }
-.websites-info button:first-of-type {
-  background-color: #000;
-  border-color: #000;
+.websites-info button:hover a:link {
   color: #fff;
-}
-.websites-info button:first-of-type a:visited {
-  color: #fff !important;
-}
-.websites-info button:first-of-type:hover {
-  background-color: #fff;
-  color: #000;
-}
-.websites-info button:first-of-type:hover a:visited {
-  color: #000 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
