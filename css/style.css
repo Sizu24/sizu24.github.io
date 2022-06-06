@@ -1,6 +1,4 @@
-/* ----------------------- Mixins ----------------------- */
-/* ----------------------- Variables ----------------------- */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* ----------------------- Mixins ----------------------- */ /* ----------------------- Variables ----------------------- */ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -8,10 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -46,12 +42,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -59,10 +52,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -79,12 +70,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -102,10 +90,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -155,14 +141,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -170,8 +152,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -180,8 +161,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -230,18 +210,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -264,10 +238,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -283,10 +255,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -301,10 +271,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -415,6 +383,12 @@ h2 {
   }
 }
 
+@media (min-width: 1024px) {
+  .welcome-header {
+    margin-top: 20rem;
+  }
+}
+
 .typing {
   margin: 0 auto;
   overflow: hidden;
@@ -520,7 +494,7 @@ span {
   font-size: 1.1em;
   font-weight: 400;
   margin-top: 10px;
-  color: #535353;
+  color: rgb(83, 83, 83);
   text-align: left;
   line-height: 1.6;
 }
@@ -754,7 +728,7 @@ ul .description {
   transition: 0.6s;
 }
 #email-link a:hover {
-  color: #d4d4d4;
+  color: rgb(212, 212, 212);
 }
 
 footer .copyright {
@@ -787,7 +761,7 @@ header {
 
 nav {
   grid-area: nav;
-  background-color: #292929;
+  background-color: rgb(41, 41, 41);
 }
 
 main {
@@ -844,7 +818,7 @@ footer {
 }
 #nav-drop {
   font-size: 1em;
-  color: #474747;
+  color: rgb(71, 71, 71);
   height: 180px;
   width: 100%;
   position: absolute;
@@ -864,7 +838,7 @@ footer {
     padding-top: 10px;
     display: block;
     position: relative;
-    color: #6d6d6d;
+    color: rgb(109, 109, 109);
     width: 100%;
     height: 20px;
   }
@@ -914,7 +888,7 @@ footer {
   color: white;
 }
 #nav-links a:visited {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .nav-button {
@@ -925,7 +899,7 @@ footer {
 }
 .nav-button:hover {
   opacity: 1;
-  background-color: #616161;
+  background-color: rgb(97, 97, 97);
 }
 @media (min-width: 768px) {
   .nav-button:hover {
@@ -952,7 +926,7 @@ footer {
   padding: 1px 0;
   margin: 5px 0;
   width: 24px;
-  background-color: #e6e6e6;
+  background-color: rgb(230, 230, 230);
 }
 
 #logo {
@@ -978,7 +952,7 @@ footer {
   position: absolute;
   top: 200px;
   z-index: 1000;
-  background-color: #555555;
+  background-color: rgb(85, 85, 85);
   border-radius: 20px;
   box-shadow: 0 10px 35px 5px rgba(200, 200, 200, 0.5);
   height: 400px;
@@ -1093,7 +1067,7 @@ footer {
 }
 
 #overlay {
-  background-image: linear-gradient(60deg, #ffaf65, #e95f5f);
+  background-image: linear-gradient(60deg, rgb(255, 175, 101), rgb(233, 95, 95));
   opacity: 0.9;
 }
 
@@ -1302,7 +1276,6 @@ a.github {
 @media (min-width: 1441px) {
   #buttons {
     padding-bottom: 400px;
-    margin-top: 500px;
   }
 }
 
@@ -1329,9 +1302,9 @@ a.github {
   }
 }
 .button:hover {
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   color: #fff;
-  border-color: #1f1f1f;
+  border-color: rgb(31, 31, 31);
   cursor: pointer;
 }
 .button.one {
@@ -1356,7 +1329,7 @@ a.github {
   }
 }
 .button.one:hover {
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   color: #fff;
 }
 .button.two {
