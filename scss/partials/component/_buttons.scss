@@ -19,7 +19,6 @@
   }
   @include mq($xl){
     padding-bottom: 400px;
-    margin-top: 500px;
   }
 }
 
@@ -87,18 +86,18 @@
 // Button Links
   a:before{
     text-decoration: none;    
-    // color: #fff;
+
   }
   a{
     &:link{
       text-decoration: none;
-      // color: white;
+
     }
     &:hover{
-      // color: white;
+
     }
     &:active{
-      // color: white;
+
     }
     &:visited{
       color: #000;
@@ -109,6 +108,26 @@
 // Websites buttons
 .websites-info {
   button{
+    &:first-of-type{
+      background-color: #000;
+      color: #fff;
+      &:hover{
+        background-color: #fff;
+        a:link {
+          color: #000;
+        }
+        a:visited{
+          color: #000 !important;
+        }
+      }
+      a:visited{
+        color: #fff;
+      }
+      a:link {
+        color: #fff;
+      }
+    }
+
     background-color: #fff;
     border-color: #000;
     color: #000;
@@ -117,12 +136,16 @@
     margin: 0 10px;
     transition: background-color, 200ms ease-in-out;
     transition: color, 200ms ease-in-out;
+    a:link{
+      color: #000;
+      text-decoration: none;
+    }
     &:hover{
       background-color: #000;
-      color: #fff !important;
-      a:visited{
+      a:visited {
         color: #fff !important;
       }
+<<<<<<< HEAD
       cursor: pointer;
     }
     &:first-of-type{
@@ -134,15 +157,12 @@
       }
       a:visited{
         color: #fff !important;
+=======
+      a:link {
+        color: #fff;
+>>>>>>> 026bc9fb66f6b2a6ae47ffc9c8fb247c77987a3b
       }
-      &:hover{
-        background-color: #fff;
-        color: #000;
-        a:visited{
-          color: #000 !important;
-        }
-      }
-
+      cursor: pointer;
     }
   }
 }
