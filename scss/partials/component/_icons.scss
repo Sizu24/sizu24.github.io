@@ -1,5 +1,35 @@
 /* ----------------------- Icons ----------------------- */
 
+
+// links icons
+
+#links{
+  margin-left: 50px;
+  height: 550px;
+  width: 175px;
+  border-radius: 15px;
+  background-color: #272727;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+}
+.links-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 125px;
+  border-radius: 10px;
+  background-color: #292929;
+  transition: 1s;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+  &:hover{
+    transform: rotate(360deg);
+  }
+}
+
 // icons in footer
 footer ul{
   text-align: center;
@@ -37,7 +67,10 @@ a{
   width: 150px;
   padding-top: 50px;
 }
+.github-icons{
+  color: #fff;
 
+}
 #image-icon{
   padding-top: 55px;
   @include mq($xs){
