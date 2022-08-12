@@ -1133,6 +1133,33 @@ footer {
 }
 
 /* ----------------------- Icons ----------------------- */
+#links {
+  margin-left: 50px;
+  height: 550px;
+  width: 175px;
+  border-radius: 15px;
+  background-color: #272727;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 125px;
+  border-radius: 10px;
+  background-color: #292929;
+  transition: 1s;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+}
+.links-item:hover {
+  transform: rotate(360deg);
+}
+
 footer ul {
   text-align: center;
   list-style-type: none;
@@ -1168,6 +1195,10 @@ a.github {
   .icon {
     width: 200px;
   }
+}
+
+.github-icons {
+  color: #fff;
 }
 
 #image-icon {
@@ -1368,6 +1399,15 @@ a.github {
   background-color: #000;
   color: #fff;
 }
+<<<<<<< HEAD
+.websites-info button:first-of-type a:link {
+  color: #fff;
+}
+.websites-info button:first-of-type a:visited {
+  color: #fff !important;
+}
+=======
+>>>>>>> 026bc9fb66f6b2a6ae47ffc9c8fb247c77987a3b
 .websites-info button:first-of-type:hover {
   background-color: #fff;
 }

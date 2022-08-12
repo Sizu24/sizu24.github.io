@@ -145,8 +145,22 @@
       a:visited {
         color: #fff !important;
       }
+<<<<<<< HEAD
+      cursor: pointer;
+    }
+    &:first-of-type{
+      background-color: #000;
+      border-color: #000;
+      color: #fff;
+      a:link{
+        color: #fff;
+      }
+      a:visited{
+        color: #fff !important;
+=======
       a:link {
         color: #fff;
+>>>>>>> 026bc9fb66f6b2a6ae47ffc9c8fb247c77987a3b
       }
       cursor: pointer;
     }
