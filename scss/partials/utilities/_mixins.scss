@@ -1,13 +1,13 @@
 /* ----------------------- Mixins ----------------------- */
 
-@mixin mq($size){
-  @media (min-width: $size){
+@mixin mq($size) {
+  @media (min-width: $size) {
     @content;
   }
 }
 
-@mixin mqsmall($size){
-  @media (max-width: $size){
+@mixin mqsmall($size) {
+  @media (max-width: $size) {
     @content;
   }
 }

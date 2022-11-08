@@ -1,9 +1,10 @@
-#nav{
+#nav {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  &-drop{
+
+  &-drop {
     font-size: 1em;
     color: rgb(71, 71, 71);
     height: 180px;
@@ -13,12 +14,13 @@
     color: #fff;
     z-index: 1000;
     top: 46px;
-    @include mq($md){
+
+    @include mq($md) {
       right: 25px;
       top: 3px;
     }
 
-    @include mq($md){
+    @include mq($md) {
       padding-top: 10px;
       display: block;
       position: relative;
@@ -27,10 +29,12 @@
       height: 20px;
     }
   }
-  &-links{
+
+  &-links {
     display: flex;
     flex-direction: column;
-    @include mq($md){
+
+    @include mq($md) {
       display: block;
       text-align: center;
     }
@@ -40,70 +44,84 @@
       padding: 10px;
       font-size: 1.2em;
  
-      @include mq($xs){
+      @include mq($xs) {
         font-size: 0.8em;
         border: none;
         padding: 15px 10px;
-        &:nth-of-type(5){
+
+        &:nth-of-type(5) {
           padding-bottom: 35px;
         }
       }
-      @include mq($md){
+
+      @include mq($md) {
         padding: 5px 10px;
         margin: 0 4%;
-        &:nth-of-type(5){
+
+        &:nth-of-type(5) {
           padding-bottom: 5px;
         }
       }
-      &:link{
+
+      &:link {
         text-decoration: none;
         color: white;
       }
-      &:hover{
+
+      &:hover {
         color: white;
       }
+
       &:active{
         color: white;
       }
-      &:visited{
+
+      &:visited {
        color: rgb(255, 255, 255);
       }
     }
   }
 }
-.nav-button{
+
+.nav-button {
   background-color: #292929;
   opacity: 0.99;
   transition-duration: .6s;
   transition-timing-function: ease-in-out;
   
-  &:hover{
+  &:hover {
     opacity: 1.0;
     background-color: rgb(97, 97, 97);
-    @include mq($md){
+
+    @include mq($md) {
       border-radius: 4px;
     }
   }
 }
-#hamburger{
+
+#hamburger {
   float: right;
   // margin: 5px 15px;
   padding: 10px;
   height: 45px;
   width: 45px;
+
   @include mq($md){
     display: none;
   }
-  &:hover{
+  
+  &:hover {
     cursor: pointer;
   }
 }
-.line{
+
+.line {
   padding: 1px 0;
   margin: 5px 0;
   width: 24px;
   background-color: rgb(230, 230, 230);
 }
+
 #logo {
   font-size: 1.5em;
   color: #fff;

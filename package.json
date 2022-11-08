@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Sizu24/sizu24.github.io/issues"
   },
-  "homepage": "https://github.com/Sizu24/sizu24.github.io#readme"
+  "homepage": "https://github.com/Sizu24/sizu24.github.io#readme",
+  "dependencies": {
+    "sass": "^1.56.0"
+  }
 }

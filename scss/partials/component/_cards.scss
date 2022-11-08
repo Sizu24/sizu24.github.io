@@ -1,6 +1,6 @@
 /* ----------------------- Cards ----------------------- */
 
-.websites{
+.websites {
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
@@ -8,112 +8,125 @@
   &-card{
     margin-bottom: 50px;
   }
-
 }
 
-#modal-overlay{
+#modal-overlay {
   position: absolute;
   top: 200px;
   z-index: 1000;
   background-color: rgb(85, 85, 85);
   border-radius: 20px;
   box-shadow: 0 10px 35px 5px rgba(200, 200, 200, 0.5);
-
   height: 400px;
   width: 600px;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
 
-#projects{
+#projects {
   padding-top: 80px;
   background-color: #ffffff;
   text-align: center;
 }
-.projects{
+.projects {
   // horizontal scroll for cards
   display: flex;
   overflow-x: scroll;
-
+  padding-bottom: 2em;
   width: 100vw;
   -webkit-overflow-scrolling: touch;
+
   &::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
   }
-  &::-webkit-scrollbar-thumb{
+
+  &::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: rgba(126, 126, 126, 0.5);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   }
   // code above is horizontal scroll for cards
 
-  padding-bottom: 2em;
-  @include mq($lg){
+  @include mq($lg) {
     overflow-x: visible; 
     margin: 20px;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 }
 
-.card{
-  @include mqsmall($xs){
-    h4{
-      margin-top: 0;
-    }
-    min-width: 260px;
-  }
-  @include mq($xi){
-    min-width: 320px;
-  }
-  @include mq($sm){
-    min-width: 360px;
-  }
+.card {
   transition: box-shadow, transform 200ms ease-in-out;
-  &:hover{
-    cursor: pointer;
-    box-shadow: 0 10px 16px rgba(219, 219, 219, 0.5); 
-    transform: translate(0px,-5px);
-  }
   width: 360px;
   height: 480px;
   margin: 20px 10px;
   padding: 10px 30px 40px 30px;
+  text-decoration: none;
   border-radius: 15px;
   // box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.596);
   background-color: #333333;
-  &:nth-child(1){
+
+  @include mqsmall($xs) {
+    h4 {
+      margin-top: 0;
+    }
+    min-width: 260px;
+  }
+
+  @include mq($xi) {
+    min-width: 320px;
+  }
+
+  @include mq($sm) {
+    min-width: 360px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 16px rgba(219, 219, 219, 0.5); 
+    transform: translate(0px,-5px);
+  }
+
+  &:nth-child(1) {
     background-color: #F7C1C1;
+
     p{
       margin-bottom: 0;
     }
-    
   }
-  &:nth-child(2){
+
+  &:nth-child(2) {
     background-color: #DCC1F7;
   }
-  &:nth-child(3){
+
+  &:nth-child(3) {
     background-color: #E2E2E2;
   }
-  &:nth-child(4){
+
+  &:nth-child(4) {
     background-color: #C1DEF7;
-    p{
+
+    p {
       margin-bottom: 0;
     }
-    .go-button{
+
+    .go-button {
       margin-top: 20px;
     }
   }
-  &:nth-child(5){
+
+  &:nth-child(5) {
     background-color: #F7F7C1;
-    p{
+
+    p {
       margin-bottom: 0;
     }
   }
-  &:nth-child(6){
+
+  &:nth-child(6) {
     background-color: #C1F7C9;
   }
 }

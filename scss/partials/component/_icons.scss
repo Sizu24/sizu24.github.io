@@ -1,9 +1,8 @@
 /* ----------------------- Icons ----------------------- */
 
-
 // links icons
 
-#links{
+#links {
   margin-left: 50px;
   height: 550px;
   width: 175px;
@@ -13,9 +12,9 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-
 }
-.links-item{
+
+.links-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,99 +24,125 @@
   background-color: #292929;
   transition: 1s;
   box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
-  &:hover{
+
+  &:hover {
     transform: rotate(360deg);
   }
 }
 
 // icons in footer
-footer ul{
+footer ul {
   text-align: center;
   list-style-type: none;
   padding: 0;
-  li{
+
+  li {
     display: inline-block;
   }
 }
-a{
-  &.social{
+
+a {
+
+  &.social {
     display: inline-block;
     width: 30px;
     height: 30px;
     margin: 10px 5px 0;
     opacity: 1.0;
     transition: 0.6s;
-    &:hover{
+
+    &:hover {
       opacity: 0.6;
     }
   }
-  &.twitter{
+
+  &.twitter {
     background-image: url("../img/twitter.svg");
   }
-  &.github{
+
+  &.github {
     background-image: url("../img/github.svg");
   }
 }
 
 // change button position using padding on other elments for less than 375px
-.icon{
-  @include mq($sm){
+.icon {
+
+  @include mq($sm) {
     width: 200px;
   }
+
   width: 150px;
   padding-top: 50px;
 }
-.github-icons{
-  color: #fff;
 
+.github-icons {
+  color: #fff;
 }
-#image-icon{
+
+#image-icon {
   padding-top: 55px;
-  @include mq($xs){
+
+  @include mq($xs) {
     padding-top: 55px;
   }
-  @include mq($sm){
+
+  @include mq($sm) {
     padding-top: 45px;
   }
-  @include mq($md){
+
+  @include mq($md) {
     padding-top: 25px;
   }
 }
-#wheel-icon{
+
+#wheel-icon {
   padding-top: 40px;
-  @include mq($sm){
+
+  @include mq($sm) {
     padding-top: 50px;
   }
 }
-#memory-icon{
+
+#memory-icon {
   padding-top: 40px;
-  @include mq($sm){
+
+  @include mq($sm) {
     padding-top: 50px;
   }
 }
-#dashboard-icon{
+
+#dashboard-icon {
   padding-top: 70px;
-  @include mq($xi){
+
+  @include mq($xi) {
     padding-top: 55px;
   }
-  @include mq($sm){
+
+  @include mq($sm) {
     padding-top: 50px;
   }
 }
-#employee-icon{
+
+#employee-icon {
   padding-top: 35px;
-  @include mq($xi){
+
+  @include mq($xi) {
     padding-top: 25px;
   }
-  @include mq($sm){
+
+  @include mq($sm) {
     padding-top: 50px;
   }
 }
+
 #form-icon{
-  @include mq($xi){
+
+  @include mq($xi) {
     padding-top: 55px;
   }
-  @include mq($sm){
+
+  @include mq($sm) {
     padding-top: 50px;
   }
 }

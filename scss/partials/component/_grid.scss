@@ -1,5 +1,5 @@
  /* ----------------------- Grid ----------------------- */
-.grid-container{
+.grid-container {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -13,7 +13,7 @@
     "main"
     "footer";
 
-  @include mq($lg){
+  @include mq($lg) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 45px 1fr 1fr 120px;
 
@@ -25,35 +25,35 @@
   }
 }
 
-header{
+header {
   grid-area: header;
   background-color: #292929;
 }
 
-nav{
+nav {
   grid-area: nav;
   background-color: rgb(41, 41, 41);
 }
 
-main{
+main {
   grid-area: main;
 }
 
-footer{
+footer {
   grid-area: footer;
   height: 140px;
   background-color: #292929;
   
 }
-#about{
+#about {
   // margin-top: 50px;
   // background-color: #f4f4f4f4;
 
 
-  .container{
+  .container {
     width: 100%;
     // margin: 0 auto;
-    @include mq($sm){
+    @include mq($sm) {
 
       position: relative;
       // background-color: #fff;
@@ -66,7 +66,7 @@ footer{
   max-width: 100%;
   margin: 0;
   // anchor tag offset to correct position when clicking link
-  &::before{
+  &::before {
     display: block;
     content: " ";
     margin-top: -45px;
@@ -75,13 +75,13 @@ footer{
     pointer-events: none;
   }
 }
-.websites{
+.websites {
   p{
     padding: 0 30px;
-    @include mq($md){
+    @include mq($md) {
       padding: 0 60px;
     }
-    @include mq($lg){
+    @include mq($lg) {
       padding: 0 350px;
     }
   }
