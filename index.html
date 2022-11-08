@@ -50,13 +50,17 @@
             </ul>
       
             <div class="header__buttons" id="buttons">
-              <button class="header__button-one button one" onclick="document.location='#about'">
-                Who Am I?    
-              </button>
-    
-              <button class="header__button-two button two" onclick="document.location='#websites'">
-                My Work
-              </button>
+              <a href="#about" class="header__button-one">
+                <button class="header__button-one button one">
+                  Who Am I?    
+                </button>
+              </a>
+
+              <a href="#websites" class="header__button-one">
+                <button class="header__button-two button two">
+                  My Work
+                </button>
+              </a>
             </div>    
 
           </div>
@@ -78,22 +82,22 @@
 
               <p>I am a web developer from Reno NV</p>
               <h3>About Me</h3>
-              <p class="description">
+              <p class="about__content-description description">
                 I studied Computer Science at the University of Nevada Reno, and in 2018 I started learning front-end web development.
               </p>  
-              <p class="description">
+              <p class="about__content-description description">
                 In 2020 I completed
                 the front-end developer Techdegree at Team Treehouse. Before that, I have finished front-end developer programs
                 at Udacity, Udemy, and Code Academy. 
               </p>
 
               <h3>Things I like</h3>
-                <p class="description">
+                <p class="about__content-description description">
                   Besides creating websites, I love video games, anime, football, going to the beach, and spending time with my family.
                   I'm also into photography, and always learning new ways to build new projects.
                 </p>
 
-              <div class="more-info info">
+              <div class="about__content-languages more-info info">
                 <div class="languages info">
                   <h2>What I use...</h2> 
                   <h3>Languages</h3>
@@ -114,7 +118,7 @@
                 </div>
 
 
-                <div class="skills info">
+                <div class="about__content-skills skills info">
                   <h3>Skills/Dev Tools</h3>
                   <div class="skills-list">
                     <ul>
@@ -135,7 +139,7 @@
                   </div>
                 </div> 
 
-                <div class="summary">
+                <div class="about__content-summary summary">
                   <p>
                     I use Adobe XD and Photoshop to design my projects.  
                   </p>
@@ -154,17 +158,17 @@
         </div>
       </div>
       
-      <div id="websites">
+      <div class="websites" id="websites">
         <h3>Websites</h3>
 
-        <div class="websites">
+        <div class="websites__content">
 
-          <div class="websites-card">
+          <div class="websites__card websites-card">
             <a href="https://shahchisty.com/Restaurant/" target="_blank">
               <img src="img/iphone.jpg" class="website-mobile-image" alt="Image of website of a restaurant, showing veggie burger from top view">
             </a>
-            <h4>Veggie Burger Restaurant</h4>
-            <div class="websites-info">
+            <h4 class="webistes__card-title">Veggie Burger Restaurant</h4>
+            <div class="websites__card-info websites-info">
               <p>New project! Creating a burger restaurant website using HTML, CSS/Sass and JavaScript. Landing page is nearly complete, and I'll be adding
                 more content to this site.
               </p>
@@ -173,34 +177,34 @@
             </div>
           </div>
           
-          <div class="websites-card">
+          <div class="websites__card websites-card">
             <a href="https://thatthriftstorescore.com" target="_blank">
               <img src="img/macbookttsss.jpg" class="website-image" alt="Image of website with brown background with images of candles">
             </a>
-            <h4>That Thrift Store Score</h4>
-            <div class="websites-info">
+            <h4 class="webistes__card-title">That Thrift Store Score</h4>
+            <div class="websites__card-info websites-info">
               <p>Developed for a thrift store and antique business startup. Used HTML, CSS, Wordpress, and Elementor. Implemented payment system with Block (Square) payments.</p>
               <button><a href="https://thatthriftstorescore.com" target="_blank">Visit Site</a></button>
             </div>
           </div>
 
-          <div class="websites-card">
+          <div class="websites__card websites-card">
             <a href="https://nvav.us" target="_blank">
               <img src="img/nvav-macbook.jpg" class="website-image" alt="Image of website with tablet on the wall for smart home controls">
             </a>
-            <h4>Nevada Audio Video</h4>
-            <div class="websites-info">
+            <h4 class="webistes__card-title">Nevada Audio Video</h4>
+            <div class="websites__card-info websites-info">
               <p>Local business site for home theater installation, and smart home setup. HTML, CSS for custom styling, Wordpress, and Elementor were all used for this website. Appointments setup through Amelia, and payment system with Block (Square) payments.</p>
               <button><a href="https://nvav.us" target="_blank">Visit Site</a></button>
             </div>
           </div>
 
-          <div class="websites-card">
+          <div class="websites__card websites-card">
             <a href="https://shahchisty.com/Luxury-Auto-Spa/" target="_blank">
               <img src="img/macbooksite.jpg" class="website-image" alt="Image of website with blue car and black background">
             </a>
-            <h4>Luxury Auto Spa</h4>
-            <div class="websites-info">
+            <h4 class="webistes__card-title">Luxury Auto Spa</h4>
+            <div class="websites__card-info websites-info">
               <p>Designed with Adobe XD, and developed in HTML, CSS, Sass, and JavaScript.</p>
               <button><a href="https://shahchisty.com/Luxury-Auto-Spa/" target="_blank">Visit Site</a></button>
               <button><a href="https://github.com/Sizu24/Luxury-Auto-Spa" target="_blank">See Code</a></button>
@@ -211,13 +215,16 @@
 
       </div>
       
-      <div id="projects">
-        <h3>Projects</h3>
-        <div class="projects">
+      <div class="projects" id="projects">
+        <h3 class="projects__title">Projects</h3>
+        <div class="projects__content projects">
 
-          <a href="https://sizu24.github.io/Interactive-Photo-Gallery/" class="card" target="_blank">
+          <a href="https://sizu24.github.io/Interactive-Photo-Gallery/" class=" projects__card card" target="_blank">
+            <!-- <svg width="22" height="22" aria-label="" class="">
+              <use xlink:href=""></use>
+            </svg> -->
             
-            <svg id="image-icon" class="icon" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 648 726">
+            <svg id="image-icon" class="projects__card-icon icon" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 648 726">
               <defs>
                 <path id="k" d="M76.8 172.8l176 174h-360l176-174c2.146-1.57 5.854-1.57 8 0z"/>
                 <path id="i" d="M423.8 55.8l296 291h-606l296-291c3.88-3.957 10.12-3.957 14 0z"/>

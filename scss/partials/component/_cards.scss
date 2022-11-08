@@ -1,12 +1,16 @@
 /* ----------------------- Cards ----------------------- */
 
 .websites {
-  margin-top: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  &-card{
-    margin-bottom: 50px;
+
+  &-content {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &__card {
+      margin-bottom: 50px;
+    }
   }
 }
 

@@ -577,7 +577,6 @@ ul .description {
 .languages ul li {
   margin: 15px 0px;
   padding: 10px;
-  font-weight: 500;
 }
 .languages ul li:nth-child(-n+6) {
   font-weight: 500;
@@ -933,13 +932,13 @@ footer {
 }
 
 /* ----------------------- Cards ----------------------- */
-.websites {
+.websites-content {
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.websites-card {
+.websites-content__card {
   margin-bottom: 50px;
 }
 
