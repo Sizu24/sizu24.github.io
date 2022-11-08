@@ -1399,15 +1399,6 @@ a.github {
   background-color: #000;
   color: #fff;
 }
-<<<<<<< HEAD
-.websites-info button:first-of-type a:link {
-  color: #fff;
-}
-.websites-info button:first-of-type a:visited {
-  color: #fff !important;
-}
-=======
->>>>>>> 026bc9fb66f6b2a6ae47ffc9c8fb247c77987a3b
 .websites-info button:first-of-type:hover {
   background-color: #fff;
 }
