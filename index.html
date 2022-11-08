@@ -12,19 +12,17 @@
 <body>
   <div class="grid-container">
 
-    <nav id="nav">
+    <nav class="nav" id="nav">
       <a href="https://sizu24.github.io/">
-        <div id="logo"><i class="fab fa-stripe-s"></i></div>
+        <div class="nav__logo" id="logo"><i class="fab fa-stripe-s"></i></div>
       </a>
- 
-      <div id="hamburger">
-        <div class="line"></div>
+      <div class="nav__hamburger" id="hamburger">
+        <div class="line"></div >
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      
-      <div id="nav-drop">
-        <div id="nav-links">
+      <div class="nav__drop" id="nav-drop">
+        <div class="nav__links" id="nav-links">
           <a href="https://sizu24.github.io/" class="nav-button fade active">Home</a>
           <a href="#about" class="nav-button fade">About Me</a>
           <a href="#websites" class="nav-button fade">Projects</a>
@@ -34,16 +32,16 @@
       </div>
     </nav>
 
-    <header>
-      <div id="background">
-        <div id="overlay">
-          <div id="welcome">
-            <h1>Shah Chisty</h1>
-            <div class="typing">
-              <h2 class="subtitle">Front End <span class="subtitle">Developer</span></h2>
+    <header class="header">
+      <div class="header__background" id="background">
+        <div class="header__overlay" id="overlay">
+          <div class="header__welcome-section" id="welcome">
+            <h1 class="header__title">Shah Chisty</h1>
+            <div class="header__typing-animation typing">
+              <h2 class="header__subhead subtitle">Front End <span class="subtitle">Developer</span></h2>
             </div>
 
-            <ul id="language-icons">
+            <ul class="header__icons" id="language-icons">
               <li>HTML <i class="fab fa-html5"></i></li>
               <li>CSS <i class="fab fa-css3-alt"></i></li>
               <li>JavaScript <i class="fab fa-js"></i></li>
@@ -51,12 +49,12 @@
               <li><i class="fab fa-sass"></i></li>
             </ul>
       
-            <div id="buttons">
-              <button class="button one" onclick="document.location='#about'">
+            <div class="header__buttons" id="buttons">
+              <button class="header__button-one button one" onclick="document.location='#about'">
                 Who Am I?    
               </button>
     
-              <button class="button two" onclick="document.location='#websites'">
+              <button class="header__button-two button two" onclick="document.location='#websites'">
                 My Work
               </button>
             </div>    
@@ -66,17 +64,17 @@
       </div>   
     </header>
 
-    <main>
-      <div id="about">
-        <div class="container">
+    <main class="main">
+      <div class="about" id="about">
+        <div class="about__container container">
   
-          <div class="me info">
+          <div class="about__info me info">
 
-            <img src="img/chisty1.jpg" id="pic" alt="image of site developer wearing a t-shirt that says 'Still Fresh.'">
+            <img src="img/chisty1.jpg" class="about__image" id="pic" alt="image of site developer wearing a t-shirt that says 'Still Fresh.'">
             
-            <div class="text">
-              <h2>Hi! My name is</h2>
-              <p>Shah</p>
+            <div class="about__content text">
+              <h2 class="about__content-title">Hi! My name is</h2>
+              <p class="about__content-title">Shah</p>
 
               <p>I am a web developer from Reno NV</p>
               <h3>About Me</h3>
@@ -217,7 +215,7 @@
         <h3>Projects</h3>
         <div class="projects">
 
-          <div class="card" onclick="window.location.href='https://sizu24.github.io/Interactive-Photo-Gallery/'">
+          <a href="https://sizu24.github.io/Interactive-Photo-Gallery/" class="card" target="_blank">
             
             <svg id="image-icon" class="icon" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 648 726">
               <defs>
@@ -347,9 +345,9 @@
             <p class="card-description">
               Modal demonstation with lightgallery plugin. Click on images, and search by title.
             </p>
-          </div>
+          </a>
 
-          <div class="card" onclick="window.location.href='https://sizu24.github.io/Game-Show-App/'">
+          <a class="card" href="https://sizu24.github.io/Game-Show-App/" target="_blank">
 
             <svg xmlns="http://www.w3.org/2000/svg" id=wheel-icon class="icon" viewBox="0 0 480 480">
               <defs/>
@@ -374,7 +372,7 @@
             <p class="card-description">
               Guess the letters to reveal random phrase. Mostly JS and CSS. 
             </p>
-          </div>
+          </a>
 
           <div class="card" onclick="window.location.href='https://sizu24.github.io/MemoryGame/'">
 

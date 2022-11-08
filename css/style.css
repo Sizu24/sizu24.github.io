@@ -577,6 +577,7 @@ ul .description {
 .languages ul li {
   margin: 15px 0px;
   padding: 10px;
+  font-weight: 500;
 }
 .languages ul li:nth-child(-n+6) {
   font-weight: 500;
@@ -629,6 +630,7 @@ ul .description {
   text-align: center;
   font-weight: 600;
   padding: 0 5px;
+  list-style: none;
 }
 @media (min-width: 1024px) {
   .skills ul {
@@ -637,7 +639,6 @@ ul .description {
     justify-content: flex-start;
     flex-direction: column;
     padding-left: 70px;
-    list-style: none;
   }
 }
 .skills ul li {
@@ -966,9 +967,9 @@ footer {
 .projects {
   display: flex;
   overflow-x: scroll;
+  padding-bottom: 2em;
   width: 100vw;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 2em;
 }
 .projects::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -994,6 +995,7 @@ footer {
   height: 480px;
   margin: 20px 10px;
   padding: 10px 30px 40px 30px;
+  text-decoration: none;
   border-radius: 15px;
   background-color: #333333;
 }

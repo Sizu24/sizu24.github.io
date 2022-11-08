@@ -1,28 +1,32 @@
 /* ----------------------- Buttons ----------------------- */
 
 // Landing page buttons
-#buttons{
-  a{
-    text-decoration: none;
-  }
+#buttons {
   padding-bottom: 200px;
   margin-top: 80px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  @include mq($sm){
+
+  a {
+    text-decoration: none;
+  }
+
+  @include mq($sm) {
     display: block;
   }
-  @include mq($md){
+
+  @include mq($md) {
     // font-size: 1.7em; 
     font-size: 1.2em;
   }
-  @include mq($xl){
+
+  @include mq($xl) {
     padding-bottom: 400px;
   }
 }
 
-.button{
+.button {
   opacity: 1.0;
   border-radius: 10px;
   border: 3px solid #fff;
@@ -33,13 +37,16 @@
   font-size: 0.7em;
   color: #fff;
   margin: 10px 30px;
-  @include mq($xs){
+
+  @include mq($xs) {
     font-size: 1.1em;
   }
-  @include mq($md){
+
+  @include mq($md) {
     font-size: 1.2em;
   }
-  &:hover{
+
+  &:hover {
     background-color: rgb(31, 31, 31);
     color: #fff;
     border-color: rgb(31, 31, 31);
@@ -47,59 +54,68 @@
   }
 
 // Landing page Button One
-  &.one{
+  &.one {
     padding: 10px 75px;
-    @include mq($xs){
+    color: #000;
+    background-color: #fff;
+
+    @include mq($xs) {
       padding: 10px 85px;
     }
 
-    color: #000;
-    background-color: #fff;
-    @include mq($md){
+    @include mq($md) {
       padding: 10px 100px;
       margin-top: 0;
     }
-    @include mq($lg){
+
+    @include mq($lg) {
       padding: 8px 50px;
     }
-    &:hover{
+
+    &:hover {
       background-color: rgb(31, 31, 31);
       color: #fff;
     }
   }
 
 // Landing page Button Two  
-  &.two{
+  &.two {
     padding: 5px 85px;
-    @include mq($xs){
+
+    @include mq($xs) {
       padding: 10px 95px;
     }
-    @include mq($md){
+
+    @include mq($md) {
       padding: 10px 113px;
     }
-    @include mq($lg){
+
+    @include mq($lg) {
       padding: 8px 65px;
     }
 
   }
   
 // Button Links
-  a:before{
+  a:before {
     text-decoration: none;    
-
   }
-  a{
-    &:link{
+
+  a {
+
+    &:link {
       text-decoration: none;
+    }
+    
+    &:hover {
 
     }
-    &:hover{
+
+    &:active {
 
     }
-    &:active{
 
-    }
-    &:visited{
+    &:visited {
       color: #000;
     }
   }
@@ -107,27 +123,8 @@
 
 // Websites buttons
 .websites-info {
-  button{
-    &:first-of-type{
-      background-color: #000;
-      color: #fff;
-      &:hover{
-        background-color: #fff;
-        a:link {
-          color: #000;
-        }
-        a:visited{
-          color: #000 !important;
-        }
-      }
-      a:visited{
-        color: #fff;
-      }
-      a:link {
-        color: #fff;
-      }
-    }
 
+  button {
     background-color: #fff;
     border-color: #000;
     color: #000;
@@ -136,18 +133,47 @@
     margin: 0 10px;
     transition: background-color, 200ms ease-in-out;
     transition: color, 200ms ease-in-out;
-    a:link{
-      color: #000;
-      text-decoration: none;
-    }
-    &:hover{
+
+    &:first-of-type {
       background-color: #000;
-      a:visited {
-        color: #fff !important;
+      color: #fff;
+
+      &:hover {
+        background-color: #fff;
+
+        a:link {
+          color: #000;
+        }
+
+        a:visited {
+          color: #000 !important;
+        }
       }
+      a:visited {
+        color: #fff;
+      }
+
       a:link {
         color: #fff;
       }
+    }
+
+    a:link {
+      color: #000;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: #000;
+
+      a:visited {
+        color: #fff !important;
+      }
+
+      a:link {
+        color: #fff;
+      }
+      
       cursor: pointer;
     }
   }
