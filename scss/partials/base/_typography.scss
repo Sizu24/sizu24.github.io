@@ -115,7 +115,7 @@ span {
 // About section 
 .info {
 
-  h2 {
+  h3 {
     text-align: center;
     margin-bottom: 0;
 
@@ -161,7 +161,7 @@ span {
     }    
   }
 
-  h3 {
+  h4 {
     color: #000;
     text-align: center;
     margin: 0;
@@ -275,29 +275,12 @@ ul .description {
     li {
       margin: 15px 0px;
       padding: 10px;
-
-      &:nth-child(-n+6) {
-        font-weight: 500;
-      }
+      font-weight: 500;
 
       @include mq($xs) {
         font-size: 1.2em;
       }
-      @include mq($sm) {
-
-        &:nth-child(-n+7){
-          font-weight: 500;
-        }
-      }
-      @include mq($md) {
-
-        &:nth-child(-n+8) {
-          font-weight: 500;
-        }
-      }
-      @include mq($md-lg) {
-        font-weight: 500;
-      }
+      
       @include mq($lg) {
         padding: 0 10px;
       }
@@ -364,6 +347,11 @@ ul .description {
     }
   }
 }
+
+.websites__card-info {
+  line-height: 1.5rem;
+}
+
 .websites-info {
   p {
     font-size: 14px;

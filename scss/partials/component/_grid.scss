@@ -45,6 +45,15 @@ footer {
   background-color: #292929;
   
 }
+
+.about__content {
+  text-align: center;
+
+  @include mq($md) {
+    text-align: left;
+  }
+}
+
 #about {
   // margin-top: 50px;
   // background-color: #f4f4f4f4;

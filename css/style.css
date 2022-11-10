@@ -435,12 +435,12 @@ span {
   color: #fff;
 }
 
-.info h2 {
+.info h3 {
   text-align: center;
   margin-bottom: 0;
 }
 @media (min-width: 1024px) {
-  .info h2 {
+  .info h3 {
     left: 20px;
     margin-top: 0;
     padding-top: 50px;
@@ -449,7 +449,7 @@ span {
     font-size: 4em;
     font-weight: 600;
   }
-  .info h2:nth-child(2) {
+  .info h3:nth-child(2) {
     position: absolute;
   }
 }
@@ -475,7 +475,7 @@ span {
     padding-left: 70px;
   }
 }
-.info h3 {
+.info h4 {
   color: #000;
   text-align: center;
   margin: 0;
@@ -484,7 +484,7 @@ span {
   font-weight: 900;
 }
 @media (min-width: 1024px) {
-  .info h3 {
+  .info h4 {
     text-align: left;
     padding-left: 70px;
   }
@@ -577,28 +577,11 @@ ul .description {
 .languages ul li {
   margin: 15px 0px;
   padding: 10px;
-}
-.languages ul li:nth-child(-n+6) {
   font-weight: 500;
 }
 @media (min-width: 321px) {
   .languages ul li {
     font-size: 1.2em;
-  }
-}
-@media (min-width: 412px) {
-  .languages ul li:nth-child(-n+7) {
-    font-weight: 500;
-  }
-}
-@media (min-width: 768px) {
-  .languages ul li:nth-child(-n+8) {
-    font-weight: 500;
-  }
-}
-@media (min-width: 820px) {
-  .languages ul li {
-    font-weight: 500;
   }
 }
 @media (min-width: 1024px) {
@@ -665,6 +648,10 @@ ul .description {
     font-size: 2rem;
     margin-bottom: 20px;
   }
+}
+
+.websites__card-info {
+  line-height: 1.5rem;
 }
 
 .websites-info p {
@@ -766,6 +753,15 @@ footer {
   grid-area: footer;
   height: 140px;
   background-color: #292929;
+}
+
+.about__content {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .about__content {
+    text-align: left;
+  }
 }
 
 #about .container {
@@ -963,24 +959,24 @@ footer {
   text-align: center;
 }
 
-.projects {
+.projects__cards {
   display: flex;
   overflow-x: scroll;
   padding-bottom: 2em;
   width: 100vw;
   -webkit-overflow-scrolling: touch;
 }
-.projects::-webkit-scrollbar {
+.projects__cards::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
 }
-.projects::-webkit-scrollbar-thumb {
+.projects__cards::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: rgba(126, 126, 126, 0.5);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 1024px) {
-  .projects {
+  .projects__cards {
     overflow-x: visible;
     margin: 20px;
     flex-wrap: wrap;
