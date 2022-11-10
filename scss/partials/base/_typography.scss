@@ -133,6 +133,7 @@ span {
       }
     }
   }
+
   // name
   p {
 
@@ -292,9 +293,11 @@ ul .description {
   // background-color: #5c5c5c;
   // background-color: #fff;
   padding-bottom: 40px;
+
   h3 {
     color: #000;
   }
+
   p {
     color: #000;
     &:nth-of-type(1) {
@@ -313,6 +316,7 @@ ul .description {
     font-weight: 600;
     padding: 0 5px;
     list-style: none;
+
     @include mq($lg) {
       text-align: left;
       display: flex;
@@ -320,6 +324,7 @@ ul .description {
       flex-direction: column;
       padding-left: 70px;
     }
+
     li {
       padding: 10px;
     }
@@ -327,7 +332,8 @@ ul .description {
 }
 
 .summary {
-  @include mq($lg){
+
+  @include mq($lg) {
       width: 55%;
     }
 }
@@ -336,6 +342,7 @@ ul .description {
 #websites {
   font-size: 2.0em;
   text-align: center;
+
   h4 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -348,15 +355,22 @@ ul .description {
   }
 }
 
+.websites__card {
+  margin: 2rem 0;
+}
+
 .websites__card-info {
   line-height: 1.5rem;
 }
 
 .websites-info {
+
   p {
     font-size: 14px;
   }
+
   @include mq($md){
+
     p {
       font-size: 0.5em;
     }

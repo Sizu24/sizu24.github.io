@@ -55,9 +55,6 @@ footer {
 }
 
 #about {
-  // margin-top: 50px;
-  // background-color: #f4f4f4f4;
-
 
   .container {
     width: 100%;
@@ -70,11 +67,21 @@ footer {
     }
   }
 }
+
+.about-content {
+
+}
+
+.about__content-title {
+  padding-left: 4.375rem;
+}
+
 // Websites
 #websites {
   max-width: 100%;
   margin: 0;
   // anchor tag offset to correct position when clicking link
+
   &::before {
     display: block;
     content: " ";
@@ -84,12 +91,16 @@ footer {
     pointer-events: none;
   }
 }
+
 .websites {
-  p{
-    padding: 0 30px;
+
+  p {
+    padding: 10px 30px;
+
     @include mq($md) {
       padding: 0 60px;
     }
+
     @include mq($lg) {
       padding: 0 350px;
     }

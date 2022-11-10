@@ -650,6 +650,10 @@ ul .description {
   }
 }
 
+.websites__card {
+  margin: 2rem 0;
+}
+
 .websites__card-info {
   line-height: 1.5rem;
 }
@@ -773,6 +777,10 @@ footer {
   }
 }
 
+.about__content-title {
+  padding-left: 4.375rem;
+}
+
 #websites {
   max-width: 100%;
   margin: 0;
@@ -787,7 +795,7 @@ footer {
 }
 
 .websites p {
-  padding: 0 30px;
+  padding: 10px 30px;
 }
 @media (min-width: 768px) {
   .websites p {
