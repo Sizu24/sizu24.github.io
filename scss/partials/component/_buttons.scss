@@ -121,64 +121,6 @@
   }
 }
 
-// Websites buttons
-.websites-info {
-
-  button {
-    background-color: #fff;
-    border-color: #000;
-    color: #000;
-    padding: 10px 25px;
-    border-radius: 5px;
-    margin: 0 10px;
-    transition: background-color, 200ms ease-in-out;
-    transition: color, 200ms ease-in-out;
-
-    &:first-of-type {
-      background-color: #000;
-      color: #fff;
-
-      &:hover {
-        background-color: #fff;
-
-        a:link {
-          color: #000;
-        }
-
-        a:visited {
-          color: #000 !important;
-        }
-      }
-      a:visited {
-        color: #fff;
-      }
-
-      a:link {
-        color: #fff;
-      }
-    }
-
-    a:link {
-      color: #000;
-      text-decoration: none;
-    }
-
-    &:hover {
-      background-color: #000;
-
-      a:visited {
-        color: #fff !important;
-      }
-
-      a:link {
-        color: #fff;
-      }
-      
-      cursor: pointer;
-    }
-  }
-}
-
 // // Project section card buttons
 
 // .go-button{

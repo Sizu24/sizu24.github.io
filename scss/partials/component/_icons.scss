@@ -31,6 +31,12 @@
 }
 
 // icons in footer
+.footer__social {
+  padding: 5px;
+  font-size: 2rem;
+  color: #fff;
+}
+
 footer ul {
   text-align: center;
   list-style-type: none;
@@ -54,14 +60,6 @@ a {
     &:hover {
       opacity: 0.6;
     }
-  }
-
-  &.twitter {
-    background-image: url("../img/twitter.svg");
-  }
-
-  &.github {
-    background-image: url("../img/github.svg");
   }
 }
 

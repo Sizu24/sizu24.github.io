@@ -1,19 +1,5 @@
 /* ----------------------- Cards ----------------------- */
 
-.websites {
-
-  &-content {
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    &__card {
-      margin-bottom: 50px;
-    }
-  }
-}
-
 #modal-overlay {
   position: absolute;
   top: 200px;

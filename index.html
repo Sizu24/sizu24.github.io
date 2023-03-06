@@ -38,7 +38,7 @@
           <div class="header__welcome-section" id="welcome">
             <h1 class="header__title">Shah Chisty</h1>
             <div class="header__typing-animation typing">
-              <h2 class="header__subhead subtitle">Web <span class="subtitle">Developer</span></h2>
+              <h2 class="header__subhead subtitle">Frontend <span class="subtitle">Developer</span></h2>
             </div>
 
             <ul class="header__icons" id="language-icons">
@@ -80,7 +80,7 @@
               <h2 class="about__content-title">Hi! My name is</h2>
               <p class="about__content-title">Shah</p>
 
-              <p>I am a web developer from Reno NV</p>
+              <p>I am a front-end developer from Reno NV</p>
               <h3>About Me</h3>
               <p class="about__content-description description">
                 I studied Computer Science at the University of Nevada Reno, and in 2018 I started learning front-end web development.
@@ -111,14 +111,13 @@
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>PHP</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
                     <li>Sass</li>
                     <li>React</li>
-                    <li>JSON</li>
-                    <li>Pug</li>
+                    <li>JSX</li>
                     <li>jQuery</li>
-                    <li>Bootstrap</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>JSON</li>
                   </ul>
                 </div>
 
@@ -131,6 +130,7 @@
                       <li>Elementor</li>
                       <li>Git</li>
                       <li>GitHub</li>
+                      <li>Vim</li>
                       <li>BEM</li>
                       <li>Lando</li>
                       <li>Docker</li>
@@ -174,12 +174,12 @@
               <img src="img/iphone.jpg" class="website-mobile-image" alt="Image of website of a restaurant, showing veggie burger from top view">
             </a>
             <h4 class="webistes__card-title">Veggie Burger Restaurant</h4>
-            <div class="websites__card-info websites-info">
-              <p>Newest project! Creating a burger restaurant website using a custom theme that I built from scratch on Wordpress. I'm using HTML, CSS/Sass, PHP, and JavaScript. I'm also creating the designs on Adobe XD.
-              </p>
-              <button><a href="https://project.shahchisty.com/" target="_blank">Visit Site</a></button>
-              <button><a href="https://github.com/Sizu24/Restaurant/tree/master" target="_blank">See Code</a></button>
+            <div class="websites__card-content websites-info">
+              <p class="websites__card-info">Creating a burger restaurant website built my own custom Wordpress theme that I created from scratch. I setup webpack to build assets, and watch for changes using npm.</p>
+              <p class="websites__card-info">I'm using HTML, CSS/Sass, PHP, and JavaScript for this project. Designs were created on Adobe XD.</p>
             </div>
+            <a class="websites__card-link websites__card-link--one" href="https://project.shahchisty.com/" target="_blank">Visit Site</a>
+            <a class="websites__card-link" href="https://github.com/Sizu24/Restaurant/tree/master" target="_blank">See Code</a>
           </div>
 
           <div class="websites__card websites-card">
@@ -187,10 +187,10 @@
               <img src="img/nvav-macbook.jpg" class="website-image" alt="Image of website with tablet on the wall for smart home controls">
             </a>
             <h4 class="webistes__card-title">Nevada Audio Video</h4>
-            <div class="websites__card-info websites-info">
-              <p>Local business site for home theater installation, and smart home setup. HTML, CSS, Wordpress, and Elementor.</p>
-              <button><a href="https://nvav.us" target="_blank">Visit Site</a></button>
+            <div class="websites__card-content websites-info">
+              <p class="websites__card-info">Local business site for home theater installation, and smart home setup. HTML, CSS, Wordpress, and Elementor.</p>
             </div>
+            <a class="websites__card-link websites__card-link--one" href="https://nvav.us" target="_blank">Visit Site</a>
           </div>
 
           <div class="websites__card websites-card">
@@ -198,11 +198,11 @@
               <img src="img/macbooksite.jpg" class="website-image" alt="Image of website with blue car and black background">
             </a>
             <h4 class="webistes__card-title">Luxury Auto Spa</h4>
-            <div class="websites__card-info websites-info">
-              <p>Designed with Adobe XD, and developed in HTML, CSS, Sass, and JavaScript.</p>
-              <button><a href="https://shahchisty.com/Luxury-Auto-Spa/" target="_blank">Visit Site</a></button>
-              <button><a href="https://github.com/Sizu24/Luxury-Auto-Spa" target="_blank">See Code</a></button>
+            <div class="websites__card-content websites-info">
+              <p class="websites__card-info">Designed with Adobe XD, and developed in HTML, CSS, Sass, and JavaScript.</p>
             </div>
+            <a class="websites__card-link websites__card-link--one" href="https://shahchisty.com/Luxury-Auto-Spa/" target="_blank">Visit Site</a>
+            <a class="websites__card-link" href="https://github.com/Sizu24/Luxury-Auto-Spa" target="_blank">See Code</a>
           </div>
 
         </div>
@@ -375,7 +375,8 @@
             </p>
           </a>
 
-          <div class="card" onclick="window.location.href='https://sizu24.github.io/MemoryGame/'">
+
+          <a class="card" href="https://sizu24.github.io/MemoryGame/" target="_blank">
 
             <svg xmlns="http://www.w3.org/2000/svg" id="memory-icon" class="icon" viewBox="0 0 512 512">
               <defs/>
@@ -393,18 +394,19 @@
               <path fill="#fffac1" d="M417.946 323.241H293.088c-8.284 0-15-6.716-15-15V114.817c0-8.284 6.716-15 15-15h124.858c8.284 0 15 6.716 15 15v193.424c0 8.285-6.716 15-15 15zM259.83 464.67V271.245c0-8.284-6.716-15-15-15H119.972c-8.284 0-15 6.716-15 15V464.67c0 8.284 6.716 15 15 15H244.83c8.285 0 15-6.716 15-15z"/>
               <path fill="#ffb52d" d="M336.357 257.391l-20.471-34.561a5.135 5.135 0 00-1.875-1.845l-34.887-19.91c-3.424-1.954-3.464-6.877-.072-8.886l34.561-20.471a5.135 5.135 0 001.845-1.875l19.91-34.887c1.954-3.424 6.877-3.464 8.886-.072l20.471 34.561a5.135 5.135 0 001.875 1.845l34.887 19.91c3.424 1.954 3.464 6.877.072 8.886l-34.561 20.471a5.135 5.135 0 00-1.845 1.875l-19.91 34.887c-1.954 3.424-6.876 3.464-8.886.072zM171.498 429.138l19.91-34.887a5.15 5.15 0 011.845-1.875l34.561-20.471c3.392-2.009 3.352-6.932-.072-8.886l-34.887-19.91a5.15 5.15 0 01-1.875-1.845l-20.471-34.561c-2.009-3.392-6.932-3.352-8.886.072l-19.91 34.887a5.15 5.15 0 01-1.845 1.875l-34.561 20.471c-3.392 2.009-3.352 6.932.072 8.886l34.887 19.91a5.15 5.15 0 011.875 1.845l20.471 34.561c2.009 3.392 6.932 3.352 8.886-.072z"/>
               <path fill="#f76937" d="M338.816 219.257l-7.726-13.044a1.937 1.937 0 00-.708-.696l-13.167-7.514c-1.292-.738-1.307-2.595-.027-3.354l13.044-7.726c.289-.171.529-.415.696-.708l7.514-13.167c.738-1.292 2.595-1.307 3.354-.027l7.726 13.044c.171.29.415.529.708.696l13.167 7.514c1.292.738 1.307 2.595.027 3.354l-13.044 7.726a1.937 1.937 0 00-.696.708l-7.514 13.167c-.738 1.292-2.596 1.307-3.354.027zM168.424 391.048l7.514-13.167c.167-.292.407-.536.696-.708l13.044-7.726c1.28-.758 1.265-2.616-.027-3.354l-13.167-7.514a1.952 1.952 0 01-.708-.696l-7.726-13.044c-.758-1.28-2.616-1.265-3.354.027l-7.514 13.167a1.952 1.952 0 01-.696.708l-13.044 7.726c-1.28.758-1.265 2.616.027 3.354l13.167 7.514c.292.167.536.407.708.696l7.726 13.044c.759 1.281 2.617 1.266 3.354-.027z"/>
-            <path fill="#a6e0ec" d="M270.02 512h-40.368c-8.284 0-15-6.716-15-15V303.576c0-8.284 6.716-15 15-15h40.368c8.284 0 15 6.716 15 15V497c0 8.284-6.716 15-15 15z"/>
-            <path fill="#c2eaf2" d="M386.228 512H261.37c-8.284 0-15-6.716-15-15V303.576c0-8.284 6.716-15 15-15h124.858c8.284 0 15 6.716 15 15V497c0 8.284-6.716 15-15 15z"/>
-            <path fill="#60c8dd" d="M368.839 484.014H247.042c-5.523 0-10-4.477-10-10V326.562c0-5.523 4.477-10 10-10H368.84c5.523 0 10 4.477 10 10v147.452c-.001 5.522-4.478 10-10.001 10z"/>
-            <path fill="#232e7a" d="M313.463 459.63a7.074 7.074 0 11-14.148 0 7.074 7.074 0 0114.148 0zm29.617-90.963c-.993-19.121-16.779-34.402-35.937-34.788-18.602-.382-34.573 13.217-37.141 31.616a37.124 37.124 0 00-.354 5.117 6.997 6.997 0 1013.994 0c0-1.067.074-2.138.219-3.182 1.589-11.384 11.485-19.821 23-19.561 11.859.238 21.63 9.693 22.244 21.523.328 6.313-1.881 12.307-6.22 16.876-4.342 4.573-10.201 7.091-16.496 7.091a6.997 6.997 0 00-6.997 6.997v31.103a6.997 6.997 0 1013.994 0v-24.764c7.466-1.426 14.276-5.135 19.647-10.792 7.007-7.379 10.574-17.052 10.047-27.236z"/>
-          </svg>
+              <path fill="#a6e0ec" d="M270.02 512h-40.368c-8.284 0-15-6.716-15-15V303.576c0-8.284 6.716-15 15-15h40.368c8.284 0 15 6.716 15 15V497c0 8.284-6.716 15-15 15z"/>
+              <path fill="#c2eaf2" d="M386.228 512H261.37c-8.284 0-15-6.716-15-15V303.576c0-8.284 6.716-15 15-15h124.858c8.284 0 15 6.716 15 15V497c0 8.284-6.716 15-15 15z"/>
+              <path fill="#60c8dd" d="M368.839 484.014H247.042c-5.523 0-10-4.477-10-10V326.562c0-5.523 4.477-10 10-10H368.84c5.523 0 10 4.477 10 10v147.452c-.001 5.522-4.478 10-10.001 10z"/>
+              <path fill="#232e7a" d="M313.463 459.63a7.074 7.074 0 11-14.148 0 7.074 7.074 0 0114.148 0zm29.617-90.963c-.993-19.121-16.779-34.402-35.937-34.788-18.602-.382-34.573 13.217-37.141 31.616a37.124 37.124 0 00-.354 5.117 6.997 6.997 0 1013.994 0c0-1.067.074-2.138.219-3.182 1.589-11.384 11.485-19.821 23-19.561 11.859.238 21.63 9.693 22.244 21.523.328 6.313-1.881 12.307-6.22 16.876-4.342 4.573-10.201 7.091-16.496 7.091a6.997 6.997 0 00-6.997 6.997v31.103a6.997 6.997 0 1013.994 0v-24.764c7.466-1.426 14.276-5.135 19.647-10.792 7.007-7.379 10.574-17.052 10.047-27.236z"/>
+            </svg>
               <h4>Memory Game</h4>
               <p class="card-description">
                 2-player matching game with timer, & score. Heavy use of JS and jQuery.
               </p>
-          </div>
-
-          <div class="card" onclick="window.location.href='https://sizu24.github.io/Interactive-Dashboard/'">
+          </a>
+          
+          
+          <a class="card" href="https://sizu24.github.io/Interactive-Dashboard/" target="_blank">
       
             <svg id="dashboard-icon" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 528">
               <defs/>
@@ -446,9 +448,9 @@
               <p class="card-description"> 
                 Dashboard using SVGs. Input forms, searchable profiles, and local storage.
               </p>
-          </div>
+          </a>
 
-          <div class="card" onclick="window.location.href='https://sizu24.github.io/Employee-Directory-API/'">
+          <a class="card" href="https://sizu24.github.io/Employee-Directory-API/" target="_blank">
           
             <svg xmlns="http://www.w3.org/2000/svg" id="employee-icon" class="icon" viewBox="0 0 512 512">
               <defs/>
@@ -488,9 +490,9 @@
             <p class="card-description">
               Random employee data with API, seach employees by name, and display Modal with employee info.
             </p>
-          </div>
+          </a>
 
-          <div class="card" onclick="window.location.href='https://sizu24.github.io/Registration-Form/'">
+          <a class="card" href="https://sizu24.github.io/Registration-Form/" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" id="form-icon" class="icon" viewBox="0 0 512 512">
               <defs/>
               <path fill="#734bbd" d="M451 135l-105-30L316 0H106C81.147 0 61 20.147 61 45v422c0 24.853 20.147 45 45 45h300c24.853 0 45-20.147 45-45z"/>
@@ -511,14 +513,19 @@
             <p class="card-description">
               HTML Registration form for newsletter.
             </p>
-          </div>
+          </a>
         </div>
       </div>  
     </main>
 
     <footer class="footer">
       <ul class="footer__contact" id="contact">
-        <li><a rel="nofollow" href="http://www.github.com/sizu24" target="_blank" class="footer__social-github social github"></a></li>
+        <li><a rel="nofollow" href="https://www.github.com/sizu24" target="_blank" class="footer__social">
+          <i class="fa-brands fa-github-alt"></i>
+        </a></li>
+        <li><a rel="nofollow" href="https://linkedin.com/in/shah-chisty/" target="_blank" class="footer__social">
+          <i class="fa-brands fa-linkedin"></i>
+        </a></li>
       </ul>
       <p class="footer__email" id="email-link"><a href="mailto:sizu24@me.com">Email | sizu24@me.com</a></p>
       <p class="footer__copyright copyright">© 2022 Shah Chisty</p>

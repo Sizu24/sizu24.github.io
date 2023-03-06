@@ -41,7 +41,7 @@ main {
 
 footer {
   grid-area: footer;
-  height: 140px;
+  min-height: 140px;
   background-color: #292929;
   
 }
@@ -58,12 +58,9 @@ footer {
 
   .container {
     width: 100%;
-    // margin: 0 auto;
+
     @include mq($sm) {
-
       position: relative;
-      // background-color: #fff;
-
     }
   }
 }
@@ -74,35 +71,4 @@ footer {
 
 .about__content-title {
   padding-left: 4.375rem;
-}
-
-// Websites
-#websites {
-  max-width: 100%;
-  margin: 0;
-  // anchor tag offset to correct position when clicking link
-
-  &::before {
-    display: block;
-    content: " ";
-    margin-top: -45px;
-    height: 45px;
-    visibility: hidden;
-    pointer-events: none;
-  }
-}
-
-.websites {
-
-  p {
-    padding: 10px 30px;
-
-    @include mq($md) {
-      padding: 0 60px;
-    }
-
-    @include mq($lg) {
-      padding: 0 350px;
-    }
-  }
 }

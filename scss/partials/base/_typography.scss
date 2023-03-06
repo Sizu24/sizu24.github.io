@@ -338,53 +338,6 @@ ul .description {
     }
 }
 
-// Websites
-#websites {
-  font-size: 2.0em;
-  text-align: center;
-
-  h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 0.7em;
-    @include mq($md){
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-  }
-}
-
-.websites__card {
-  margin: 2rem 0;
-}
-
-.websites__card-info {
-  line-height: 1.5rem;
-}
-
-.websites-info {
-
-  p {
-    font-size: 14px;
-  }
-
-  @include mq($md){
-
-    p {
-      font-size: 0.5em;
-    }
-  }
-  button {
-    font-size: 12px;
-  }
-}
-
-.coming-soon {
-  font-size: 0.8rem;
-  margin-top: 0;
-}
-
 // Projects cards
 #projects h3{
   font-size: 2.1em;

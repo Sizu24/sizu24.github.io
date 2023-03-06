@@ -1,0 +1,138 @@
+// Websites
+.websites {
+
+  &-content {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &__card {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+#websites {
+  max-width: 100%;
+  margin: 0;
+  // anchor tag offset to correct position when clicking link
+  font-size: 2.0em;
+  text-align: center;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 0.7em;
+    @include mq($md){
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  &::before {
+    display: block;
+    content: " ";
+    margin-top: -45px;
+    height: 45px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.websites__card {
+  margin: 2rem 0;
+}
+
+.websites__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  line-height: 1.5rem;
+}
+
+.websites__card-info {
+  max-width: 70%;
+  margin: 0;
+}
+
+.websites-info {
+
+  p {
+    font-size: 14px;
+  }
+
+  @include mq($md){
+
+    p {
+      font-size: 0.5em;
+    }
+  }
+  button {
+    font-size: 12px;
+  }
+}
+
+.websites__card-link {
+  padding: 10px 25px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color, 200ms ease-in-out;
+  transition: color, 200ms ease-in-out;
+
+  a:link {
+    color: #000;
+  }
+
+  a:visited {
+    color: #000;
+  }
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+
+    a:link {
+      color: #fff;
+    }
+
+    a:visited {
+      color: #fff !important;
+    }
+  }
+}
+
+.websites__card-link--one {
+  background-color: #000;
+  color: #fff;
+
+  a:visited {
+    color: #fff;
+  }
+
+  a:link {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+
+    a:link {
+      color: #000;
+    }
+
+    a:visited {
+      color: #000 !important;
+    }
+  }
+}

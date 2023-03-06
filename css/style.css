@@ -633,48 +633,6 @@ ul .description {
   }
 }
 
-#websites {
-  font-size: 2em;
-  text-align: center;
-}
-#websites h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 0.7em;
-}
-@media (min-width: 768px) {
-  #websites h4 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-}
-
-.websites__card {
-  margin: 2rem 0;
-}
-
-.websites__card-info {
-  line-height: 1.5rem;
-}
-
-.websites-info p {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  .websites-info p {
-    font-size: 0.5em;
-  }
-}
-.websites-info button {
-  font-size: 12px;
-}
-
-.coming-soon {
-  font-size: 0.8rem;
-  margin-top: 0;
-}
-
 #projects h3 {
   font-size: 2.1em;
 }
@@ -755,7 +713,7 @@ main {
 
 footer {
   grid-area: footer;
-  height: 140px;
+  min-height: 140px;
   background-color: #292929;
 }
 
@@ -779,33 +737,6 @@ footer {
 
 .about__content-title {
   padding-left: 4.375rem;
-}
-
-#websites {
-  max-width: 100%;
-  margin: 0;
-}
-#websites::before {
-  display: block;
-  content: " ";
-  margin-top: -45px;
-  height: 45px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.websites p {
-  padding: 10px 30px;
-}
-@media (min-width: 768px) {
-  .websites p {
-    padding: 0 60px;
-  }
-}
-@media (min-width: 1024px) {
-  .websites p {
-    padding: 0 350px;
-  }
 }
 
 #nav {
@@ -936,16 +867,6 @@ footer {
 }
 
 /* ----------------------- Cards ----------------------- */
-.websites-content {
-  margin-top: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.websites-content__card {
-  margin-bottom: 50px;
-}
-
 #modal-overlay {
   position: absolute;
   top: 200px;
@@ -1165,6 +1086,12 @@ footer {
   transform: rotate(360deg);
 }
 
+.footer__social {
+  padding: 5px;
+  font-size: 2rem;
+  color: #fff;
+}
+
 footer ul {
   text-align: center;
   list-style-type: none;
@@ -1184,12 +1111,6 @@ a.social {
 }
 a.social:hover {
   opacity: 0.6;
-}
-a.twitter {
-  background-image: url("../img/twitter.svg");
-}
-a.github {
-  background-image: url("../img/github.svg");
 }
 
 .icon {
@@ -1390,48 +1311,122 @@ a.github {
   color: #000;
 }
 
+.websites-content {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.websites-content__card {
+  margin-bottom: 50px;
+}
+
+#websites {
+  max-width: 100%;
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+#websites h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 0.7em;
+}
+@media (min-width: 768px) {
+  #websites h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+#websites::before {
+  display: block;
+  content: " ";
+  margin-top: -45px;
+  height: 45px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.websites__card {
+  margin: 2rem 0;
+}
+
+.websites__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  line-height: 1.5rem;
+}
+
+.websites__card-info {
+  max-width: 70%;
+  margin: 0;
+}
+
+.websites-info p {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .websites-info p {
+    font-size: 0.5em;
+  }
+}
 .websites-info button {
-  background-color: #fff;
-  border-color: #000;
-  color: #000;
+  font-size: 12px;
+}
+
+.websites__card-link {
   padding: 10px 25px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #000;
   border-radius: 5px;
-  margin: 0 10px;
+  color: #000;
+  cursor: pointer;
   transition: background-color, 200ms ease-in-out;
   transition: color, 200ms ease-in-out;
 }
-.websites-info button:first-of-type {
+.websites__card-link a:link {
+  color: #000;
+}
+.websites__card-link a:visited {
+  color: #000;
+}
+.websites__card-link:hover {
   background-color: #000;
   color: #fff;
 }
-.websites-info button:first-of-type:hover {
-  background-color: #fff;
-}
-.websites-info button:first-of-type:hover a:link {
-  color: #000;
-}
-.websites-info button:first-of-type:hover a:visited {
-  color: #000 !important;
-}
-.websites-info button:first-of-type a:visited {
+.websites__card-link:hover a:link {
   color: #fff;
 }
-.websites-info button:first-of-type a:link {
-  color: #fff;
-}
-.websites-info button a:link {
-  color: #000;
-  text-decoration: none;
-}
-.websites-info button:hover {
-  background-color: #000;
-  cursor: pointer;
-}
-.websites-info button:hover a:visited {
+.websites__card-link:hover a:visited {
   color: #fff !important;
 }
-.websites-info button:hover a:link {
+
+.websites__card-link--one {
+  background-color: #000;
   color: #fff;
+}
+.websites__card-link--one a:visited {
+  color: #fff;
+}
+.websites__card-link--one a:link {
+  color: #fff;
+}
+.websites__card-link--one:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.websites__card-link--one:hover a:link {
+  color: #000;
+}
+.websites__card-link--one:hover a:visited {
+  color: #000 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
