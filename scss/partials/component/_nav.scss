@@ -1,90 +1,115 @@
 .nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+}
 
-  &-drop {
-    font-size: 1rem;
-    color: rgb(71, 71, 71);
-    height: 100vh;
+.nav-list {
+  display: none;
+
+  @include mq($md) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    position: absolute;
-    display: none;
-    color: #fff;
-    z-index: 1000;
-    top: 46px;
+    list-style: none;
+  }
+}
 
-    @include mq($md) {
-      right: 25px;
-      top: 3px;
-    }
+.nav-list__item {
+  padding: 5px 10px;
+  margin: 0 4%;
+  color: #fff;
+}
 
-    @include mq($md) {
-      padding-top: 10px;
-      display: block;
-      position: relative;
-      color: rgb(109, 109, 109);
-      width: 100%;
-      height: 20px;
-    }
+.nav-list__item-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__drop {
+  font-size: 1rem;
+  background-color: rgb(41, 41, 41);
+  color: rgb(71, 71, 71);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: 46px;
+  opacity: 0;
+  transform: translateY(-100%);
+
+  @include mq($md) {
+    right: 25px;
+    top: 3px;
   }
 
-  &-links {
-    display: flex;
-    flex-direction: column;
+  @include mq($md) {
+    display: none;
+  }
+}
 
-    @include mq($md) {
-      display: block;
-      text-align: center;
+.nav__drop.open {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($md) {
+    display: block;
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+
+    @include mq($xs) {
+      font-size: 0.8em;
+      border: none;
+      padding: 15px 10px;
     }
 
-    a{
-      text-align: center;
-      padding: 10px;
-      font-size: 1.2em;
- 
-      @include mq($xs) {
-        font-size: 0.8em;
-        border: none;
-        padding: 15px 10px;
+    @include mq($md) {
+      padding: 5px 10px;
+      margin: 0 4%;
 
-        &:nth-of-type(5) {
-          padding-bottom: 35px;
-        }
+      &:nth-of-type(5) {
+        padding-bottom: 5px;
       }
+    }
 
-      @include mq($md) {
-        padding: 5px 10px;
-        margin: 0 4%;
+    &:link {
+      text-decoration: none;
+      color: white;
+    }
 
-        &:nth-of-type(5) {
-          padding-bottom: 5px;
-        }
-      }
+    &:hover {
+      color: white;
+    }
 
-      &:link {
-        text-decoration: none;
-        color: white;
-      }
+    &:active{
+      color: white;
+    }
 
-      &:hover {
-        color: white;
-      }
-
-      &:active{
-        color: white;
-      }
-
-      &:visited {
-       color: rgb(255, 255, 255);
-      }
+    &:visited {
+     color: rgb(255, 255, 255);
     }
   }
 }
 
 .nav-button {
-  transition: all .6s ease-in-out;
+  transition: all .4s ease-in-out;
   
   &:hover {
     background-color: rgb(97, 97, 97);
@@ -95,12 +120,25 @@
   }
 }
 
-#hamburger {
-  float: right;
-  // margin: 5px 15px;
+.nav-list__item {
+  padding: 10px;
+  border-radius: 4px;
+  transition: all .4s ease-in-out;
+  
+  &:hover {
+    background-color: rgb(97, 97, 97);
+  }
+  
+}
+
+.nav-hamburger {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   padding: 10px;
   height: 45px;
   width: 45px;
+  z-index: 2;
 
   @include mq($md){
     display: none;
@@ -111,11 +149,48 @@
   }
 }
 
-.line {
+.nav-hamburger__button {
+  position: relative;
   padding: 1px 0;
   margin: 5px 0;
   width: 24px;
+  border: none;
   background-color: rgb(230, 230, 230);
+  z-index: -1;
+  transition: transform .4s ease-in-out;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+  }
+}
+
+.nav-hamburger__button.open {
+  background-color: transparent;
+  &:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  &:after {
+    transform: rotate(135deg);
+    bottom: 0;
+  }
 }
 
 #logo {

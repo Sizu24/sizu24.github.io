@@ -16,13 +16,20 @@
       <a href="https://sizu24.github.io/">
         <div class="nav__logo" id="logo"><i class="fab fa-stripe-s"></i></div>
       </a>
-      <div class="nav__hamburger" id="hamburger">
-        <div class="line"></div >
-        <div class="line"></div>
-        <div class="line"></div>
+      <div class="nav-hamburger" id="hamburger">
+        <button class="nav-hamburger__button"></button>
       </div>
-      <div class="nav__drop" id="nav-drop">
-        <div class="nav__links" id="nav-links">
+
+      <ul class="nav-list">
+        <li class="nav-list__item"><a class="nav-list__item-link" href="https://sizu24.github.io/" class="nav-button fade active">Home</a>
+        <li class="nav-list__item"><a class="nav-list__item-link" href="#about" class="nav-button fade">About Me</a></li>
+        <li class="nav-list__item"><a class="nav-list__item-link" href="#websites" class="nav-button fade">Projects</a></li>
+        <li class="nav-list__item"><a class="nav-list__item-link" href="https://github.com/sizu24" class="nav-button fade" target="_blank">Github</a></li>
+        <li class="nav-list__item"><a class="nav-list__item-link" href="#contact" class="nav-button fade">Contact</a></li>
+      </ul>
+
+      <div class="nav__drop">
+        <div class="nav__links">
           <a href="https://sizu24.github.io/" class="nav-button fade active">Home</a>
           <a href="#about" class="nav-button fade">About Me</a>
           <a href="#websites" class="nav-button fade">Projects</a>
@@ -32,16 +39,16 @@
       </div>
     </nav>
 
-    <header class="header">
-      <div class="header__background" id="background">
-        <div class="header__overlay" id="overlay">
-          <div class="header__welcome-section" id="welcome">
-            <h1 class="header__title">Shah Chisty</h1>
-            <div class="header__typing-animation typing">
-              <h2 class="header__subhead subtitle">Frontend <span class="subtitle">Developer</span></h2>
+    <div class="hero">
+      <div class="hero__background" id="background">
+        <div class="hero__overlay" id="overlay">
+          <div class="hero__welcome-section" id="welcome">
+            <h1 class="hero__title">Shah Chisty</h1>
+            <div class="hero__typing-animation typing">
+              <h2 class="hero__subhead subtitle">Frontend <span class="subtitle">Developer</span></h2>
             </div>
 
-            <ul class="header__icons" id="language-icons">
+            <ul class="hero__icons" id="language-icons">
               <li>HTML<i class="fab fa-html5"></i></li>
               <li>CSS<i class="fab fa-css3-alt"></i></li>
               <li>JavaScript <i class="fab fa-js"></i></li>
@@ -49,15 +56,15 @@
               <li><i class="fab fa-sass"></i></li>
             </ul>
       
-            <div class="header__buttons" id="buttons">
-              <a href="#about" class="header__button-one">
-                <button class="header__button-one button one">
+            <div class="hero__buttons" id="buttons">
+              <a href="#about" class="hero__button-one">
+                <button class="hero__button-one button one">
                   Who Am I?    
                 </button>
               </a>
 
-              <a href="#websites" class="header__button-one">
-                <button class="header__button-two button two">
+              <a href="#websites" class="hero__button-one">
+                <button class="hero__button-two button two">
                   My Work
                 </button>
               </a>
@@ -66,7 +73,7 @@
           </div>
         </div>
       </div>   
-    </header>
+    </div>
 
     <main class="main">
       <div class="about" id="about">

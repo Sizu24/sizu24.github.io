@@ -1,21 +1,25 @@
-const navDrop = document.querySelector(".nav-drop");
-const navLinks = document.querySelector(".nav-links");
+const navDrop = document.querySelector(".nav__drop");
+const navLinks = document.querySelector(".nav__links");
+const navToggle = document.querySelector(".nav-hamburger");
+const navButton = document.querySelector(".nav-hamburger__button");
 let screenWidth = window.outerWidth;
 
 // Open and close hamburger menu
-window.addEventListener("click", e => {
-  if(e.target.id === "hamburger" || e.target.className === "line") {
-    navDrop.style.display === "block";
-    if(navDrop.style.display === "block") {
-      navDrop.style.display = "none";
-    }else {
-      navDrop.style.display = "block";
+document.addEventListener("DOMContentLoaded", function () {
+  // Toggle navDrop on navToggle click
+  navToggle.addEventListener("click", function () {
+    navDrop.classList.toggle('open');
+    navButton.classList.toggle('open');
+  });
+
+  // Close navDrop if clicked outside of navToggle and navDrop
+  document.addEventListener("click", function (event) {
+    const target = event.target;
+    if (target !== navToggle && target !== navDrop) {
+      navDrop.classList.remove('open');
+      navButton.classList.remove('open');
     }
-  }else {
-    if(navDrop.style.display === "block") {
-      navDrop.style.display = "none";
-    }
-  }
+  });
 });
 
 const removeActive = () => {

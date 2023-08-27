@@ -9,7 +9,7 @@
   grid-template-areas:
 
     "nav"
-    "header"
+    "hero"
     "main"
     "footer";
 
@@ -19,14 +19,14 @@
 
     grid-template-areas:
      "nav nav nav nav"
-     "header header header header"
+     "hero hero hero hero"
      "main main main main"
      "footer footer footer footer";
   }
 }
 
-header {
-  grid-area: header;
+.hero {
+  grid-area: hero;
   background-color: #292929;
 }
 
