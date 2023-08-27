@@ -1,5 +1,5 @@
-const navDrop = document.querySelector("#nav-drop");
-const navLinks = document.querySelector("#nav-links");
+const navDrop = document.querySelector(".nav-drop");
+const navLinks = document.querySelector(".nav-links");
 let screenWidth = window.outerWidth;
 
 // Open and close hamburger menu
